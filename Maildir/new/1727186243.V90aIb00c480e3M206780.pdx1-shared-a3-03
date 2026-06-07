@@ -1,0 +1,108 @@
+Return-Path: <>
+X-Original-To: dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Delivered-To: dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Received: from pdx1-shared-relay-02.dreamhost.com (pdx1-shared-relay-02.dreamhost.com [69.163.136.89])
+	by pdx1-shared-a3-03.dreamhost.com (Postfix) with ESMTP id 4XChJ31PhVz4nPl
+	for <dh_southtabor@pdx1-shared-a3-03.dreamhost.com>; Tue, 24 Sep 2024 13:57:23 +0000 (UTC)
+Received: by pdx1-shared-relay-02.dreamhost.com (Postfix)
+	id 4XChJ318rkzfd; Tue, 24 Sep 2024 06:57:23 -0700 (PDT)
+Date: Tue, 24 Sep 2024 06:57:23 -0700 (PDT)
+From: MAILER-DAEMON@pdx1-shared-relay-02.dreamhost.com (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="4XChJ22qFKz1M.1727186243/pdx1-shared-relay-02.dreamhost.com"
+Message-Id: <4XChJ318rkzfd@pdx1-shared-relay-02.dreamhost.com>
+
+This is a MIME-encapsulated message.
+
+--4XChJ22qFKz1M.1727186243/pdx1-shared-relay-02.dreamhost.com
+Content-Description: Notification
+Content-Type: text/plain; charset=us-ascii
+
+This is the mail system at host pdx1-shared-relay-02.dreamhost.com.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+If you are a current customer of DreamHost, please contact our
+technical support team here
+
+https://panel.dreamhost.com/support
+
+If you are not a customer please use our contact form at.
+
+http://dreamhost.com/contact
+
+If you do so, please include this email in your support ticket. You can
+delete your own text from the attached returned message.
+
+                DreamHost Email Support
+
+<crimebuster@southtabor.org>: host mx1.mailchannels.net[52.38.143.159] said:
+    550 5.7.1 Message rejected (in reply to end of DATA command)
+
+--4XChJ22qFKz1M.1727186243/pdx1-shared-relay-02.dreamhost.com
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; pdx1-shared-relay-02.dreamhost.com
+X-Postfix-Queue-ID: 4XChJ22qFKz1M
+X-Postfix-Sender: rfc822; dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Arrival-Date: Tue, 24 Sep 2024 06:57:22 -0700 (PDT)
+
+Final-Recipient: rfc822; crimebuster@southtabor.org
+Original-Recipient: rfc822;crimebuster@southtabor.org
+Action: failed
+Status: 5.7.1
+Remote-MTA: dns; mx1.mailchannels.net
+Diagnostic-Code: smtp; 550 5.7.1 Message rejected
+
+--4XChJ22qFKz1M.1727186243/pdx1-shared-relay-02.dreamhost.com
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+
+Return-Path: <dh_southtabor@pdx1-shared-a3-03.dreamhost.com>
+Received: from pdx1-shared-a3-03.dreamhost.com (pdx1-shared-a3-03.dreamhost.com [69.163.140.3])
+	by pdx1-shared-relay-02.dreamhost.com (Postfix) with ESMTP id 4XChJ22qFKz1M
+	for <crimebuster@southtabor.org>; Tue, 24 Sep 2024 06:57:22 -0700 (PDT)
+Received: by pdx1-shared-a3-03.dreamhost.com (Postfix, from userid 5516487)
+	id 4XChJ22jxNz4sCh; Tue, 24 Sep 2024 13:57:22 +0000 (UTC)
+To: crimebuster@southtabor.org
+Subject: =?us-ascii?Q?SouthTabor.org_Form_-_Viral_Video_Generator_Sof?=  =?us-ascii?Q?tware:_VIDEOFROMTEXT.COM__Try_it_Free?=
+X-PHP-Originating-Script: 5516487:PHPMailer.php
+Date: Tue, 24 Sep 2024 13:57:22 +0000
+From: Arlie Streeten <communications@southtabor.org>
+Reply-To: arlie.streeten@outlook.com
+Message-ID: <524snrzv8rUseZGql96HZ73OHAJiFUpDyg20FNTfGo@southtabor.org>
+X-Mailer: PHPMailer 6.9.1 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+
+From: Arlie Streeten <arlie.streeten@outlook.com>
+Subject: Viral Video Generator Software: VIDEOFROMTEXT.COM  Try it Free
+
+Phone: 180467365
+
+Message Body:
+Dear Colleague
+
+Have you tried Video Marketing for your products? 
+No longer do you need a mega budget to generate videos.
+Try this powerful https://videofromtext.com software free.
+Generate hundreds of videos for Twitter, Facebook, Tiktok and Snapchat.
+Pay once, use forever.
+
+Get this Game Changer software today, you deserve it.
+
+Thanks
+
+Emily Chang
+
+--
+This e-mail was sent from a contact form on South Tabor Neighborhood Association (http://southtabor.org)
+
+
+--4XChJ22qFKz1M.1727186243/pdx1-shared-relay-02.dreamhost.com--

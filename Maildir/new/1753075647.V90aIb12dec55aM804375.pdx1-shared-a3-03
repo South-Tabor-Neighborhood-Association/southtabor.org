@@ -1,0 +1,96 @@
+Return-Path: <>
+X-Original-To: dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Delivered-To: dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Received: from pdx1-shared-relay-02.dreamhost.com (pdx1-shared-relay-02.dreamhost.com [69.163.136.89])
+	by pdx1-shared-a3-03.dreamhost.com (Postfix) with ESMTP id 4blpnC5f4Tz4rw4
+	for <dh_southtabor@pdx1-shared-a3-03.dreamhost.com>; Sun, 20 Jul 2025 22:27:27 -0700 (PDT)
+Received: by pdx1-shared-relay-02.dreamhost.com (Postfix)
+	id 4blpnC5WvYz1f4; Sun, 20 Jul 2025 22:27:27 -0700 (PDT)
+Date: Sun, 20 Jul 2025 22:27:27 -0700 (PDT)
+From: MAILER-DAEMON@pdx1-shared-relay-02.dreamhost.com (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="4blpnC1KfXz1f5.1753075647/pdx1-shared-relay-02.dreamhost.com"
+Message-Id: <4blpnC5WvYz1f4@pdx1-shared-relay-02.dreamhost.com>
+
+This is a MIME-encapsulated message.
+
+--4blpnC1KfXz1f5.1753075647/pdx1-shared-relay-02.dreamhost.com
+Content-Description: Notification
+Content-Type: text/plain; charset=us-ascii
+
+This is the mail system at host pdx1-shared-relay-02.dreamhost.com.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+If you are a current customer of DreamHost, please contact our
+technical support team here
+
+https://panel.dreamhost.com/support
+
+If you are not a customer please use our contact form at.
+
+http://dreamhost.com/contact
+
+If you do so, please include this email in your support ticket. You can
+delete your own text from the attached returned message.
+
+                DreamHost Email Support
+
+<crimebuster@southtabor.org>: host mx1.mailchannels.net[18.236.29.166] said:
+    550 5.7.1 Message rejected (in reply to end of DATA command)
+
+--4blpnC1KfXz1f5.1753075647/pdx1-shared-relay-02.dreamhost.com
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; pdx1-shared-relay-02.dreamhost.com
+X-Postfix-Queue-ID: 4blpnC1KfXz1f5
+X-Postfix-Sender: rfc822; dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Arrival-Date: Sun, 20 Jul 2025 22:27:27 -0700 (PDT)
+
+Final-Recipient: rfc822; crimebuster@southtabor.org
+Original-Recipient: rfc822;crimebuster@southtabor.org
+Action: failed
+Status: 5.7.1
+Remote-MTA: dns; mx1.mailchannels.net
+Diagnostic-Code: smtp; 550 5.7.1 Message rejected
+
+--4blpnC1KfXz1f5.1753075647/pdx1-shared-relay-02.dreamhost.com
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+
+Return-Path: <dh_southtabor@pdx1-shared-a3-03.dreamhost.com>
+Received: from pdx1-shared-a3-03.dreamhost.com (pdx1-shared-a3-03.dreamhost.com [69.163.140.3])
+	by pdx1-shared-relay-02.dreamhost.com (Postfix) with ESMTP id 4blpnC1KfXz1f5
+	for <crimebuster@southtabor.org>; Sun, 20 Jul 2025 22:27:27 -0700 (PDT)
+Received: by pdx1-shared-a3-03.dreamhost.com (Postfix, from userid 5516487)
+	id 4blkxN64MKz4rw7; Sun, 20 Jul 2025 19:34:16 -0700 (PDT)
+To: crimebuster@southtabor.org
+Subject: =?us-ascii?Q?SouthTabor.org_Form_-_Buying_a_kitchen:_how_not?=  =?us-ascii?Q?_to_become_a_victim_of_unscrupulous_sellers=3F?=
+X-PHP-Originating-Script: 5516487:PHPMailer.php
+Date: Mon, 21 Jul 2025 02:34:16 +0000
+From: Ketimes <communications@southtabor.org>
+Reply-To: sitebig.choic.e@gmail.com
+Message-ID: <VMVPQ2mnJiLvPSRjZledrxKTcJGDNbKNkzItLNBSW4@southtabor.org>
+X-Mailer: PHPMailer 6.9.3 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+
+From: Ketimes <sitebig.choic.e@gmail.com>
+Subject: Buying a kitchen: how not to become a victim of unscrupulous sellers?
+
+Phone: 81818426655
+
+Message Body:
+The topic is of course very serious and interesting... I created a topic on the kitchen, I invite you to discuss it. In this post, I'll explain how important <a href=https://kuhnia-nazakaz.by/contact/><font color=#1C1C1C>creating a kitchen as a place for the whole family</font></a>. What details make the kitchen really the center of attraction, and how to properly organize the space so that it becomes comfortable and cozy for all family members.
+
+--
+This e-mail was sent from a contact form on South Tabor Neighborhood Association (http://southtabor.org)
+
+
+--4blpnC1KfXz1f5.1753075647/pdx1-shared-relay-02.dreamhost.com--

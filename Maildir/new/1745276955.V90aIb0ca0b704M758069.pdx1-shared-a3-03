@@ -1,0 +1,98 @@
+Return-Path: <>
+X-Original-To: dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Delivered-To: dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Received: from pdx1-shared-relay-02.dreamhost.com (pdx1-shared-relay-02.dreamhost.com [69.163.136.89])
+	by pdx1-shared-a3-03.dreamhost.com (Postfix) with ESMTP id 4ZhLfM5CQ3z4qc7
+	for <dh_southtabor@pdx1-shared-a3-03.dreamhost.com>; Mon, 21 Apr 2025 23:09:15 +0000 (UTC)
+Received: by pdx1-shared-relay-02.dreamhost.com (Postfix)
+	id 4ZhLfM53vtz42; Mon, 21 Apr 2025 16:09:15 -0700 (PDT)
+Date: Mon, 21 Apr 2025 16:09:15 -0700 (PDT)
+From: MAILER-DAEMON@pdx1-shared-relay-02.dreamhost.com (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="4ZhLfL6ZpKz7b.1745276955/pdx1-shared-relay-02.dreamhost.com"
+Message-Id: <4ZhLfM53vtz42@pdx1-shared-relay-02.dreamhost.com>
+
+This is a MIME-encapsulated message.
+
+--4ZhLfL6ZpKz7b.1745276955/pdx1-shared-relay-02.dreamhost.com
+Content-Description: Notification
+Content-Type: text/plain; charset=us-ascii
+
+This is the mail system at host pdx1-shared-relay-02.dreamhost.com.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+If you are a current customer of DreamHost, please contact our
+technical support team here
+
+https://panel.dreamhost.com/support
+
+If you are not a customer please use our contact form at.
+
+http://dreamhost.com/contact
+
+If you do so, please include this email in your support ticket. You can
+delete your own text from the attached returned message.
+
+                DreamHost Email Support
+
+<crimebuster@southtabor.org>: host mx1.mailchannels.net[18.236.29.166] said:
+    550 5.7.1 Message rejected (in reply to end of DATA command)
+
+--4ZhLfL6ZpKz7b.1745276955/pdx1-shared-relay-02.dreamhost.com
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; pdx1-shared-relay-02.dreamhost.com
+X-Postfix-Queue-ID: 4ZhLfL6ZpKz7b
+X-Postfix-Sender: rfc822; dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Arrival-Date: Mon, 21 Apr 2025 16:09:14 -0700 (PDT)
+
+Final-Recipient: rfc822; crimebuster@southtabor.org
+Original-Recipient: rfc822;crimebuster@southtabor.org
+Action: failed
+Status: 5.7.1
+Remote-MTA: dns; mx1.mailchannels.net
+Diagnostic-Code: smtp; 550 5.7.1 Message rejected
+
+--4ZhLfL6ZpKz7b.1745276955/pdx1-shared-relay-02.dreamhost.com
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+
+Return-Path: <dh_southtabor@pdx1-shared-a3-03.dreamhost.com>
+Received: from pdx1-shared-a3-03.dreamhost.com (pdx1-shared-a3-03.dreamhost.com [69.163.140.3])
+	by pdx1-shared-relay-02.dreamhost.com (Postfix) with ESMTP id 4ZhLfL6ZpKz7b
+	for <crimebuster@southtabor.org>; Mon, 21 Apr 2025 16:09:14 -0700 (PDT)
+Received: by pdx1-shared-a3-03.dreamhost.com (Postfix, from userid 5516487)
+	id 4ZhLfL6VXJz4rww; Mon, 21 Apr 2025 23:09:14 +0000 (UTC)
+To: crimebuster@southtabor.org
+Subject: =?us-ascii?Q?SouthTabor.org_Form_-_Unlock_Holistic_Wellness:?=  =?us-ascii?Q?_Expert_Guidance_for_a_Balanced_Life_-_Mindful_?=  =?us-ascii?Q?Movement,_Natural_Skincare,_and_More?=
+X-PHP-Originating-Script: 5516487:PHPMailer.php
+Date: Mon, 21 Apr 2025 23:09:14 +0000
+From: Williammaick <communications@southtabor.org>
+Reply-To: prosperhaven007@gmail.com
+Message-ID: <uFLdx1N6NEe5JAfXHDExfSe4hq157zX5h7Bl2SYhzU@southtabor.org>
+X-Mailer: PHPMailer 6.9.2 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+
+From: Williammaick <prosperhaven007@gmail.com>
+Subject: Unlock Holistic Wellness: Expert Guidance for a Balanced Life - Mindful Movement, Natural Skincare, and More
+
+Phone: 83269461826
+
+Message Body:
+Discover the secrets to achieving optimal wellness with our expert guidance. From mindful movement and natural skincare to gut health supplements and digital detox retreats, our comprehensive resource covers it all. Learn how to prioritize your mental health, boost your energy, and nourish your body with our actionable tips and expert advice. Whether you're looking to improve your sleep hygiene, optimize your fitness routine, or simply find a sense of calm, we've got you covered. Explore our curated content and start your journey towards a balanced, holistic lifestyle today! 
+ 
+<a href=https://wellness-warrior-guide.blogspot.com/2024/04/health-wellness-your-fun-guide-to.html>Healthy Recipes</a>
+
+--
+This e-mail was sent from a contact form on South Tabor Neighborhood Association (http://southtabor.org)
+
+
+--4ZhLfL6ZpKz7b.1745276955/pdx1-shared-relay-02.dreamhost.com--

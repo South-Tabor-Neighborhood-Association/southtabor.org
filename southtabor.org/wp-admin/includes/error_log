@@ -1,0 +1,1 @@
+[01-Mar-2016 08:55:45 America/Los_Angeles] PHP Fatal error:  Class 'WP_Filesystem_Base' not found in /home/southtab/public_html/wp-admin/includes/class-wp-filesystem-ftpext.php on line 17

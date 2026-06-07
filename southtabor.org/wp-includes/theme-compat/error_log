@@ -1,0 +1,2 @@
+[15-Feb-2018 14:07:26 America/Los_Angeles] PHP Fatal error:  Call to undefined function post_class() in /home/southtab/public_html/wp-includes/theme-compat/embed-content.php on line 13
+[15-Feb-2018 14:07:27 America/Los_Angeles] PHP Fatal error:  Call to undefined function post_class() in /home/southtab/public_html/wp-includes/theme-compat/embed-content.php on line 13

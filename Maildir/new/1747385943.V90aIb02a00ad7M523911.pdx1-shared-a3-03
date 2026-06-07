@@ -1,0 +1,111 @@
+Return-Path: <>
+X-Original-To: dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Delivered-To: dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Received: from pdx1-shared-relay-02.dreamhost.com (pdx1-shared-relay-02.dreamhost.com [69.163.136.89])
+	by pdx1-shared-a3-03.dreamhost.com (Postfix) with ESMTP id 4ZzLbq3Y9cz4n7b
+	for <dh_southtabor@pdx1-shared-a3-03.dreamhost.com>; Fri, 16 May 2025 01:59:03 -0700 (PDT)
+Received: by pdx1-shared-relay-02.dreamhost.com (Postfix)
+	id 4ZzLbq35n6zPK; Fri, 16 May 2025 01:59:03 -0700 (PDT)
+Date: Fri, 16 May 2025 01:59:03 -0700 (PDT)
+From: MAILER-DAEMON@pdx1-shared-relay-02.dreamhost.com (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="4ZzLbp4znPz9F.1747385943/pdx1-shared-relay-02.dreamhost.com"
+Content-Transfer-Encoding: 8bit
+Message-Id: <4ZzLbq35n6zPK@pdx1-shared-relay-02.dreamhost.com>
+
+This is a MIME-encapsulated message.
+
+--4ZzLbp4znPz9F.1747385943/pdx1-shared-relay-02.dreamhost.com
+Content-Description: Notification
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 8bit
+
+This is the mail system at host pdx1-shared-relay-02.dreamhost.com.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+If you are a current customer of DreamHost, please contact our
+technical support team here
+
+https://panel.dreamhost.com/support
+
+If you are not a customer please use our contact form at.
+
+http://dreamhost.com/contact
+
+If you do so, please include this email in your support ticket. You can
+delete your own text from the attached returned message.
+
+                DreamHost Email Support
+
+<welcome@southtabor.org>: host mx1.mailchannels.net[18.236.29.166] said: 550
+    5.7.1 Message rejected (in reply to end of DATA command)
+
+--4ZzLbp4znPz9F.1747385943/pdx1-shared-relay-02.dreamhost.com
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; pdx1-shared-relay-02.dreamhost.com
+X-Postfix-Queue-ID: 4ZzLbp4znPz9F
+X-Postfix-Sender: rfc822; dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Arrival-Date: Fri, 16 May 2025 01:59:02 -0700 (PDT)
+
+Final-Recipient: rfc822; welcome@southtabor.org
+Original-Recipient: rfc822;welcome@southtabor.org
+Action: failed
+Status: 5.7.1
+Remote-MTA: dns; mx1.mailchannels.net
+Diagnostic-Code: smtp; 550 5.7.1 Message rejected
+
+--4ZzLbp4znPz9F.1747385943/pdx1-shared-relay-02.dreamhost.com
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+Content-Transfer-Encoding: 8bit
+
+Return-Path: <dh_southtabor@pdx1-shared-a3-03.dreamhost.com>
+Received: from pdx1-shared-a3-03.dreamhost.com (pdx1-shared-a3-03.dreamhost.com [69.163.140.3])
+	by pdx1-shared-relay-02.dreamhost.com (Postfix) with ESMTP id 4ZzLbp4znPz9F
+	for <welcome@southtabor.org>; Fri, 16 May 2025 01:59:02 -0700 (PDT)
+Received: by pdx1-shared-a3-03.dreamhost.com (Postfix, from userid 5516487)
+	id 4ZzLbp4tBpz4qm0; Fri, 16 May 2025 01:59:02 -0700 (PDT)
+To: welcome@southtabor.org
+Subject: =?UTF-8?Q?SouthTabor.org_Form_-_Grow_Your_social_media_Fast_?=  =?UTF-8?Q?=E2=80=94_With_Socpeak.fun!?=
+X-PHP-Originating-Script: 5516487:PHPMailer.php
+Date: Fri, 16 May 2025 08:59:02 +0000
+From: LarryCok <communications@southtabor.org>
+Reply-To: socpeakbot@gmail.com
+Message-ID: <c7dtFWmSSbCcsi7bvMCpfUYlt6jsGIzcwAC3cNBLQ@southtabor.org>
+X-Mailer: PHPMailer 6.9.3 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+From: LarryCok <socpeakbot@gmail.com>
+Subject: Grow Your social media Fast — With Socpeak.fun!
+
+Phone: 84816859842
+
+Message Body:
+Are you looking to increase your visibility on Instagram, TikTok, or other platforms? 
+With Socpeak.fun, you can instantly boost your followers, likes, views, and more — safely and affordably. 
+Why choose Socpeak.fun? 
+•	 Fast delivery 
+•	 Real & organic-looking growth 
+•	 Custom packages based on your goals 
+•	 Trusted by influencers, brands & startups 
+•	 Emails Campaign… and a lot more ! 
+Visit us now: http://www.socpeak.fun/ 
+Start building your audience today — and get noticed. 
+Got questions or want a custom offer? 
+Just email us at info@socpeak.net — and ask about your free welcome gift!
+
+--
+This e-mail was sent from a contact form on South Tabor Neighborhood Association (http://southtabor.org)
+
+
+--4ZzLbp4znPz9F.1747385943/pdx1-shared-relay-02.dreamhost.com--

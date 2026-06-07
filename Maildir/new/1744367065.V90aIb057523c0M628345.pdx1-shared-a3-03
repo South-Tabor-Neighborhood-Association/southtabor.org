@@ -1,0 +1,112 @@
+Return-Path: <>
+X-Original-To: dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Delivered-To: dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Received: from pdx1-shared-relay-02.dreamhost.com (pdx1-shared-relay-02.dreamhost.com [69.163.136.89])
+	by pdx1-shared-a3-03.dreamhost.com (Postfix) with ESMTP id 4ZYt8T2lT9z4n82
+	for <dh_southtabor@pdx1-shared-a3-03.dreamhost.com>; Fri, 11 Apr 2025 10:24:25 +0000 (UTC)
+Received: by pdx1-shared-relay-02.dreamhost.com (Postfix)
+	id 4ZYt8T2bTzzB6; Fri, 11 Apr 2025 03:24:25 -0700 (PDT)
+Date: Fri, 11 Apr 2025 03:24:25 -0700 (PDT)
+From: MAILER-DAEMON@pdx1-shared-relay-02.dreamhost.com (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="4ZYt8S49fzz4j.1744367065/pdx1-shared-relay-02.dreamhost.com"
+Message-Id: <4ZYt8T2bTzzB6@pdx1-shared-relay-02.dreamhost.com>
+
+This is a MIME-encapsulated message.
+
+--4ZYt8S49fzz4j.1744367065/pdx1-shared-relay-02.dreamhost.com
+Content-Description: Notification
+Content-Type: text/plain; charset=us-ascii
+
+This is the mail system at host pdx1-shared-relay-02.dreamhost.com.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+If you are a current customer of DreamHost, please contact our
+technical support team here
+
+https://panel.dreamhost.com/support
+
+If you are not a customer please use our contact form at.
+
+http://dreamhost.com/contact
+
+If you do so, please include this email in your support ticket. You can
+delete your own text from the attached returned message.
+
+                DreamHost Email Support
+
+<communications@southtabor.org>: host mx1.mailchannels.net[52.38.143.159] said:
+    550 5.7.1 Message rejected (in reply to end of DATA command)
+
+--4ZYt8S49fzz4j.1744367065/pdx1-shared-relay-02.dreamhost.com
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; pdx1-shared-relay-02.dreamhost.com
+X-Postfix-Queue-ID: 4ZYt8S49fzz4j
+X-Postfix-Sender: rfc822; dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Arrival-Date: Fri, 11 Apr 2025 03:24:24 -0700 (PDT)
+
+Final-Recipient: rfc822; communications@southtabor.org
+Original-Recipient: rfc822;communications@southtabor.org
+Action: failed
+Status: 5.7.1
+Remote-MTA: dns; mx1.mailchannels.net
+Diagnostic-Code: smtp; 550 5.7.1 Message rejected
+
+--4ZYt8S49fzz4j.1744367065/pdx1-shared-relay-02.dreamhost.com
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+
+Return-Path: <dh_southtabor@pdx1-shared-a3-03.dreamhost.com>
+Received: from pdx1-shared-a3-03.dreamhost.com (pdx1-shared-a3-03.dreamhost.com [69.163.140.3])
+	by pdx1-shared-relay-02.dreamhost.com (Postfix) with ESMTP id 4ZYt8S49fzz4j
+	for <communications@southtabor.org>; Fri, 11 Apr 2025 03:24:24 -0700 (PDT)
+Received: by pdx1-shared-a3-03.dreamhost.com (Postfix, from userid 5516487)
+	id 4ZYt8S44fqz4rxr; Fri, 11 Apr 2025 10:24:24 +0000 (UTC)
+To: communications@southtabor.org
+Subject: =?us-ascii?Q?SouthTabor.org_Form_-_Create_AI_Tools_That_Driv?=  =?us-ascii?Q?e_Free_Traffic_to_southtabor.org?=
+X-PHP-Originating-Script: 5516487:PHPMailer.php
+Date: Fri, 11 Apr 2025 10:24:24 +0000
+From: Major Miller <communications@southtabor.org>
+Reply-To: major.miller@gmail.com
+Message-ID: <xzCvuJ6xsuRgodRUqUylbWpi5qBJWUvjkJDFeQxtsxQ@southtabor.org>
+X-Mailer: PHPMailer 6.9.2 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+
+From: Major Miller <major.miller@gmail.com>
+Subject: Create AI Tools That Drive Free Traffic to southtabor.org
+
+Phone: 274344796
+
+Message Body:
+Hi there,
+
+We wanted to introduce you to a revolutionary system that helps you create AI-powered tools to generate steady, qualified leads without paid advertising.
+
+Key benefits:
+
+Create AI tools in minutes with simple copy/paste templates 
+Drive free, targeted traffic to any niche or offer  
+Built-in call-to-action system to funnel leads to your sales pages 
+No coding or technical experience needed
+
+We're currently offering a special launch price of $17 (regular $97) which includes bonus training on traffic generation and AI monetization.
+
+For more details, check out: https://furtherinfo.info/etb
+
+Thanks,
+Major
+
+--
+This e-mail was sent from a contact form on South Tabor Neighborhood Association (http://southtabor.org)
+
+
+--4ZYt8S49fzz4j.1744367065/pdx1-shared-relay-02.dreamhost.com--

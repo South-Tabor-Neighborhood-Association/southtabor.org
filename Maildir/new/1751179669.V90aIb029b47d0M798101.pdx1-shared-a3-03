@@ -1,0 +1,107 @@
+Return-Path: <>
+X-Original-To: dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Delivered-To: dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Received: from pdx1-shared-relay-02.dreamhost.com (pdx1-shared-relay-02.dreamhost.com [69.163.136.89])
+	by pdx1-shared-a3-03.dreamhost.com (Postfix) with ESMTP id 4bVKc55bPbz4nQ7
+	for <dh_southtabor@pdx1-shared-a3-03.dreamhost.com>; Sat, 28 Jun 2025 23:47:49 -0700 (PDT)
+Received: by pdx1-shared-relay-02.dreamhost.com (Postfix)
+	id 4bVKc55STRzGv; Sat, 28 Jun 2025 23:47:49 -0700 (PDT)
+Date: Sat, 28 Jun 2025 23:47:49 -0700 (PDT)
+From: MAILER-DAEMON@pdx1-shared-relay-02.dreamhost.com (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="4bVKc46Sjmz8L.1751179669/pdx1-shared-relay-02.dreamhost.com"
+Message-Id: <4bVKc55STRzGv@pdx1-shared-relay-02.dreamhost.com>
+
+This is a MIME-encapsulated message.
+
+--4bVKc46Sjmz8L.1751179669/pdx1-shared-relay-02.dreamhost.com
+Content-Description: Notification
+Content-Type: text/plain; charset=us-ascii
+
+This is the mail system at host pdx1-shared-relay-02.dreamhost.com.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+If you are a current customer of DreamHost, please contact our
+technical support team here
+
+https://panel.dreamhost.com/support
+
+If you are not a customer please use our contact form at.
+
+http://dreamhost.com/contact
+
+If you do so, please include this email in your support ticket. You can
+delete your own text from the attached returned message.
+
+                DreamHost Email Support
+
+<crimebuster@southtabor.org>: host mx1.mailchannels.net[18.236.29.166] said:
+    550 5.7.1 Message rejected (in reply to end of DATA command)
+
+--4bVKc46Sjmz8L.1751179669/pdx1-shared-relay-02.dreamhost.com
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; pdx1-shared-relay-02.dreamhost.com
+X-Postfix-Queue-ID: 4bVKc46Sjmz8L
+X-Postfix-Sender: rfc822; dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Arrival-Date: Sat, 28 Jun 2025 23:47:48 -0700 (PDT)
+
+Final-Recipient: rfc822; crimebuster@southtabor.org
+Original-Recipient: rfc822;crimebuster@southtabor.org
+Action: failed
+Status: 5.7.1
+Remote-MTA: dns; mx1.mailchannels.net
+Diagnostic-Code: smtp; 550 5.7.1 Message rejected
+
+--4bVKc46Sjmz8L.1751179669/pdx1-shared-relay-02.dreamhost.com
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+
+Return-Path: <dh_southtabor@pdx1-shared-a3-03.dreamhost.com>
+Received: from pdx1-shared-a3-03.dreamhost.com (pdx1-shared-a3-03.dreamhost.com [69.163.140.3])
+	by pdx1-shared-relay-02.dreamhost.com (Postfix) with ESMTP id 4bVKc46Sjmz8L
+	for <crimebuster@southtabor.org>; Sat, 28 Jun 2025 23:47:48 -0700 (PDT)
+Received: by pdx1-shared-a3-03.dreamhost.com (Postfix, from userid 5516487)
+	id 4bVKc46LHkz4s6G; Sat, 28 Jun 2025 23:47:48 -0700 (PDT)
+To: crimebuster@southtabor.org
+Subject: =?us-ascii?Q?SouthTabor.org_Form_-_Explainer_Video_for_your_?=  =?us-ascii?Q?website?=
+X-PHP-Originating-Script: 5516487:PHPMailer.php
+Date: Sun, 29 Jun 2025 06:47:48 +0000
+From: Joanna Riggs <communications@southtabor.org>
+Reply-To: joannariggs278@gmail.com
+Message-ID: <AZdvw7kUvg7FCZd6tA8JAB8v45S5Lc8TOVVKBevvnVQ@southtabor.org>
+X-Mailer: PHPMailer 6.9.3 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+
+From: Joanna Riggs <joannariggs278@gmail.com>
+Subject: Explainer Video for your website
+
+Phone: 240202581
+
+Message Body:
+Hi,
+
+I just visited southtabor.org and wondered if you'd ever thought about having an engaging video to explain what you do?
+
+Our prices start from just $195 (USD).
+
+Let me know if you're interested in seeing samples of our previous work.
+
+Regards,
+Joanna
+
+Unsubscribe: https://removeme.live/unsubscribe.php?d=southtabor.org
+
+--
+This e-mail was sent from a contact form on South Tabor Neighborhood Association (http://southtabor.org)
+
+
+--4bVKc46Sjmz8L.1751179669/pdx1-shared-relay-02.dreamhost.com--

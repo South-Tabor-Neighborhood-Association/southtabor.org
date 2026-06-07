@@ -1,0 +1,97 @@
+Return-Path: <>
+X-Original-To: dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Delivered-To: dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Received: from pdx1-shared-relay-02.dreamhost.com (pdx1-shared-relay-02.dreamhost.com [69.163.136.89])
+	by pdx1-shared-a3-03.dreamhost.com (Postfix) with ESMTP id 4bB0qW3223z4nVT
+	for <dh_southtabor@pdx1-shared-a3-03.dreamhost.com>; Mon,  2 Jun 2025 10:16:07 -0700 (PDT)
+Received: by pdx1-shared-relay-02.dreamhost.com (Postfix)
+	id 4bB0qW2rYDzpS; Mon,  2 Jun 2025 10:16:07 -0700 (PDT)
+Date: Mon,  2 Jun 2025 10:16:07 -0700 (PDT)
+From: MAILER-DAEMON@pdx1-shared-relay-02.dreamhost.com (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="4bB0qV54Cjz1D.1748884567/pdx1-shared-relay-02.dreamhost.com"
+Message-Id: <4bB0qW2rYDzpS@pdx1-shared-relay-02.dreamhost.com>
+
+This is a MIME-encapsulated message.
+
+--4bB0qV54Cjz1D.1748884567/pdx1-shared-relay-02.dreamhost.com
+Content-Description: Notification
+Content-Type: text/plain; charset=us-ascii
+
+This is the mail system at host pdx1-shared-relay-02.dreamhost.com.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+If you are a current customer of DreamHost, please contact our
+technical support team here
+
+https://panel.dreamhost.com/support
+
+If you are not a customer please use our contact form at.
+
+http://dreamhost.com/contact
+
+If you do so, please include this email in your support ticket. You can
+delete your own text from the attached returned message.
+
+                DreamHost Email Support
+
+<welcome@southtabor.org>: host mx1.mailchannels.net[52.38.143.159] said: 550
+    5.7.1 Message rejected (in reply to end of DATA command)
+
+--4bB0qV54Cjz1D.1748884567/pdx1-shared-relay-02.dreamhost.com
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; pdx1-shared-relay-02.dreamhost.com
+X-Postfix-Queue-ID: 4bB0qV54Cjz1D
+X-Postfix-Sender: rfc822; dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Arrival-Date: Mon,  2 Jun 2025 10:16:06 -0700 (PDT)
+
+Final-Recipient: rfc822; welcome@southtabor.org
+Original-Recipient: rfc822;welcome@southtabor.org
+Action: failed
+Status: 5.7.1
+Remote-MTA: dns; mx1.mailchannels.net
+Diagnostic-Code: smtp; 550 5.7.1 Message rejected
+
+--4bB0qV54Cjz1D.1748884567/pdx1-shared-relay-02.dreamhost.com
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+
+Return-Path: <dh_southtabor@pdx1-shared-a3-03.dreamhost.com>
+Received: from pdx1-shared-a3-03.dreamhost.com (pdx1-shared-a3-03.dreamhost.com [69.163.140.3])
+	by pdx1-shared-relay-02.dreamhost.com (Postfix) with ESMTP id 4bB0qV54Cjz1D
+	for <welcome@southtabor.org>; Mon,  2 Jun 2025 10:16:06 -0700 (PDT)
+Received: by pdx1-shared-a3-03.dreamhost.com (Postfix, from userid 5516487)
+	id 4bB0qV4rpLz4y28; Mon,  2 Jun 2025 10:16:06 -0700 (PDT)
+To: welcome@southtabor.org
+Subject: =?us-ascii?Q?SouthTabor.org_Form_-_Cargo_transportation_in_t?=  =?us-ascii?Q?he_age_of_digitalization:_new_horizons?=
+X-PHP-Originating-Script: 5516487:PHPMailer.php
+Date: Mon, 2 Jun 2025 17:16:06 +0000
+From: Gruzedgen <communications@southtabor.org>
+Reply-To: sitebigc.hoice@gmail.com
+Message-ID: <Aah2ht44IytQXncYYEVhYy58wggfgwGSDgUdzBhuI@southtabor.org>
+X-Mailer: PHPMailer 6.9.3 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+
+From: Gruzedgen <sitebigc.hoice@gmail.com>
+Subject: Cargo transportation in the age of digitalization: new horizons
+
+Phone: 88443897585
+
+Message Body:
+When <a href=https://ntg-trucking.kz/kak-podgotovit-gruz-k-perevozke-na-fure/><font color=#1C1C1C>we are talking about cargo transportation, reliability and speed play a key role.</font></a> With each order, we understand that the success of your business depends on us. We strive to provide impeccable service that will make your business even more successful. 
+Each shipment is another opportunity to justify the trust of customers. Our team is always in touch and ready to provide up-to-date information on the delivery status so that you can focus on developing your business without worrying about the cargo. Give us the opportunity to demonstrate what we are capable of!
+
+--
+This e-mail was sent from a contact form on South Tabor Neighborhood Association (http://southtabor.org)
+
+
+--4bB0qV54Cjz1D.1748884567/pdx1-shared-relay-02.dreamhost.com--

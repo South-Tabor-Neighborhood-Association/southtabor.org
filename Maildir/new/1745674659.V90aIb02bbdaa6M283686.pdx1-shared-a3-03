@@ -1,0 +1,96 @@
+Return-Path: <>
+X-Original-To: dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Delivered-To: dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Received: from pdx1-shared-relay-02.dreamhost.com (pdx1-shared-relay-02.dreamhost.com [69.163.136.89])
+	by pdx1-shared-a3-03.dreamhost.com (Postfix) with ESMTP id 4Zl9kW1wFmz4qgM
+	for <dh_southtabor@pdx1-shared-a3-03.dreamhost.com>; Sat, 26 Apr 2025 13:37:39 +0000 (UTC)
+Received: by pdx1-shared-relay-02.dreamhost.com (Postfix)
+	id 4Zl9kW1jrWz6V; Sat, 26 Apr 2025 06:37:39 -0700 (PDT)
+Date: Sat, 26 Apr 2025 06:37:39 -0700 (PDT)
+From: MAILER-DAEMON@pdx1-shared-relay-02.dreamhost.com (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="4Zl9kS3Y52zM1.1745674659/pdx1-shared-relay-02.dreamhost.com"
+Message-Id: <4Zl9kW1jrWz6V@pdx1-shared-relay-02.dreamhost.com>
+
+This is a MIME-encapsulated message.
+
+--4Zl9kS3Y52zM1.1745674659/pdx1-shared-relay-02.dreamhost.com
+Content-Description: Notification
+Content-Type: text/plain; charset=us-ascii
+
+This is the mail system at host pdx1-shared-relay-02.dreamhost.com.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+If you are a current customer of DreamHost, please contact our
+technical support team here
+
+https://panel.dreamhost.com/support
+
+If you are not a customer please use our contact form at.
+
+http://dreamhost.com/contact
+
+If you do so, please include this email in your support ticket. You can
+delete your own text from the attached returned message.
+
+                DreamHost Email Support
+
+<welcome@southtabor.org>: host mx2.mailchannels.net[18.236.29.166] said: 550
+    5.7.1 Message rejected (in reply to end of DATA command)
+
+--4Zl9kS3Y52zM1.1745674659/pdx1-shared-relay-02.dreamhost.com
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; pdx1-shared-relay-02.dreamhost.com
+X-Postfix-Queue-ID: 4Zl9kS3Y52zM1
+X-Postfix-Sender: rfc822; dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Arrival-Date: Sat, 26 Apr 2025 06:37:36 -0700 (PDT)
+
+Final-Recipient: rfc822; welcome@southtabor.org
+Original-Recipient: rfc822;welcome@southtabor.org
+Action: failed
+Status: 5.7.1
+Remote-MTA: dns; mx2.mailchannels.net
+Diagnostic-Code: smtp; 550 5.7.1 Message rejected
+
+--4Zl9kS3Y52zM1.1745674659/pdx1-shared-relay-02.dreamhost.com
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+
+Return-Path: <dh_southtabor@pdx1-shared-a3-03.dreamhost.com>
+Received: from pdx1-shared-a3-03.dreamhost.com (pdx1-shared-a3-03.dreamhost.com [69.163.140.3])
+	by pdx1-shared-relay-02.dreamhost.com (Postfix) with ESMTP id 4Zl9kS3Y52zM1
+	for <welcome@southtabor.org>; Sat, 26 Apr 2025 06:37:36 -0700 (PDT)
+Received: by pdx1-shared-a3-03.dreamhost.com (Postfix, from userid 5516487)
+	id 4Zl9kS3SDlz4rww; Sat, 26 Apr 2025 13:37:36 +0000 (UTC)
+To: welcome@southtabor.org
+Subject: =?us-ascii?Q?SouthTabor.org_Form_-_Reel_Cash_Vault:_How_to_W?=  =?us-ascii?Q?in_Revealed!?=
+X-PHP-Originating-Script: 5516487:PHPMailer.php
+Date: Sat, 26 Apr 2025 13:37:36 +0000
+From: Orrinll <communications@southtabor.org>
+Reply-To: baronjkku@aol.com
+Message-ID: <XGaPRnmwI3ej7142DGDCThlose0HqYuelKFaOeBrOo@southtabor.org>
+X-Mailer: PHPMailer 6.9.3 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+
+From: Orrinll <baronjkku@aol.com>
+Subject: Reel Cash Vault: How to Win Revealed!
+
+Phone: 83786878114
+
+Message Body:
+The proof: 1 in 5 spins triggers a big win. Try now! Spin to Win Here => u.to/bhk8Ig
+
+--
+This e-mail was sent from a contact form on South Tabor Neighborhood Association (http://southtabor.org)
+
+
+--4Zl9kS3Y52zM1.1745674659/pdx1-shared-relay-02.dreamhost.com--

@@ -1,0 +1,809 @@
+Return-Path: <>
+X-Original-To: dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Delivered-To: dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Received: from NAM02-DM3-obe.outbound.protection.outlook.com (mail-dm3nam02olkn2038.outbound.protection.outlook.com [40.92.43.38])
+	by pdx1-shared-a3-03.dreamhost.com (Postfix) with ESMTP id 4bM1WB0pyTz4qgp
+	for <dh_southtabor@pdx1-shared-a3-03.dreamhost.com>; Tue, 17 Jun 2025 02:18:14 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=none;
+ b=tlAKX7PLdMetg0axZ6Po+62C96cDWdhWZTOCe6vBUh28XGGW4N5D68b1iH/QZq84CABZ0mTQuOOu4hGjF63j/hjUpOSK1qgOch0q3f2eGUdVW3sYU6yMrkOyCI5kqPdkG2vqeRjuRTrna3B66FXf6+mT+qrn9RKnKxsywYBMX/TyqoqOnoThttNUxYUn0tvVuRKXmEG/lmG0ExakHQPwpPyLDqpx2aJnn8v8gd/UuGAgALl0yzjlLc6vGvYKRiwVuMP0xS5cH29/nbJnZVXtauojBHZSqkbO7bxvvj/pDFW9MsIz36NwybNpzSWg30bA+DPc769ji/OCXWiO6UAnVw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=XqHPSfSJCn6EcjZ8w/gL5gd9UsnVktTxOVrEcBX9NS4=;
+ b=Aedk2H0EA2r/eGtAYhCuhoEapw7zbEJzrxesN5ENASMVHsmEFV1tFBL+KkvwGaQ00ldVmxraLhNwGtyiHe2KcG8805T/Q9MdZwm9Ysorwb9OqZbl9Bsn1vMrbzyZcQYOf5Odauvudb95eOlKR4GYdA7qGNC1pcAeTIuLHWsjERUehjrOzSMmx33tSBTxzmPNULlJGL7o3e8H285KUL4rOPwQ4GdnLOSE/ZvQZZW0u0F6lDeAAWzBBw2affytsNlmav4iJHFH+RfTm+xgLatFQu6pIF57kbgvQPCm6pAd8z2dNm4HNd2r/hLpfGlRoES47cvFIQhnta/hOTSouxBvSQ==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=none; dmarc=none;
+ dkim=none; arc=none
+MIME-Version: 1.0
+From: <postmaster@outlook.com>
+To: <dh_southtabor@pdx1-shared-a3-03.dreamhost.com>
+Date: Tue, 17 Jun 2025 06:08:22 +0000
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="9cc7177a-04cb-4042-a228-dc9257353af8"
+X-MS-Exchange-Message-Is-Ndr:
+Content-Language: en-US
+Message-ID:
+ <ff90e244-4150-4f42-8729-be3b1307320f@DS7P220MB0855.NAMP220.PROD.OUTLOOK.COM>
+In-Reply-To: <86CggEPxtDzFNuu3PpJRf4AYyJbFcQwILiSdiJhWlvQ@southtabor.org>
+References: <86CggEPxtDzFNuu3PpJRf4AYyJbFcQwILiSdiJhWlvQ@southtabor.org>
+Subject: Undeliverable: SouthTabor.org Form - Underground: The Art of
+ Extracting Clean Water
+Auto-Submitted: auto-replied
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: DS7P220MB0855:EE_
+X-Microsoft-Antispam:
+	BCL:0;ARA:14566002|8022599003|6092099012|461199028|8060799009|12050799012|12121999007|41001999006|1602099012|20055399003|2082599003|4302099013|3412199025|440099028|19111999003|26115399003;
+X-Microsoft-Antispam-Message-Info:
+	=?us-ascii?Q?QvX7mZDhEy5lkTRGUUHBGhXR4ejywOp9dro2NNiPPBW0Mtzpq3saaAaknhF3?=
+ =?us-ascii?Q?kLpmEl4GdwPNPBW1cRlLG6u3mLsYskGR6nupXnA55UsTt25QhmqMdQP9gHBx?=
+ =?us-ascii?Q?mrnDcX6/s81ObZBZ7zrdENkCjrj9mtZFYQ0h5xgKycvKWgkORq41ZpPvncPh?=
+ =?us-ascii?Q?wwQ4khDCmdDR4OegPDjpXiYzBbk7ihjjcBiEzP2ocOLhtlwCDi0YY5QRt4sT?=
+ =?us-ascii?Q?yFApxE3Wr4BK2VFv12c/ZCiFNIwSIx0khlOa0AuL8ius/WcHH82xzkySfXr8?=
+ =?us-ascii?Q?TruHFbCf3GqU88kUKH8TI7q12PMxjFhKmZTYkE7MUWOF0hwmeuQYPD+RKHIl?=
+ =?us-ascii?Q?BlronvzIVGV4V137D7jdMWWUOHDxOZF7fmxjjTyKbMndK0ceeADcfokGjYIh?=
+ =?us-ascii?Q?MwjlWwhKp8MMWiRzmkyHZ1RWVSm7SLkvTPKEL7vgniAtqqxAZchfA5emThHJ?=
+ =?us-ascii?Q?PTUhkbmNbuBybm+IEI8NEb6Hyj6BaUUJKMkMP9vPoloV57sYPFHxZhb3Kfd3?=
+ =?us-ascii?Q?+0oNZiCOSS94bsfpl+JQLIqElz/kgb2cXs4VQQ85bRheUfBf3b/XfB4qVaN5?=
+ =?us-ascii?Q?eliAdWjRxE4S9dlCRKKVhf9wNKAgwzb06XLN0KqbdkS8RtW7pFnDzs9KniZr?=
+ =?us-ascii?Q?83py+4fwEu/Jvx/IyDCU33wDYsWWJdzHdRXs4xU3PeWx9pwvBFvIu0E6Npp2?=
+ =?us-ascii?Q?9i1s+lk88LHpGogbqBADYZnqVp45+s9bYG73kHMAsHc726GmlG0ctDRDcUmu?=
+ =?us-ascii?Q?g7JiMpVRQHFsK0e5YztCYpjBYrexkhySEVTyf0wBLgxKZTuIA5bem4P8Pt8g?=
+ =?us-ascii?Q?faIlcY7y9xn8qUAXKLd7pFk9Egz8NjHYM7AN0JvsN4zFc4KdrH369Ra33hKj?=
+ =?us-ascii?Q?8fo/ptGpOLkt5kFI7uFHYnPTdlKev6bIHa4FXtSE9rHus/5e+1tXTfCmOkRt?=
+ =?us-ascii?Q?eE4cjJCPr7vDGCkgI97o9vB/D7If5TFn4XRJD/I6Vlq2qs19veQT+nN4uay4?=
+ =?us-ascii?Q?C6+3VF1+Hug1vD86fyltmE7SZYZABcUpUkOHYkAI7Ip0KegpwrTTmQ9XRJnz?=
+ =?us-ascii?Q?5zGkY/zyWS35/B8Mf/zC13SBH6YYSy/lHlajVez7IWJbDWjh5q2smdKWECco?=
+ =?us-ascii?Q?psb82+YaLihURX2STbpxXULOSS4WmjSfDuTjRVNFcqnRwo8jpiMSOTBV/113?=
+ =?us-ascii?Q?ndL79nsGiGgOjVNoF1/9vlyeXX+HntbK/p3okz+oJAMqDbyyrVmjm1V3bof/?=
+ =?us-ascii?Q?egCUwHvDZF9GhfTwad0qh5xRNobfjseSO/QSfOdCAzOswvBjOSKLPgKFPoRH?=
+ =?us-ascii?Q?kCLczwS9RwVH6sgvmihh2HeJi8vm+Hra6AMTxRx5nzFscPkyXpLdFlxp+0GL?=
+ =?us-ascii?Q?wvyYEOKjCTtEchL1zT0Akz7BDnNPBaep0incN1pECaupkGHlDMhzRi/eej8F?=
+ =?us-ascii?Q?Y8IoRnPDbeSSHurB4JiUOCrSm6fcaQKvZro+0xWqboJHbq5lIrYXnKcXrp5Z?=
+ =?us-ascii?Q?Z7QkIoHdXANfanlPBEOa/ChadcOQJ5q+jOTw?=
+X-MS-Exchange-AntiSpam-MessageData-ChunkCount: 1
+X-MS-Exchange-AntiSpam-MessageData-0:
+	6IqMnz4lRzA4u+Q6H+9iylKn9HQvRRju3b1vzh2JkojmZs+LD2BG+6NXWZ3pzZLV8YI/YE4tMKf6LsxJHuCE8UUVW3b0M1N9MacGV0Yw6YnUi3YhZROr5oj6QJAQa63OhWv0d6sxj/8QJT48T24H+9p45GC3worZrWYa5wBXCBHlwJWBs4Utg66YgHc3EG2a
+X-OriginatorOrg: outlook.com
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 17 Jun 2025 06:08:22.4452
+ (UTC)
+X-MS-Exchange-CrossTenant-FromEntityHeader: Hosted
+X-MS-Exchange-CrossTenant-AuthSource: DS7P220MB0855.NAMP220.PROD.OUTLOOK.COM
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-Network-Message-Id:
+	bc324b1c-a87c-4f6c-406e-08ddad655d43
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DS7P220MB0855
+
+--9cc7177a-04cb-4042-a228-dc9257353af8
+Content-Type: multipart/alternative; differences=Content-Type;
+	boundary="84bdf1d5-a91e-407e-9bd0-b725b67c0f66"
+
+--84bdf1d5-a91e-407e-9bd0-b725b67c0f66
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Delivery has failed to these recipients or groups:
+
+crimebuster@southtabor.org<mailto:crimebuster@southtabor.org>
+The recipient's mailbox is full and can't accept messages now. Please try r=
+esending your message later, or contact the recipient directly.
+
+
+
+
+
+
+
+
+Diagnostic information for administrators:
+
+Generating server: DS7P220MB0855.NAMP220.PROD.OUTLOOK.COM
+
+crimebuster@southtabor.org
+Remote server returned '554 5.2.2 mailbox full; STOREDRV.Deliver.Exception:=
+QuotaExceededException; Failed to process message due to a permanent except=
+ion with message [BeginDiagnosticData]Microsoft Unified Storage is full. Qu=
+otaExceededException: Microsoft Unified Storage is full.[EndDiagnosticData]=
+ [Stage: DeliverMessage]'
+
+Original message headers:
+
+ARC-Seal: i=3D2; a=3Drsa-sha256; s=3Darcselector10001; d=3Dmicrosoft.com; c=
+v=3Dfail;
+ b=3DleKE11Rt3h+RyZoc1ygeVztlS0u22Bvqg1K24VA3Q9Xpmrl2QjqXYKrWO54y2XE8C1/Zsn=
+Wrn1TTNgBMU950x4Yc+W9XdwKGq73USxsVQUDSrHbmXE0VP/JRAaDydRsv9G79DfkeeJkzOR56B=
+2o6x9+25e/7UMmjapFtj/y/8k0Ms5GxoqHr/Pn8jHMyHnJh33c+eAgeGNOrPgDxrWxqEN4ECABl=
+422jSs6uiYRBj3Vc7vYy8OrJtr+52+fhKF09aKUBun+dG2QAZdz5P7go2EhiVcDkYzlgcfU6WXu=
+yXyDALEnb3RhlPCnDx9k/0+SrYoigsn7hoZ4FozZ8W4YPjg=3D=3D
+ARC-Message-Signature: i=3D2; a=3Drsa-sha256; c=3Drelaxed/relaxed; d=3Dmicr=
+osoft.com;
+ s=3Darcselector10001;
+ h=3DFrom:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-A=
+ntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Ex=
+change-AntiSpam-MessageData-1;
+ bh=3DT+lbBKAXkEHrWjt9/sGedLcKnC80Yp+AK90K31GcBk0=3D;
+ b=3DHHlnLjdBSiYw2OikemwJalQVGPmw4ouRCkns0p9mDQUnJztqoxka8LZQBD9qkOwCN8wxpc=
++XI2hY1ZJg2vvoue4MnCl221D8iQbETKYoTHhtSbc++ViexSRfcC4NKfOiMZP7aqFYpIAW9k5uH=
+E0PboT6inueu27oi1nrFHvEfzAw9DaVssPdhqT35fLjb8JnJOO7XFnu6j2MaH6xhZD3ZGMZNq1p=
++8zyTjXWnL0/Nng2aSctpeN41579CtRlDW0/DiNt0aEsEuKWAZ/Rtk4WUvSa1DgVkLbDAxAml6Y=
++TUsdlwgDfo94o728G+E97Q0RiPA+PysDuog/Tl2t6N2fCA=3D=3D
+ARC-Authentication-Results: i=3D2; mx.microsoft.com 1; spf=3Dpass (sender i=
+p is
+ 64.90.62.163) smtp.rcpttodomain=3Dhotmail.com
+ smtp.mailfrom=3Dpdx1-shared-a3-03.dreamhost.com; dmarc=3Dnone action=3Dnon=
+e
+ header.from=3Dsouthtabor.org; dkim=3Dnone (message not signed); arc=3Dfail=
+ (35)
+Received: from DU2PR04CA0317.eurprd04.prod.outlook.com (2603:10a6:10:2b5::2=
+2)
+ by DS7P220MB0855.NAMP220.PROD.OUTLOOK.COM (2603:10b6:8:82::15) with Micros=
+oft
+ SMTP Server (version=3DTLS1_2, cipher=3DTLS_ECDHE_RSA_WITH_AES_256_GCM_SHA=
+384) id
+ 15.20.8857.17; Mon, 16 Jun 2025 20:51:52 +0000
+Received: from DU6PEPF00009526.eurprd02.prod.outlook.com
+ (2603:10a6:10:2b5:cafe::4a) by DU2PR04CA0317.outlook.office365.com
+ (2603:10a6:10:2b5::22) with Microsoft SMTP Server (version=3DTLS1_3,
+ cipher=3DTLS_AES_256_GCM_SHA384) id 15.20.8835.25 via Frontend Transport; =
+Mon,
+ 16 Jun 2025 20:51:51 +0000
+Authentication-Results: spf=3Dpass (sender IP is 64.90.62.163)
+ smtp.mailfrom=3Dpdx1-shared-a3-03.dreamhost.com; dkim=3Dnone (message not =
+signed)
+ header.d=3Dnone;dmarc=3Dnone action=3Dnone header.from=3Dsouthtabor.org;
+Received-SPF: Pass (protection.outlook.com: domain of
+ pdx1-shared-a3-03.dreamhost.com designates 64.90.62.163 as permitted sende=
+r)
+ receiver=3Dprotection.outlook.com; client-ip=3D64.90.62.163;
+ helo=3Dpdx1-sub0-mail-mx212.dreamhost.com; pr=3DC
+Received: from pdx1-sub0-mail-mx212.dreamhost.com (64.90.62.163) by
+ DU6PEPF00009526.mail.protection.outlook.com (10.167.8.7) with Microsoft SM=
+TP
+ Server (version=3DTLS1_3, cipher=3DTLS_AES_256_GCM_SHA384) id 15.20.8835.1=
+5 via
+ Frontend Transport; Mon, 16 Jun 2025 20:51:51 +0000
+X-IncomingTopHeaderMarker: OriginalChecksum:193ACAE046BFE83919F1EB4C954E9A1=
+C105D9619143C31C322E0B469FFC5D557;UpperCasedChecksum:E24842F7B985311EAC5762=
+7741C8EF90DDF9847FB27568EBDEE2FA2085938D7E;SizeAsReceived:3362;Count:21
+Received: from postfix-inbound-v2-7.inbound.mailchannels.net (inbound-egres=
+s-8.mailchannels.net [23.83.223.254])
+        (using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)
+         key-exchange X25519 server-signature RSA-PSS (2048 bits) server-di=
+gest SHA256)
+        (No client certificate requested)
+        by pdx1-sub0-mail-mx212.dreamhost.com (Postfix) with ESMTPS id 4bLh=
+xx3pj5z2qWT
+        for <crimebuster@southtabor.org>; Mon, 16 Jun 2025 13:51:49 -0700 (=
+PDT)
+ARC-Seal: i=3D1; s=3Darc-2022; d=3Dmailchannels.net; t=3D1750107109; a=3Drs=
+a-sha256;
+        cv=3Dnone;
+        b=3DoRSt6QyUBW6CBIKugBuUeWY1xUOij8LQocQAmCerEXkXuZHzAhpMMt8oYmw0tpc=
+h8Q6+Qf
+        J4T0879HchtXKKAz1Wx1gL4Ya/LCnL/dJyErgDvs91qao4UHj/hA5/Yt3qdA8h2gZ5d=
+CzF
+        eu3m5JMCsz4Eia16/Rwu5gAxfFLi5XRljn3PO+Cz/5/fQ+ZyG7fWwFv2iShyIHHhyCZ=
+NVP
+        IWuKpEgVsvWNOQ2zugN9Oe9vk7sRZ1dbKe9x65GUutKGrzWZ2ljL7Q1T+OKJ6iCo2Xq=
+Eev
+        vD95pEPEAGr+7Ggc8gHEgoREwlIZSEqRUHKI/5rEt+s/aXynoG83lz1+gHiozw=3D=
+=3D
+ARC-Message-Signature: i=3D1; a=3Drsa-sha256; c=3Drelaxed/relaxed;
+ d=3Dmailchannels.net;
+        s=3Darc-2022; t=3D1750107109;
+        h=3Dfrom:from:reply-to:reply-to:subject:subject:date:date:
+         message-id:message-id:to:to:cc:mime-version:mime-version:
+         content-type:content-type:
+         content-transfer-encoding:content-transfer-encoding;
+        bh=3DT+lbBKAXkEHrWjt9/sGedLcKnC80Yp+AK90K31GcBk0=3D;
+        b=3DNCTDskqi273jHsarixlCJN3RfbMGw0XCoO7oSiz5POzBiqVBiOI+OnVdwuQrhGK=
+BHXzvkp
+        0/4x+v7xeDO4VGkCONDGjDYIRpCtS/BcaNw8/DQ5DaMLlv83RAHSza9Zm3lxGY5YFll=
+jXr
+        dfJx70hxxhXgiEOae/OIQGpebUFeF3s+FuRsXsqUps2fDENpMPsfjflEgl2XIt4UNV0=
+FuS
+        U3mflRqbkikkdN8AlHIkYwMCB4DAg6uvAmOCAaCzTqlDZV/c87TYnQNPgc10A+H5ofi=
+K98
+        CIWmVXMjzAX20Azw3s8sX1cdDAMtvALMoqCpdHRRujPsRTnxE0xbYiKHJmfDjw=3D=
+=3D
+ARC-Authentication-Results: i=3D1;
+        inbound-rspamd-5d4c7c94f8-54x96;
+        none
+X-Message-ID: dpjz3OyjfNBtZyvYidfAvb30
+Received: from pdx1-shared-relay-02.dreamhost.com
+ (pdx1-shared-relay-02.dreamhost.com [69.163.136.89])
+        (using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384)
+        by 100.120.233.75 (trex/7.0.3);
+        Mon, 16 Jun 2025 20:51:49 +0000
+Authentication-Results-Original: inbound.mailchannels.net; spf=3Dpass
+ smtp.mailfrom=3Ddh_southtabor@pdx1-shared-a3-03.dreamhost.com; dkim=3Dnone=
+;
+ dmarc=3Dnone; arc=3Dnone
+Received-SPF: pass (dmarc-service-759f7f5c56-r755h: domain of
+ pdx1-shared-a3-03.dreamhost.com designates 69.163.136.89 as permitted send=
+er)
+ client-ip=3D69.163.136.89;
+ envelope-from=3Ddh_southtabor@pdx1-shared-a3-03.dreamhost.com;
+ helo=3Dpdx1-shared-relay-02.dreamhost.com;
+Received: from pdx1-shared-a3-03.dreamhost.com (pdx1-shared-a3-03.dreamhost=
+.com [69.163.140.3])
+        by pdx1-shared-relay-02.dreamhost.com (Postfix) with ESMTP id 4bLhx=
+w5KzwzJh
+        for <crimebuster@southtabor.org>; Mon, 16 Jun 2025 13:51:48 -0700 (=
+PDT)
+Received: by pdx1-shared-a3-03.dreamhost.com (Postfix, from userid 5516487)
+        id 4bLhxw5DcKz4y4K; Mon, 16 Jun 2025 13:51:48 -0700 (PDT)
+To: crimebuster@southtabor.org
+Subject: =3D?us-ascii?Q?SouthTabor.org_Form_-_Underground:_The_Art_of_E?=3D=
+  =3D?us-ascii?Q?xtracting_Clean_Water?=3D
+X-PHP-Originating-Script: 5516487:PHPMailer.php
+Date: Mon, 16 Jun 2025 20:51:48 +0000
+From: Jamelut <communications@southtabor.org>
+Reply-To: turkishop.ping8@gmail.com
+Message-ID: <86CggEPxtDzFNuu3PpJRf4AYyJbFcQwILiSdiJhWlvQ@southtabor.org>
+X-Mailer: PHPMailer 6.9.3 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=3DUTF-8
+Content-Transfer-Encoding: quoted-printable
+X-IncomingHeaderCount: 21
+Return-Path: dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: DU6PEPF00009526:EE_|DS7P220MB0855:EE_
+X-MS-UserLastLogonTime: 9/2/2024 7:58:08 PM
+X-MS-Office365-Filtering-Correlation-Id: 30e9f424-66ee-4be4-dcfc-08ddad179e=
+aa
+X-MS-DelayedDelivery: true
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 64.90.62.163
+X-SID-PRA: COMMUNICATIONS@SOUTHTABOR.ORG
+X-SID-Result: NONE
+X-Microsoft-Antispam:
+        BCL:0;ARA:1444111002|32080799003|461199028|18030799003|9400799033|3=
+600799018|83100799006;
+X-Microsoft-Antispam-Message-Info:
+        =3D?us-ascii?Q?x/jVd65hSIgxvwaivbEXKDOhuOnoi1xICf/iubOg8wftBf6zDYMH=
+hXVFGPcR?=3D
+ =3D?us-ascii?Q?NhUa+4L0aJE7HnYxtMoe10wa7yBU/VYS6BLML5QX9ZFVYQ8PUqsX/QyHDEm=
+K?=3D
+ =3D?us-ascii?Q?ez9Htw7BOSkWQJcfRLyPcnEybnqvcrLe/mHo0z/SZjCi3VW5WwGW7SuXGvA=
+G?=3D
+ =3D?us-ascii?Q?tLyfW+s/wmkxaXhyC4ZW6lCuM14HQw2Dr56+atlHHefcweKVIaEWto/NBc2=
+b?=3D
+ =3D?us-ascii?Q?+QI9LL78IL80lDx2+c2zt8XD9foS7RMMCiqamOgcntF0oKUOBY4WCqoG2tf=
+0?=3D
+ =3D?us-ascii?Q?HoCIfo9qAZQvzCme8nCVYoCl8V+xicR2TJm6nNVB6EhzIgsagvzM0+Fzeb3=
+n?=3D
+ =3D?us-ascii?Q?n2xI5QCY11ggkwzYqB+C+VoKf2C5y5Txq629le9eU3a2Fn5c/pvVRf8n3eP=
+o?=3D
+ =3D?us-ascii?Q?Y34ReANlQ1zYOaao6WLv89nbmLsu+YXxPhdokqqh/B8456Le8jpBqhWeoZF=
+m?=3D
+ =3D?us-ascii?Q?eJZFHcdkYHqrdCYPcMqEUdiv7sVsJ3Kfe9rfXffJJDrLGRBTt78cF6w+Yi3=
+L?=3D
+ =3D?us-ascii?Q?Z/B5vw/2GNyM682JHCC4C/M4YnlkTuDjFs0I448nuyMrDCRsqE6PujYRi++=
+0?=3D
+ =3D?us-ascii?Q?I+LsxbPACpgNJd0aVRVSKoFXsDP2MqjNel2+jaKHgEjNVS30LAgjx6GUujn=
+u?=3D
+ =3D?us-ascii?Q?Ixdzba0cQfgboOkl7N/hCzZrZwri8iwL1rDHfJQYUNXFyThkLnda3j84sHu=
+O?=3D
+ =3D?us-ascii?Q?iNUhWVaAmTVA8rWt8KPcsLusFUN6Xw4671TSBTCcccL+nhVe1ycj250ztMt=
+P?=3D
+ =3D?us-ascii?Q?Sc7+MiyoOpEGTl4V30zqXWIYVII3sEQ9lYlStBcHB9CET1KKzfPhWHJCjpD=
+D?=3D
+ =3D?us-ascii?Q?RMp4Z1GVV9a00flg0WRJvvmPqq77nRBv4kk9otGHLkUOtmg2eZPYQ6hBmsp=
+O?=3D
+ =3D?us-ascii?Q?Z4rKedFrtt5otV9tHFibgSneBN8RPB+8WdNswTcu14wujTJeSTBpQJhnute=
+6?=3D
+ =3D?us-ascii?Q?us8I/vQsOMQr2Y5aIJMmYxhtBRjgNvMt7cDRNFAm/ENxnEUsJ1xNQTqPDAN=
+3?=3D
+ =3D?us-ascii?Q?XDfLlY3EiuwyNmaHvDhSxTrlO4gMFUpTJXq9V8kp3KfsAAjZSj40MHiUAMB=
+f?=3D
+ =3D?us-ascii?Q?ZFeUJH/MlwyNNqmsEXhjpMHznouxv6295NzSH1YiWbkujn2iC3ToA1rsQh/=
+F?=3D
+ =3D?us-ascii?Q?L6txmJOKENLkqHct9kZZB3qlzqazADODORGrHZGE8GIHGKTYCsAVDi0/Lnt=
+w?=3D
+ =3D?us-ascii?Q?vscerhI/RZXpcaz/13itApzwfi0XRGQq6s10KmPv2mqdz4fYVHe5VgTI93r=
+T?=3D
+ =3D?us-ascii?Q?VmJc1XYC0SAPFgSX0zN/LFJSaXNrp98sZlRqqkc6grbmmUujoOpMgaDXl3L=
+n?=3D
+ =3D?us-ascii?Q?wZkxKqlBMFgZSaII+HcENsrZj/2V7xSvOHQ7EppLyo0bOndUx9XP9aeG1dB=
+O?=3D
+ =3D?us-ascii?Q?cnRzN+8csKUaGejrp4Y8OUMHsyIfnpbsanLyx3sETSqrHnuqNLocoFk63Sa=
+/?=3D
+ =3D?us-ascii?Q?Er2EyQQCgvukmU31sAKlB+nmbqsmPFam05JazvyLW0NuQomL/YXiPgKZ7gv=
+p?=3D
+ =3D?us-ascii?Q?JCCOyakso+KxW9FoD1OJJ3OVvE7Nx+yJGgEHHVkCmNYTJWKGsBwb3BIK1k9=
+j?=3D
+ =3D?us-ascii?Q?m37q8k1qP2/IuGbVSpQw3Vtq94S8/nmVwJ8/mUAECQHAwNLixPrGiP31Yx1=
+H?=3D
+ =3D?us-ascii?Q?Bz2iq3i85+4v33yTxJ7Tw0EZf4oT6DeX/J5m51ktRlkVdCOwr1x8/f72E3v=
+x?=3D
+ =3D?us-ascii?Q?rsvmekN3NRsUROoLl2zooUWo50GvuqzAokDaCi451TvR7band1HxNPvu/dv=
+I?=3D
+ =3D?us-ascii?Q?AmG/drpjp2R8bjVnAo9raUWYGY+9utt5ZkDa50N3FxT2zLWt3JKI2kYdqTO=
+t?=3D
+ =3D?us-ascii?Q?/sq4i6oHpVTndWXZJiYGtY8cYAWQYEvRmc6f34vHebGEcUb8GRLWgROux9/=
+5?=3D
+ =3D?us-ascii?Q?ie3BF5VSidbgtnmCSiSLwlhy0R+nslDCrY1IOFVpauYUR3D/85EOWp753bs=
+4?=3D
+ =3D?us-ascii?Q?jqhvrlrHcyJCeo1jJQ8e4htZBbjfjfzKMBopH+3PRMXQ/9Pl0MK7Q9Ir37A=
+A?=3D
+ =3D?us-ascii?Q?CTjQkSt8sHzOLYLkfI4e+AuBnXwcbhfjnD9UgNWeVgFzlka8VDswl77bijF=
+d?=3D
+ =3D?us-ascii?Q?Fvq86Y9eNo6diAE4o0gTOr1t9w6a4A=3D3D=3D3D?=3D
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 16 Jun 2025 20:51:51.0630
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 30e9f424-66ee-4be4-dcfc-08dda=
+d179eaa
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: DU6PEPF00009526.eurprd02.prod.outlook=
+.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg:
+        00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DS7P220MB0855
+
+
+--84bdf1d5-a91e-407e-9bd0-b725b67c0f66
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<Head></head><body>
+<p><b><font color=3D"#000066" size=3D"3" face=3D"Arial">Delivery has failed=
+ to these recipients or groups:</font></b></p>
+<font color=3D"#000000" size=3D"2" face=3D"Tahoma"><p><a href=3D"mailto:cri=
+mebuster@southtabor.org">crimebuster@southtabor.org</a><br>
+</font>
+<font color=3D"#000000" size=3D"3" face=3D"Arial">The recipient's mailbox i=
+s full and can't accept messages now. Please try resending your message lat=
+er, or contact the recipient directly.<br>
+</font>
+<font color=3D"#000000" size=3D"2" face=3D"Tahoma"><br>
+</p>
+</font>
+<br><br><br><br><br><br>
+<font color=3D"#808080" size=3D"2" face=3D"Tahoma"><p><b>Diagnostic informa=
+tion for administrators:</b></p>
+<p>Generating server: DS7P220MB0855.NAMP220.PROD.OUTLOOK.COM<br>
+</p>
+<p>crimebuster@southtabor.org<br>
+Remote server  returned '554 5.2.2 mailbox full; STOREDRV.Deliver.Exception=
+:QuotaExceededException; Failed to process message due to a permanent excep=
+tion with message [BeginDiagnosticData]Microsoft Unified Storage is full. Q=
+uotaExceededException: Microsoft Unified Storage is full.[EndDiagnosticData=
+] [Stage: DeliverMessage]'<br>
+</p>
+<p>Original message headers:</p>
+<pre>ARC-Seal: i=3D2; a=3Drsa-sha256; s=3Darcselector10001; d=3Dmicrosoft.c=
+om; cv=3Dfail;
+ b=3DleKE11Rt3h+RyZoc1ygeVztlS0u22Bvqg1K24VA3Q9Xpmrl2QjqXYKrWO54y2XE8C1/Zsn=
+Wrn1TTNgBMU950x4Yc+W9XdwKGq73USxsVQUDSrHbmXE0VP/JRAaDydRsv9G79DfkeeJkzOR56B=
+2o6x9+25e/7UMmjapFtj/y/8k0Ms5GxoqHr/Pn8jHMyHnJh33c+eAgeGNOrPgDxrWxqEN4ECABl=
+422jSs6uiYRBj3Vc7vYy8OrJtr+52+fhKF09aKUBun+dG2QAZdz5P7go2EhiVcDkYzlgcfU6WXu=
+yXyDALEnb3RhlPCnDx9k/0+SrYoigsn7hoZ4FozZ8W4YPjg=3D=3D
+ARC-Message-Signature: i=3D2; a=3Drsa-sha256; c=3Drelaxed/relaxed; d=3Dmicr=
+osoft.com;
+ s=3Darcselector10001;
+ h=3DFrom:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-A=
+ntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Ex=
+change-AntiSpam-MessageData-1;
+ bh=3DT+lbBKAXkEHrWjt9/sGedLcKnC80Yp+AK90K31GcBk0=3D;
+ b=3DHHlnLjdBSiYw2OikemwJalQVGPmw4ouRCkns0p9mDQUnJztqoxka8LZQBD9qkOwCN8wxpc=
++XI2hY1ZJg2vvoue4MnCl221D8iQbETKYoTHhtSbc++ViexSRfcC4NKfOiMZP7aqFYpIAW9k5uH=
+E0PboT6inueu27oi1nrFHvEfzAw9DaVssPdhqT35fLjb8JnJOO7XFnu6j2MaH6xhZD3ZGMZNq1p=
++8zyTjXWnL0/Nng2aSctpeN41579CtRlDW0/DiNt0aEsEuKWAZ/Rtk4WUvSa1DgVkLbDAxAml6Y=
++TUsdlwgDfo94o728G+E97Q0RiPA+PysDuog/Tl2t6N2fCA=3D=3D
+ARC-Authentication-Results: i=3D2; mx.microsoft.com 1; spf=3Dpass (sender i=
+p is
+ 64.90.62.163) smtp.rcpttodomain=3Dhotmail.com
+ smtp.mailfrom=3Dpdx1-shared-a3-03.dreamhost.com; dmarc=3Dnone action=3Dnon=
+e
+ header.from=3Dsouthtabor.org; dkim=3Dnone (message not signed); arc=3Dfail=
+ (35)
+Received: from DU2PR04CA0317.eurprd04.prod.outlook.com (2603:10a6:10:2b5::2=
+2)
+ by DS7P220MB0855.NAMP220.PROD.OUTLOOK.COM (2603:10b6:8:82::15) with Micros=
+oft
+ SMTP Server (version=3DTLS1_2, cipher=3DTLS_ECDHE_RSA_WITH_AES_256_GCM_SHA=
+384) id
+ 15.20.8857.17; Mon, 16 Jun 2025 20:51:52 +0000
+Received: from DU6PEPF00009526.eurprd02.prod.outlook.com
+ (2603:10a6:10:2b5:cafe::4a) by DU2PR04CA0317.outlook.office365.com
+ (2603:10a6:10:2b5::22) with Microsoft SMTP Server (version=3DTLS1_3,
+ cipher=3DTLS_AES_256_GCM_SHA384) id 15.20.8835.25 via Frontend Transport; =
+Mon,
+ 16 Jun 2025 20:51:51 +0000
+Authentication-Results: spf=3Dpass (sender IP is 64.90.62.163)
+ smtp.mailfrom=3Dpdx1-shared-a3-03.dreamhost.com; dkim=3Dnone (message not =
+signed)
+ header.d=3Dnone;dmarc=3Dnone action=3Dnone header.from=3Dsouthtabor.org;
+Received-SPF: Pass (protection.outlook.com: domain of
+ pdx1-shared-a3-03.dreamhost.com designates 64.90.62.163 as permitted sende=
+r)
+ receiver=3Dprotection.outlook.com; client-ip=3D64.90.62.163;
+ helo=3Dpdx1-sub0-mail-mx212.dreamhost.com; pr=3DC
+Received: from pdx1-sub0-mail-mx212.dreamhost.com (64.90.62.163) by
+ DU6PEPF00009526.mail.protection.outlook.com (10.167.8.7) with Microsoft SM=
+TP
+ Server (version=3DTLS1_3, cipher=3DTLS_AES_256_GCM_SHA384) id 15.20.8835.1=
+5 via
+ Frontend Transport; Mon, 16 Jun 2025 20:51:51 +0000
+X-IncomingTopHeaderMarker: OriginalChecksum:193ACAE046BFE83919F1EB4C954E9A1=
+C105D9619143C31C322E0B469FFC5D557;UpperCasedChecksum:E24842F7B985311EAC5762=
+7741C8EF90DDF9847FB27568EBDEE2FA2085938D7E;SizeAsReceived:3362;Count:21
+Received: from postfix-inbound-v2-7.inbound.mailchannels.net (inbound-egres=
+s-8.mailchannels.net [23.83.223.254])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)
+	 key-exchange X25519 server-signature RSA-PSS (2048 bits) server-digest SH=
+A256)
+	(No client certificate requested)
+	by pdx1-sub0-mail-mx212.dreamhost.com (Postfix) with ESMTPS id 4bLhxx3pj5z=
+2qWT
+	for &lt;crimebuster@southtabor.org&gt;; Mon, 16 Jun 2025 13:51:49 -0700 (P=
+DT)
+ARC-Seal: i=3D1; s=3Darc-2022; d=3Dmailchannels.net; t=3D1750107109; a=3Drs=
+a-sha256;
+	cv=3Dnone;
+	b=3DoRSt6QyUBW6CBIKugBuUeWY1xUOij8LQocQAmCerEXkXuZHzAhpMMt8oYmw0tpch8Q6+Qf
+	J4T0879HchtXKKAz1Wx1gL4Ya/LCnL/dJyErgDvs91qao4UHj/hA5/Yt3qdA8h2gZ5dCzF
+	eu3m5JMCsz4Eia16/Rwu5gAxfFLi5XRljn3PO+Cz/5/fQ+ZyG7fWwFv2iShyIHHhyCZNVP
+	IWuKpEgVsvWNOQ2zugN9Oe9vk7sRZ1dbKe9x65GUutKGrzWZ2ljL7Q1T+OKJ6iCo2XqEev
+	vD95pEPEAGr+7Ggc8gHEgoREwlIZSEqRUHKI/5rEt+s/aXynoG83lz1+gHiozw=3D=3D
+ARC-Message-Signature: i=3D1; a=3Drsa-sha256; c=3Drelaxed/relaxed;
+ d=3Dmailchannels.net;
+	s=3Darc-2022; t=3D1750107109;
+	h=3Dfrom:from:reply-to:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding;
+	bh=3DT+lbBKAXkEHrWjt9/sGedLcKnC80Yp+AK90K31GcBk0=3D;
+	b=3DNCTDskqi273jHsarixlCJN3RfbMGw0XCoO7oSiz5POzBiqVBiOI+OnVdwuQrhGKBHXzvkp
+	0/4x+v7xeDO4VGkCONDGjDYIRpCtS/BcaNw8/DQ5DaMLlv83RAHSza9Zm3lxGY5YFlljXr
+	dfJx70hxxhXgiEOae/OIQGpebUFeF3s+FuRsXsqUps2fDENpMPsfjflEgl2XIt4UNV0FuS
+	U3mflRqbkikkdN8AlHIkYwMCB4DAg6uvAmOCAaCzTqlDZV/c87TYnQNPgc10A+H5ofiK98
+	CIWmVXMjzAX20Azw3s8sX1cdDAMtvALMoqCpdHRRujPsRTnxE0xbYiKHJmfDjw=3D=3D
+ARC-Authentication-Results: i=3D1;
+	inbound-rspamd-5d4c7c94f8-54x96;
+	none
+X-Message-ID: dpjz3OyjfNBtZyvYidfAvb30
+Received: from pdx1-shared-relay-02.dreamhost.com
+ (pdx1-shared-relay-02.dreamhost.com [69.163.136.89])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384)
+	by 100.120.233.75 (trex/7.0.3);
+	Mon, 16 Jun 2025 20:51:49 +0000
+Authentication-Results-Original: inbound.mailchannels.net; spf=3Dpass
+ smtp.mailfrom=3Ddh_southtabor@pdx1-shared-a3-03.dreamhost.com; dkim=3Dnone=
+;
+ dmarc=3Dnone; arc=3Dnone
+Received-SPF: pass (dmarc-service-759f7f5c56-r755h: domain of
+ pdx1-shared-a3-03.dreamhost.com designates 69.163.136.89 as permitted send=
+er)
+ client-ip=3D69.163.136.89;
+ envelope-from=3Ddh_southtabor@pdx1-shared-a3-03.dreamhost.com;
+ helo=3Dpdx1-shared-relay-02.dreamhost.com;
+Received: from pdx1-shared-a3-03.dreamhost.com (pdx1-shared-a3-03.dreamhost=
+.com [69.163.140.3])
+	by pdx1-shared-relay-02.dreamhost.com (Postfix) with ESMTP id 4bLhxw5KzwzJ=
+h
+	for &lt;crimebuster@southtabor.org&gt;; Mon, 16 Jun 2025 13:51:48 -0700 (P=
+DT)
+Received: by pdx1-shared-a3-03.dreamhost.com (Postfix, from userid 5516487)
+	id 4bLhxw5DcKz4y4K; Mon, 16 Jun 2025 13:51:48 -0700 (PDT)
+To: crimebuster@southtabor.org
+Subject: =3D?us-ascii?Q?SouthTabor.org_Form_-_Underground:_The_Art_of_E?=3D=
+  =3D?us-ascii?Q?xtracting_Clean_Water?=3D
+X-PHP-Originating-Script: 5516487:PHPMailer.php
+Date: Mon, 16 Jun 2025 20:51:48 +0000
+From: Jamelut &lt;communications@southtabor.org&gt;
+Reply-To: turkishop.ping8@gmail.com
+Message-ID: &lt;86CggEPxtDzFNuu3PpJRf4AYyJbFcQwILiSdiJhWlvQ@southtabor.org&=
+gt;
+X-Mailer: PHPMailer 6.9.3 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=3DUTF-8
+Content-Transfer-Encoding: quoted-printable
+X-IncomingHeaderCount: 21
+Return-Path: dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: DU6PEPF00009526:EE_|DS7P220MB0855:EE_
+X-MS-UserLastLogonTime: 9/2/2024 7:58:08 PM
+X-MS-Office365-Filtering-Correlation-Id: 30e9f424-66ee-4be4-dcfc-08ddad179e=
+aa
+X-MS-DelayedDelivery: true
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 64.90.62.163
+X-SID-PRA: COMMUNICATIONS@SOUTHTABOR.ORG
+X-SID-Result: NONE
+X-Microsoft-Antispam:
+	BCL:0;ARA:1444111002|32080799003|461199028|18030799003|9400799033|36007990=
+18|83100799006;
+X-Microsoft-Antispam-Message-Info:
+	=3D?us-ascii?Q?x/jVd65hSIgxvwaivbEXKDOhuOnoi1xICf/iubOg8wftBf6zDYMHhXVFGPc=
+R?=3D
+ =3D?us-ascii?Q?NhUa+4L0aJE7HnYxtMoe10wa7yBU/VYS6BLML5QX9ZFVYQ8PUqsX/QyHDEm=
+K?=3D
+ =3D?us-ascii?Q?ez9Htw7BOSkWQJcfRLyPcnEybnqvcrLe/mHo0z/SZjCi3VW5WwGW7SuXGvA=
+G?=3D
+ =3D?us-ascii?Q?tLyfW+s/wmkxaXhyC4ZW6lCuM14HQw2Dr56+atlHHefcweKVIaEWto/NBc2=
+b?=3D
+ =3D?us-ascii?Q?+QI9LL78IL80lDx2+c2zt8XD9foS7RMMCiqamOgcntF0oKUOBY4WCqoG2tf=
+0?=3D
+ =3D?us-ascii?Q?HoCIfo9qAZQvzCme8nCVYoCl8V+xicR2TJm6nNVB6EhzIgsagvzM0+Fzeb3=
+n?=3D
+ =3D?us-ascii?Q?n2xI5QCY11ggkwzYqB+C+VoKf2C5y5Txq629le9eU3a2Fn5c/pvVRf8n3eP=
+o?=3D
+ =3D?us-ascii?Q?Y34ReANlQ1zYOaao6WLv89nbmLsu+YXxPhdokqqh/B8456Le8jpBqhWeoZF=
+m?=3D
+ =3D?us-ascii?Q?eJZFHcdkYHqrdCYPcMqEUdiv7sVsJ3Kfe9rfXffJJDrLGRBTt78cF6w+Yi3=
+L?=3D
+ =3D?us-ascii?Q?Z/B5vw/2GNyM682JHCC4C/M4YnlkTuDjFs0I448nuyMrDCRsqE6PujYRi++=
+0?=3D
+ =3D?us-ascii?Q?I+LsxbPACpgNJd0aVRVSKoFXsDP2MqjNel2+jaKHgEjNVS30LAgjx6GUujn=
+u?=3D
+ =3D?us-ascii?Q?Ixdzba0cQfgboOkl7N/hCzZrZwri8iwL1rDHfJQYUNXFyThkLnda3j84sHu=
+O?=3D
+ =3D?us-ascii?Q?iNUhWVaAmTVA8rWt8KPcsLusFUN6Xw4671TSBTCcccL+nhVe1ycj250ztMt=
+P?=3D
+ =3D?us-ascii?Q?Sc7+MiyoOpEGTl4V30zqXWIYVII3sEQ9lYlStBcHB9CET1KKzfPhWHJCjpD=
+D?=3D
+ =3D?us-ascii?Q?RMp4Z1GVV9a00flg0WRJvvmPqq77nRBv4kk9otGHLkUOtmg2eZPYQ6hBmsp=
+O?=3D
+ =3D?us-ascii?Q?Z4rKedFrtt5otV9tHFibgSneBN8RPB+8WdNswTcu14wujTJeSTBpQJhnute=
+6?=3D
+ =3D?us-ascii?Q?us8I/vQsOMQr2Y5aIJMmYxhtBRjgNvMt7cDRNFAm/ENxnEUsJ1xNQTqPDAN=
+3?=3D
+ =3D?us-ascii?Q?XDfLlY3EiuwyNmaHvDhSxTrlO4gMFUpTJXq9V8kp3KfsAAjZSj40MHiUAMB=
+f?=3D
+ =3D?us-ascii?Q?ZFeUJH/MlwyNNqmsEXhjpMHznouxv6295NzSH1YiWbkujn2iC3ToA1rsQh/=
+F?=3D
+ =3D?us-ascii?Q?L6txmJOKENLkqHct9kZZB3qlzqazADODORGrHZGE8GIHGKTYCsAVDi0/Lnt=
+w?=3D
+ =3D?us-ascii?Q?vscerhI/RZXpcaz/13itApzwfi0XRGQq6s10KmPv2mqdz4fYVHe5VgTI93r=
+T?=3D
+ =3D?us-ascii?Q?VmJc1XYC0SAPFgSX0zN/LFJSaXNrp98sZlRqqkc6grbmmUujoOpMgaDXl3L=
+n?=3D
+ =3D?us-ascii?Q?wZkxKqlBMFgZSaII+HcENsrZj/2V7xSvOHQ7EppLyo0bOndUx9XP9aeG1dB=
+O?=3D
+ =3D?us-ascii?Q?cnRzN+8csKUaGejrp4Y8OUMHsyIfnpbsanLyx3sETSqrHnuqNLocoFk63Sa=
+/?=3D
+ =3D?us-ascii?Q?Er2EyQQCgvukmU31sAKlB+nmbqsmPFam05JazvyLW0NuQomL/YXiPgKZ7gv=
+p?=3D
+ =3D?us-ascii?Q?JCCOyakso+KxW9FoD1OJJ3OVvE7Nx+yJGgEHHVkCmNYTJWKGsBwb3BIK1k9=
+j?=3D
+ =3D?us-ascii?Q?m37q8k1qP2/IuGbVSpQw3Vtq94S8/nmVwJ8/mUAECQHAwNLixPrGiP31Yx1=
+H?=3D
+ =3D?us-ascii?Q?Bz2iq3i85+4v33yTxJ7Tw0EZf4oT6DeX/J5m51ktRlkVdCOwr1x8/f72E3v=
+x?=3D
+ =3D?us-ascii?Q?rsvmekN3NRsUROoLl2zooUWo50GvuqzAokDaCi451TvR7band1HxNPvu/dv=
+I?=3D
+ =3D?us-ascii?Q?AmG/drpjp2R8bjVnAo9raUWYGY+9utt5ZkDa50N3FxT2zLWt3JKI2kYdqTO=
+t?=3D
+ =3D?us-ascii?Q?/sq4i6oHpVTndWXZJiYGtY8cYAWQYEvRmc6f34vHebGEcUb8GRLWgROux9/=
+5?=3D
+ =3D?us-ascii?Q?ie3BF5VSidbgtnmCSiSLwlhy0R+nslDCrY1IOFVpauYUR3D/85EOWp753bs=
+4?=3D
+ =3D?us-ascii?Q?jqhvrlrHcyJCeo1jJQ8e4htZBbjfjfzKMBopH+3PRMXQ/9Pl0MK7Q9Ir37A=
+A?=3D
+ =3D?us-ascii?Q?CTjQkSt8sHzOLYLkfI4e+AuBnXwcbhfjnD9UgNWeVgFzlka8VDswl77bijF=
+d?=3D
+ =3D?us-ascii?Q?Fvq86Y9eNo6diAE4o0gTOr1t9w6a4A=3D3D=3D3D?=3D
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 16 Jun 2025 20:51:51.0630
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 30e9f424-66ee-4be4-dcfc-08dda=
+d179eaa
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: DU6PEPF00009526.eurprd02.prod.outlook=
+.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg:
+	00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DS7P220MB0855
+</pre>
+</font>
+</body>
+</html>=
+
+--84bdf1d5-a91e-407e-9bd0-b725b67c0f66--
+
+--9cc7177a-04cb-4042-a228-dc9257353af8
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns;DS7P220MB0855.NAMP220.PROD.OUTLOOK.COM
+Received-From-MTA: dns;pdx1-sub0-mail-mx212.dreamhost.com
+Arrival-Date: Mon, 16 Jun 2025 20:51:52 +0000
+
+Original-Recipient: rfc822;crimebuster@southtabor.org
+Final-Recipient: rfc822;crimebuster@southtabor.org
+Action: failed
+Status: 5.2.2
+Diagnostic-Code: smtp;554 5.2.2 mailbox full; STOREDRV.Deliver.Exception:QuotaExceededException; Failed to process message due to a permanent exception with message [BeginDiagnosticData]Microsoft Unified Storage is full. QuotaExceededException: Microsoft Unified Storage is full.[EndDiagnosticData] [Stage: DeliverMessage]
+
+
+--9cc7177a-04cb-4042-a228-dc9257353af8
+Content-Type: message/rfc822
+
+ARC-Seal: i=2; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=fail;
+ b=leKE11Rt3h+RyZoc1ygeVztlS0u22Bvqg1K24VA3Q9Xpmrl2QjqXYKrWO54y2XE8C1/ZsnWrn1TTNgBMU950x4Yc+W9XdwKGq73USxsVQUDSrHbmXE0VP/JRAaDydRsv9G79DfkeeJkzOR56B2o6x9+25e/7UMmjapFtj/y/8k0Ms5GxoqHr/Pn8jHMyHnJh33c+eAgeGNOrPgDxrWxqEN4ECABl422jSs6uiYRBj3Vc7vYy8OrJtr+52+fhKF09aKUBun+dG2QAZdz5P7go2EhiVcDkYzlgcfU6WXuyXyDALEnb3RhlPCnDx9k/0+SrYoigsn7hoZ4FozZ8W4YPjg==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=T+lbBKAXkEHrWjt9/sGedLcKnC80Yp+AK90K31GcBk0=;
+ b=HHlnLjdBSiYw2OikemwJalQVGPmw4ouRCkns0p9mDQUnJztqoxka8LZQBD9qkOwCN8wxpc+XI2hY1ZJg2vvoue4MnCl221D8iQbETKYoTHhtSbc++ViexSRfcC4NKfOiMZP7aqFYpIAW9k5uHE0PboT6inueu27oi1nrFHvEfzAw9DaVssPdhqT35fLjb8JnJOO7XFnu6j2MaH6xhZD3ZGMZNq1p+8zyTjXWnL0/Nng2aSctpeN41579CtRlDW0/DiNt0aEsEuKWAZ/Rtk4WUvSa1DgVkLbDAxAml6Y+TUsdlwgDfo94o728G+E97Q0RiPA+PysDuog/Tl2t6N2fCA==
+ARC-Authentication-Results: i=2; mx.microsoft.com 1; spf=pass (sender ip is
+ 64.90.62.163) smtp.rcpttodomain=hotmail.com
+ smtp.mailfrom=pdx1-shared-a3-03.dreamhost.com; dmarc=none action=none
+ header.from=southtabor.org; dkim=none (message not signed); arc=fail (35)
+Received: from DU2PR04CA0317.eurprd04.prod.outlook.com (2603:10a6:10:2b5::22)
+ by DS7P220MB0855.NAMP220.PROD.OUTLOOK.COM (2603:10b6:8:82::15) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.8857.17; Mon, 16 Jun 2025 20:51:52 +0000
+Received: from DU6PEPF00009526.eurprd02.prod.outlook.com
+ (2603:10a6:10:2b5:cafe::4a) by DU2PR04CA0317.outlook.office365.com
+ (2603:10a6:10:2b5::22) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.8835.25 via Frontend Transport; Mon,
+ 16 Jun 2025 20:51:51 +0000
+Authentication-Results: spf=pass (sender IP is 64.90.62.163)
+ smtp.mailfrom=pdx1-shared-a3-03.dreamhost.com; dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=southtabor.org;
+Received-SPF: Pass (protection.outlook.com: domain of
+ pdx1-shared-a3-03.dreamhost.com designates 64.90.62.163 as permitted sender)
+ receiver=protection.outlook.com; client-ip=64.90.62.163;
+ helo=pdx1-sub0-mail-mx212.dreamhost.com; pr=C
+Received: from pdx1-sub0-mail-mx212.dreamhost.com (64.90.62.163) by
+ DU6PEPF00009526.mail.protection.outlook.com (10.167.8.7) with Microsoft SMTP
+ Server (version=TLS1_3, cipher=TLS_AES_256_GCM_SHA384) id 15.20.8835.15 via
+ Frontend Transport; Mon, 16 Jun 2025 20:51:51 +0000
+X-IncomingTopHeaderMarker: OriginalChecksum:193ACAE046BFE83919F1EB4C954E9A1C105D9619143C31C322E0B469FFC5D557;UpperCasedChecksum:E24842F7B985311EAC57627741C8EF90DDF9847FB27568EBDEE2FA2085938D7E;SizeAsReceived:3362;Count:21
+Received: from postfix-inbound-v2-7.inbound.mailchannels.net (inbound-egress-8.mailchannels.net [23.83.223.254])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)
+	 key-exchange X25519 server-signature RSA-PSS (2048 bits) server-digest SHA256)
+	(No client certificate requested)
+	by pdx1-sub0-mail-mx212.dreamhost.com (Postfix) with ESMTPS id 4bLhxx3pj5z2qWT
+	for <crimebuster@southtabor.org>; Mon, 16 Jun 2025 13:51:49 -0700 (PDT)
+ARC-Seal: i=1; s=arc-2022; d=mailchannels.net; t=1750107109; a=rsa-sha256;
+	cv=none;
+	b=oRSt6QyUBW6CBIKugBuUeWY1xUOij8LQocQAmCerEXkXuZHzAhpMMt8oYmw0tpch8Q6+Qf
+	J4T0879HchtXKKAz1Wx1gL4Ya/LCnL/dJyErgDvs91qao4UHj/hA5/Yt3qdA8h2gZ5dCzF
+	eu3m5JMCsz4Eia16/Rwu5gAxfFLi5XRljn3PO+Cz/5/fQ+ZyG7fWwFv2iShyIHHhyCZNVP
+	IWuKpEgVsvWNOQ2zugN9Oe9vk7sRZ1dbKe9x65GUutKGrzWZ2ljL7Q1T+OKJ6iCo2XqEev
+	vD95pEPEAGr+7Ggc8gHEgoREwlIZSEqRUHKI/5rEt+s/aXynoG83lz1+gHiozw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=mailchannels.net;
+	s=arc-2022; t=1750107109;
+	h=from:from:reply-to:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding;
+	bh=T+lbBKAXkEHrWjt9/sGedLcKnC80Yp+AK90K31GcBk0=;
+	b=NCTDskqi273jHsarixlCJN3RfbMGw0XCoO7oSiz5POzBiqVBiOI+OnVdwuQrhGKBHXzvkp
+	0/4x+v7xeDO4VGkCONDGjDYIRpCtS/BcaNw8/DQ5DaMLlv83RAHSza9Zm3lxGY5YFlljXr
+	dfJx70hxxhXgiEOae/OIQGpebUFeF3s+FuRsXsqUps2fDENpMPsfjflEgl2XIt4UNV0FuS
+	U3mflRqbkikkdN8AlHIkYwMCB4DAg6uvAmOCAaCzTqlDZV/c87TYnQNPgc10A+H5ofiK98
+	CIWmVXMjzAX20Azw3s8sX1cdDAMtvALMoqCpdHRRujPsRTnxE0xbYiKHJmfDjw==
+ARC-Authentication-Results: i=1;
+	inbound-rspamd-5d4c7c94f8-54x96;
+	none
+X-Message-ID: dpjz3OyjfNBtZyvYidfAvb30
+Received: from pdx1-shared-relay-02.dreamhost.com
+ (pdx1-shared-relay-02.dreamhost.com [69.163.136.89])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384)
+	by 100.120.233.75 (trex/7.0.3);
+	Mon, 16 Jun 2025 20:51:49 +0000
+Authentication-Results-Original: inbound.mailchannels.net; spf=pass
+ smtp.mailfrom=dh_southtabor@pdx1-shared-a3-03.dreamhost.com; dkim=none;
+ dmarc=none; arc=none
+Received-SPF: pass (dmarc-service-759f7f5c56-r755h: domain of
+ pdx1-shared-a3-03.dreamhost.com designates 69.163.136.89 as permitted sender)
+ client-ip=69.163.136.89;
+ envelope-from=dh_southtabor@pdx1-shared-a3-03.dreamhost.com;
+ helo=pdx1-shared-relay-02.dreamhost.com;
+Received: from pdx1-shared-a3-03.dreamhost.com (pdx1-shared-a3-03.dreamhost.com [69.163.140.3])
+	by pdx1-shared-relay-02.dreamhost.com (Postfix) with ESMTP id 4bLhxw5KzwzJh
+	for <crimebuster@southtabor.org>; Mon, 16 Jun 2025 13:51:48 -0700 (PDT)
+Received: by pdx1-shared-a3-03.dreamhost.com (Postfix, from userid 5516487)
+	id 4bLhxw5DcKz4y4K; Mon, 16 Jun 2025 13:51:48 -0700 (PDT)
+To: crimebuster@southtabor.org
+Subject: =?us-ascii?Q?SouthTabor.org_Form_-_Underground:_The_Art_of_E?=  =?us-ascii?Q?xtracting_Clean_Water?=
+X-PHP-Originating-Script: 5516487:PHPMailer.php
+Date: Mon, 16 Jun 2025 20:51:48 +0000
+From: Jamelut <communications@southtabor.org>
+Reply-To: turkishop.ping8@gmail.com
+Message-ID: <86CggEPxtDzFNuu3PpJRf4AYyJbFcQwILiSdiJhWlvQ@southtabor.org>
+X-Mailer: PHPMailer 6.9.3 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+X-IncomingHeaderCount: 21
+Return-Path: dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: DU6PEPF00009526:EE_|DS7P220MB0855:EE_
+X-MS-UserLastLogonTime: 9/2/2024 7:58:08 PM
+X-MS-Office365-Filtering-Correlation-Id: 30e9f424-66ee-4be4-dcfc-08ddad179eaa
+X-MS-DelayedDelivery: true
+X-MS-Exchange-EOPDirect: true
+X-Sender-IP: 64.90.62.163
+X-SID-PRA: COMMUNICATIONS@SOUTHTABOR.ORG
+X-SID-Result: NONE
+X-Microsoft-Antispam:
+ BCL:0;ARA:1444111002|32080799003|461199028|18030799003|9400799033|3600799018|83100799006;
+X-Microsoft-Antispam-Message-Info:
+ =?us-ascii?Q?x/jVd65hSIgxvwaivbEXKDOhuOnoi1xICf/iubOg8wftBf6zDYMHhXVFGPcR?=
+ =?us-ascii?Q?NhUa+4L0aJE7HnYxtMoe10wa7yBU/VYS6BLML5QX9ZFVYQ8PUqsX/QyHDEmK?=
+ =?us-ascii?Q?ez9Htw7BOSkWQJcfRLyPcnEybnqvcrLe/mHo0z/SZjCi3VW5WwGW7SuXGvAG?=
+ =?us-ascii?Q?tLyfW+s/wmkxaXhyC4ZW6lCuM14HQw2Dr56+atlHHefcweKVIaEWto/NBc2b?=
+ =?us-ascii?Q?+QI9LL78IL80lDx2+c2zt8XD9foS7RMMCiqamOgcntF0oKUOBY4WCqoG2tf0?=
+ =?us-ascii?Q?HoCIfo9qAZQvzCme8nCVYoCl8V+xicR2TJm6nNVB6EhzIgsagvzM0+Fzeb3n?=
+ =?us-ascii?Q?n2xI5QCY11ggkwzYqB+C+VoKf2C5y5Txq629le9eU3a2Fn5c/pvVRf8n3ePo?=
+ =?us-ascii?Q?Y34ReANlQ1zYOaao6WLv89nbmLsu+YXxPhdokqqh/B8456Le8jpBqhWeoZFm?=
+ =?us-ascii?Q?eJZFHcdkYHqrdCYPcMqEUdiv7sVsJ3Kfe9rfXffJJDrLGRBTt78cF6w+Yi3L?=
+ =?us-ascii?Q?Z/B5vw/2GNyM682JHCC4C/M4YnlkTuDjFs0I448nuyMrDCRsqE6PujYRi++0?=
+ =?us-ascii?Q?I+LsxbPACpgNJd0aVRVSKoFXsDP2MqjNel2+jaKHgEjNVS30LAgjx6GUujnu?=
+ =?us-ascii?Q?Ixdzba0cQfgboOkl7N/hCzZrZwri8iwL1rDHfJQYUNXFyThkLnda3j84sHuO?=
+ =?us-ascii?Q?iNUhWVaAmTVA8rWt8KPcsLusFUN6Xw4671TSBTCcccL+nhVe1ycj250ztMtP?=
+ =?us-ascii?Q?Sc7+MiyoOpEGTl4V30zqXWIYVII3sEQ9lYlStBcHB9CET1KKzfPhWHJCjpDD?=
+ =?us-ascii?Q?RMp4Z1GVV9a00flg0WRJvvmPqq77nRBv4kk9otGHLkUOtmg2eZPYQ6hBmspO?=
+ =?us-ascii?Q?Z4rKedFrtt5otV9tHFibgSneBN8RPB+8WdNswTcu14wujTJeSTBpQJhnute6?=
+ =?us-ascii?Q?us8I/vQsOMQr2Y5aIJMmYxhtBRjgNvMt7cDRNFAm/ENxnEUsJ1xNQTqPDAN3?=
+ =?us-ascii?Q?XDfLlY3EiuwyNmaHvDhSxTrlO4gMFUpTJXq9V8kp3KfsAAjZSj40MHiUAMBf?=
+ =?us-ascii?Q?ZFeUJH/MlwyNNqmsEXhjpMHznouxv6295NzSH1YiWbkujn2iC3ToA1rsQh/F?=
+ =?us-ascii?Q?L6txmJOKENLkqHct9kZZB3qlzqazADODORGrHZGE8GIHGKTYCsAVDi0/Lntw?=
+ =?us-ascii?Q?vscerhI/RZXpcaz/13itApzwfi0XRGQq6s10KmPv2mqdz4fYVHe5VgTI93rT?=
+ =?us-ascii?Q?VmJc1XYC0SAPFgSX0zN/LFJSaXNrp98sZlRqqkc6grbmmUujoOpMgaDXl3Ln?=
+ =?us-ascii?Q?wZkxKqlBMFgZSaII+HcENsrZj/2V7xSvOHQ7EppLyo0bOndUx9XP9aeG1dBO?=
+ =?us-ascii?Q?cnRzN+8csKUaGejrp4Y8OUMHsyIfnpbsanLyx3sETSqrHnuqNLocoFk63Sa/?=
+ =?us-ascii?Q?Er2EyQQCgvukmU31sAKlB+nmbqsmPFam05JazvyLW0NuQomL/YXiPgKZ7gvp?=
+ =?us-ascii?Q?JCCOyakso+KxW9FoD1OJJ3OVvE7Nx+yJGgEHHVkCmNYTJWKGsBwb3BIK1k9j?=
+ =?us-ascii?Q?m37q8k1qP2/IuGbVSpQw3Vtq94S8/nmVwJ8/mUAECQHAwNLixPrGiP31Yx1H?=
+ =?us-ascii?Q?Bz2iq3i85+4v33yTxJ7Tw0EZf4oT6DeX/J5m51ktRlkVdCOwr1x8/f72E3vx?=
+ =?us-ascii?Q?rsvmekN3NRsUROoLl2zooUWo50GvuqzAokDaCi451TvR7band1HxNPvu/dvI?=
+ =?us-ascii?Q?AmG/drpjp2R8bjVnAo9raUWYGY+9utt5ZkDa50N3FxT2zLWt3JKI2kYdqTOt?=
+ =?us-ascii?Q?/sq4i6oHpVTndWXZJiYGtY8cYAWQYEvRmc6f34vHebGEcUb8GRLWgROux9/5?=
+ =?us-ascii?Q?ie3BF5VSidbgtnmCSiSLwlhy0R+nslDCrY1IOFVpauYUR3D/85EOWp753bs4?=
+ =?us-ascii?Q?jqhvrlrHcyJCeo1jJQ8e4htZBbjfjfzKMBopH+3PRMXQ/9Pl0MK7Q9Ir37AA?=
+ =?us-ascii?Q?CTjQkSt8sHzOLYLkfI4e+AuBnXwcbhfjnD9UgNWeVgFzlka8VDswl77bijFd?=
+ =?us-ascii?Q?Fvq86Y9eNo6diAE4o0gTOr1t9w6a4A=3D=3D?=
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 16 Jun 2025 20:51:51.0630
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 30e9f424-66ee-4be4-dcfc-08ddad179eaa
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-AuthSource: DU6PEPF00009526.eurprd02.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg:
+ 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DS7P220MB0855
+
+From: Jamelut <turkishop.ping8@gmail.com>=0ASubject: Underground: The Art o=
+f Extracting Clean Water=0A=0APhone: 82763351736=0A=0AMessage Body:=0ASomet=
+imes the most intimate secrets of life are hidden in the most ordinary plac=
+es. We look for inspiration in microscopic details, and sometimes into the =
+depths of the earth, where nature stores its best gifts. Understanding the =
+importance of groundwater and its rational use brings us to the topic <a hr=
+ef=3Dhttps://skvazhinanavodu.by/vidi-bureniya-i-ix-primenenie-pri-vodosnabz=
+henii-chastnogo-doma/><font color=3D#1C1C1C>drilling of water wells</font><=
+/a>, which plays a key role in ensuring our comfort and safety.In modern so=
+ciety, human ingenuity and creativity are applied in a wide variety of fiel=
+ds, from technology to art. However, access to basic resources remains the =
+foundation on which our existence is built. Against this background <a href=
+=3Dhttps://skvazhinanavodu.by/vidi-bureniya-obzor-texnologij-dlya-chastnogo=
+-i-promishlennogo-primeneniya/><font color=3D#1C1C1C>drilling of water well=
+s is an important element</font></a> contributing to the improvement of lif=
+e and sustainable development, helping to provide everyone with the necessa=
+ry water resource.Immersion in the exploration of the new and unknown is no=
+t only a property of science, but also the desire of each of us to find the=
+ best for our lives. The groundwater reserves that run deep underground off=
+er us the answer to questions that have been troubling humanity for centuri=
+es. So, <a href=3Dhttps://skvazhinanavodu.by/vidi-bureniya-obzor-texnologij=
+-dlya-chastnogo-i-promishlennogo-primeneniya/><font color=3D#1C1C1C>water w=
+ell drilling is becoming a modern solution</font></a> to help meet the grow=
+ing demand for clean drinking water.=0A=0A--=0AThis e-mail was sent from a =
+contact form on South Tabor Neighborhood Association (http://southtabor.org=
+)
+
+--9cc7177a-04cb-4042-a228-dc9257353af8--

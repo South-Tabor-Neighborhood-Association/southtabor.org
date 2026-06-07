@@ -1,0 +1,107 @@
+Return-Path: <>
+X-Original-To: dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Delivered-To: dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Received: from pdx1-shared-relay-02.dreamhost.com (pdx1-shared-relay-02.dreamhost.com [69.163.136.89])
+	by pdx1-shared-a3-03.dreamhost.com (Postfix) with ESMTP id 4bksMB0CFtz4qTS
+	for <dh_southtabor@pdx1-shared-a3-03.dreamhost.com>; Sat, 19 Jul 2025 09:20:06 -0700 (PDT)
+Received: by pdx1-shared-relay-02.dreamhost.com (Postfix)
+	id 4bksM975h5zBY; Sat, 19 Jul 2025 09:20:05 -0700 (PDT)
+Date: Sat, 19 Jul 2025 09:20:05 -0700 (PDT)
+From: MAILER-DAEMON@pdx1-shared-relay-02.dreamhost.com (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="4bksM92RbHz4k.1752942005/pdx1-shared-relay-02.dreamhost.com"
+Content-Transfer-Encoding: 8bit
+Message-Id: <4bksM975h5zBY@pdx1-shared-relay-02.dreamhost.com>
+
+This is a MIME-encapsulated message.
+
+--4bksM92RbHz4k.1752942005/pdx1-shared-relay-02.dreamhost.com
+Content-Description: Notification
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 8bit
+
+This is the mail system at host pdx1-shared-relay-02.dreamhost.com.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+If you are a current customer of DreamHost, please contact our
+technical support team here
+
+https://panel.dreamhost.com/support
+
+If you are not a customer please use our contact form at.
+
+http://dreamhost.com/contact
+
+If you do so, please include this email in your support ticket. You can
+delete your own text from the attached returned message.
+
+                DreamHost Email Support
+
+<jadedistrict@southtabor.org>: host mx2.mailchannels.net[18.236.29.166] said:
+    550 5.7.1 Message rejected (in reply to end of DATA command)
+
+--4bksM92RbHz4k.1752942005/pdx1-shared-relay-02.dreamhost.com
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; pdx1-shared-relay-02.dreamhost.com
+X-Postfix-Queue-ID: 4bksM92RbHz4k
+X-Postfix-Sender: rfc822; dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Arrival-Date: Sat, 19 Jul 2025 09:20:05 -0700 (PDT)
+
+Final-Recipient: rfc822; jadedistrict@southtabor.org
+Original-Recipient: rfc822;jadedistrict@southtabor.org
+Action: failed
+Status: 5.7.1
+Remote-MTA: dns; mx2.mailchannels.net
+Diagnostic-Code: smtp; 550 5.7.1 Message rejected
+
+--4bksM92RbHz4k.1752942005/pdx1-shared-relay-02.dreamhost.com
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+Content-Transfer-Encoding: 8bit
+
+Return-Path: <dh_southtabor@pdx1-shared-a3-03.dreamhost.com>
+Received: from pdx1-shared-a3-03.dreamhost.com (pdx1-shared-a3-03.dreamhost.com [69.163.140.3])
+	by pdx1-shared-relay-02.dreamhost.com (Postfix) with ESMTP id 4bksM92RbHz4k
+	for <jadedistrict@southtabor.org>; Sat, 19 Jul 2025 09:20:05 -0700 (PDT)
+Received: by pdx1-shared-a3-03.dreamhost.com (Postfix, from userid 5516487)
+	id 4bksLp16mPz4rtC; Sat, 19 Jul 2025 09:19:46 -0700 (PDT)
+To: jadedistrict@southtabor.org
+Subject: =?us-ascii?Q?SouthTabor.org_Form_-_Translation_That_Survives?=  =?us-ascii?Q?_Compliance_Reviews?=
+X-PHP-Originating-Script: 5516487:PHPMailer.php
+Date: Sat, 19 Jul 2025 16:19:46 +0000
+From: "Paolo A." <communications@southtabor.org>
+Reply-To: giovanni.marinelli19@yahoo.com
+Message-ID: <6OU56xFPz88XmnxrN430zSVHCO3wcXZXQjQWe2Wu2UA@southtabor.org>
+X-Mailer: PHPMailer 6.9.3 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+From: Paolo A. <giovanni.marinelli19@yahoo.com>
+Subject: Translation That Survives Compliance Reviews
+
+Phone: 83584998153
+
+Message Body:
+We help companies translate high-stakes documents — manuals, regulatory files, legal contracts — clearly and audit-ready. 
+ 
+Every line is reviewed by subject-matter experts. No shortcuts. No generic templates. 
+ 
+If that’s something you might need, you can take a quick look here: 
+https://sho.cat/translation-that-survives 
+ 
+If not, no worries — and thanks for reading. You won’t hear from us again.
+
+--
+This e-mail was sent from a contact form on South Tabor Neighborhood Association (http://southtabor.org)
+
+
+--4bksM92RbHz4k.1752942005/pdx1-shared-relay-02.dreamhost.com--

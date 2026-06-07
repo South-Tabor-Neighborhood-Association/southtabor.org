@@ -1,0 +1,116 @@
+Return-Path: <>
+X-Original-To: dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Delivered-To: dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Received: from pdx1-shared-relay-02.dreamhost.com (pdx1-shared-relay-02.dreamhost.com [69.163.136.89])
+	by pdx1-shared-a3-03.dreamhost.com (Postfix) with ESMTP id 4XLTxM1R5bz4sD2
+	for <dh_southtabor@pdx1-shared-a3-03.dreamhost.com>; Sat,  5 Oct 2024 15:34:47 +0000 (UTC)
+Received: by pdx1-shared-relay-02.dreamhost.com (Postfix)
+	id 4XLTxM10ZKzSS; Sat,  5 Oct 2024 08:34:47 -0700 (PDT)
+Date: Sat,  5 Oct 2024 08:34:47 -0700 (PDT)
+From: MAILER-DAEMON@pdx1-shared-relay-02.dreamhost.com (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="4XLTxL4kTyz6Y.1728142487/pdx1-shared-relay-02.dreamhost.com"
+Content-Transfer-Encoding: 8bit
+Message-Id: <4XLTxM10ZKzSS@pdx1-shared-relay-02.dreamhost.com>
+
+This is a MIME-encapsulated message.
+
+--4XLTxL4kTyz6Y.1728142487/pdx1-shared-relay-02.dreamhost.com
+Content-Description: Notification
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 8bit
+
+This is the mail system at host pdx1-shared-relay-02.dreamhost.com.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+If you are a current customer of DreamHost, please contact our
+technical support team here
+
+https://panel.dreamhost.com/support
+
+If you are not a customer please use our contact form at.
+
+http://dreamhost.com/contact
+
+If you do so, please include this email in your support ticket. You can
+delete your own text from the attached returned message.
+
+                DreamHost Email Support
+
+<jadedistrict@southtabor.org>: host mx1.mailchannels.net[18.236.29.166] said:
+    550 5.7.1 Message rejected (in reply to end of DATA command)
+
+--4XLTxL4kTyz6Y.1728142487/pdx1-shared-relay-02.dreamhost.com
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; pdx1-shared-relay-02.dreamhost.com
+X-Postfix-Queue-ID: 4XLTxL4kTyz6Y
+X-Postfix-Sender: rfc822; dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Arrival-Date: Sat,  5 Oct 2024 08:34:46 -0700 (PDT)
+
+Final-Recipient: rfc822; jadedistrict@southtabor.org
+Original-Recipient: rfc822;jadedistrict@southtabor.org
+Action: failed
+Status: 5.7.1
+Remote-MTA: dns; mx1.mailchannels.net
+Diagnostic-Code: smtp; 550 5.7.1 Message rejected
+
+--4XLTxL4kTyz6Y.1728142487/pdx1-shared-relay-02.dreamhost.com
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+Content-Transfer-Encoding: 8bit
+
+Return-Path: <dh_southtabor@pdx1-shared-a3-03.dreamhost.com>
+Received: from pdx1-shared-a3-03.dreamhost.com (pdx1-shared-a3-03.dreamhost.com [69.163.140.3])
+	by pdx1-shared-relay-02.dreamhost.com (Postfix) with ESMTP id 4XLTxL4kTyz6Y
+	for <jadedistrict@southtabor.org>; Sat,  5 Oct 2024 08:34:46 -0700 (PDT)
+Received: by pdx1-shared-a3-03.dreamhost.com (Postfix, from userid 5516487)
+	id 4XLTxL4dPRz4sSv; Sat,  5 Oct 2024 15:34:46 +0000 (UTC)
+To: jadedistrict@southtabor.org
+Subject: =?us-ascii?Q?SouthTabor.org_Form_-_Hello_southtabor.org_Admi?=  =?us-ascii?Q?nistrator.?=
+X-PHP-Originating-Script: 5516487:PHPMailer.php
+Date: Sat, 5 Oct 2024 15:34:46 +0000
+From: Leah Maple <communications@southtabor.org>
+Reply-To: leah.maple@hotmail.com
+Message-ID: <cWDrd0RjpafCFb3hIULjLRYrdXzpmdFEpESqKkNg@southtabor.org>
+X-Mailer: PHPMailer 6.9.1 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+From: Leah Maple <leah.maple@hotmail.com>
+Subject: Hello southtabor.org Administrator.
+
+Phone: 454052713
+
+Message Body:
+Payroll, Insurance, inventory, & advertising EXPENSES ……UGH
+
+Want some breathing room and a break from these expenses?
+
+Get a no obligation business working capital funding quote in less than 2 minutes.
+
+USA Based Businesses Only! 
+
+Contact me below for details
+
+Warmly,
+
+Lauren Smith
+HelloRates Fast Funding USA  
+Commercial & Business working capital with affordable payments, lowest rates, & best terms
+Lauren.smith@helloratesfastfundingusa.com
+https://www.HelloRatesFastFundingUSA.com
+
+--
+This e-mail was sent from a contact form on South Tabor Neighborhood Association (http://southtabor.org)
+
+
+--4XLTxL4kTyz6Y.1728142487/pdx1-shared-relay-02.dreamhost.com--

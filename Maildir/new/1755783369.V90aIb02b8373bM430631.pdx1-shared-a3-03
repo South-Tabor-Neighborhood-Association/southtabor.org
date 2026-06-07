@@ -1,0 +1,102 @@
+Return-Path: <>
+X-Original-To: dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Delivered-To: dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Received: from pdx1-shared-relay-02.dreamhost.com (pdx1-shared-relay-02.dreamhost.com [69.163.136.89])
+	by pdx1-shared-a3-03.dreamhost.com (Postfix) with ESMTP id 4c748n2tLYz4qbg
+	for <dh_southtabor@pdx1-shared-a3-03.dreamhost.com>; Thu, 21 Aug 2025 06:36:09 -0700 (PDT)
+Received: by pdx1-shared-relay-02.dreamhost.com (Postfix)
+	id 4c748n2Z5JzGs; Thu, 21 Aug 2025 06:36:09 -0700 (PDT)
+Date: Thu, 21 Aug 2025 06:36:09 -0700 (PDT)
+From: MAILER-DAEMON@pdx1-shared-relay-02.dreamhost.com (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="4c748l2gYcz5r.1755783369/pdx1-shared-relay-02.dreamhost.com"
+Content-Transfer-Encoding: 8bit
+Message-Id: <4c748n2Z5JzGs@pdx1-shared-relay-02.dreamhost.com>
+
+This is a MIME-encapsulated message.
+
+--4c748l2gYcz5r.1755783369/pdx1-shared-relay-02.dreamhost.com
+Content-Description: Notification
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 8bit
+
+This is the mail system at host pdx1-shared-relay-02.dreamhost.com.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+If you are a current customer of DreamHost, please contact our
+technical support team here
+
+https://panel.dreamhost.com/support
+
+If you are not a customer please use our contact form at.
+
+http://dreamhost.com/contact
+
+If you do so, please include this email in your support ticket. You can
+delete your own text from the attached returned message.
+
+                DreamHost Email Support
+
+<landuse@southtabor.org>: host mx1.mailchannels.net[18.236.29.166] said: 550
+    5.7.1 Message rejected (in reply to end of DATA command)
+
+--4c748l2gYcz5r.1755783369/pdx1-shared-relay-02.dreamhost.com
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; pdx1-shared-relay-02.dreamhost.com
+X-Postfix-Queue-ID: 4c748l2gYcz5r
+X-Postfix-Sender: rfc822; dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Arrival-Date: Thu, 21 Aug 2025 06:36:07 -0700 (PDT)
+
+Final-Recipient: rfc822; landuse@southtabor.org
+Original-Recipient: rfc822;landuse@southtabor.org
+Action: failed
+Status: 5.7.1
+Remote-MTA: dns; mx1.mailchannels.net
+Diagnostic-Code: smtp; 550 5.7.1 Message rejected
+
+--4c748l2gYcz5r.1755783369/pdx1-shared-relay-02.dreamhost.com
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+Content-Transfer-Encoding: 8bit
+
+Return-Path: <dh_southtabor@pdx1-shared-a3-03.dreamhost.com>
+Received: from pdx1-shared-a3-03.dreamhost.com (pdx1-shared-a3-03.dreamhost.com [69.163.140.3])
+	by pdx1-shared-relay-02.dreamhost.com (Postfix) with ESMTP id 4c748l2gYcz5r
+	for <landuse@southtabor.org>; Thu, 21 Aug 2025 06:36:07 -0700 (PDT)
+Received: by pdx1-shared-a3-03.dreamhost.com (Postfix, from userid 5516487)
+	id 4c746P6Ms1z4sXL; Thu, 21 Aug 2025 06:34:05 -0700 (PDT)
+To: landuse@southtabor.org
+Subject: SouthTabor.org Form - Personal Assistant
+X-PHP-Originating-Script: 5516487:PHPMailer.php
+Date: Thu, 21 Aug 2025 13:34:05 +0000
+From: Julie <communications@southtabor.org>
+Reply-To: businessgrowtogether@outlook.com
+Message-ID: <oJBbe8kt1PEEhzZuRSZcpsxDG7pFFzozgeNVaCtrodg@southtabor.org>
+X-Mailer: PHPMailer 6.9.3 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+From: Julie <businessgrowtogether@outlook.com>
+Subject: Personal Assistant
+
+Phone: 3599273945
+
+Message Body:
+Are you looking for a personal assistant who can handle your daily business operations and make your life easier? I can help with tasks related to admin, marketing, gathering data from multiple websites, answering emails, website management, social media, content writing, planning new projects, bookkeeping, entering data into softwares, and back-office assistance. I have an Inhouse Content writer, social media specialist, Data Entry Operator, Website Developer and Bookkeeper. My costing varies from $8/hr to $30/hr depending on type of project and its complexity.
+
+If you are interested, send me an email at Businessgrowtogether@outlook.com with a list of tasks you want to accomplish, and We can discuss our collaboration over a video call as per your convenience.
+
+--
+This e-mail was sent from a contact form on South Tabor Neighborhood Association (http://southtabor.org)
+
+
+--4c748l2gYcz5r.1755783369/pdx1-shared-relay-02.dreamhost.com--

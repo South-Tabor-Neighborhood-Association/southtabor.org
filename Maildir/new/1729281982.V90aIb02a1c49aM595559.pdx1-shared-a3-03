@@ -1,0 +1,110 @@
+Return-Path: <>
+X-Original-To: dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Delivered-To: dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Received: from pdx1-shared-relay-02.dreamhost.com (pdx1-shared-relay-02.dreamhost.com [69.163.136.89])
+	by pdx1-shared-a3-03.dreamhost.com (Postfix) with ESMTP id 4XVbLk48Ctz4sH6
+	for <dh_southtabor@pdx1-shared-a3-03.dreamhost.com>; Fri, 18 Oct 2024 20:06:22 +0000 (UTC)
+Received: by pdx1-shared-relay-02.dreamhost.com (Postfix)
+	id 4XVbLk3tbzzNH; Fri, 18 Oct 2024 13:06:22 -0700 (PDT)
+Date: Fri, 18 Oct 2024 13:06:22 -0700 (PDT)
+From: MAILER-DAEMON@pdx1-shared-relay-02.dreamhost.com (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="4XVbLj5h8qzLr.1729281982/pdx1-shared-relay-02.dreamhost.com"
+Message-Id: <4XVbLk3tbzzNH@pdx1-shared-relay-02.dreamhost.com>
+
+This is a MIME-encapsulated message.
+
+--4XVbLj5h8qzLr.1729281982/pdx1-shared-relay-02.dreamhost.com
+Content-Description: Notification
+Content-Type: text/plain; charset=us-ascii
+
+This is the mail system at host pdx1-shared-relay-02.dreamhost.com.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+If you are a current customer of DreamHost, please contact our
+technical support team here
+
+https://panel.dreamhost.com/support
+
+If you are not a customer please use our contact form at.
+
+http://dreamhost.com/contact
+
+If you do so, please include this email in your support ticket. You can
+delete your own text from the attached returned message.
+
+                DreamHost Email Support
+
+<crimebuster@southtabor.org>: host mx2.mailchannels.net[52.38.143.159] said:
+    550 5.7.1 Message rejected (in reply to end of DATA command)
+
+--4XVbLj5h8qzLr.1729281982/pdx1-shared-relay-02.dreamhost.com
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; pdx1-shared-relay-02.dreamhost.com
+X-Postfix-Queue-ID: 4XVbLj5h8qzLr
+X-Postfix-Sender: rfc822; dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Arrival-Date: Fri, 18 Oct 2024 13:06:21 -0700 (PDT)
+
+Final-Recipient: rfc822; crimebuster@southtabor.org
+Original-Recipient: rfc822;crimebuster@southtabor.org
+Action: failed
+Status: 5.7.1
+Remote-MTA: dns; mx2.mailchannels.net
+Diagnostic-Code: smtp; 550 5.7.1 Message rejected
+
+--4XVbLj5h8qzLr.1729281982/pdx1-shared-relay-02.dreamhost.com
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+
+Return-Path: <dh_southtabor@pdx1-shared-a3-03.dreamhost.com>
+Received: from pdx1-shared-a3-03.dreamhost.com (pdx1-shared-a3-03.dreamhost.com [69.163.140.3])
+	by pdx1-shared-relay-02.dreamhost.com (Postfix) with ESMTP id 4XVbLj5h8qzLr
+	for <crimebuster@southtabor.org>; Fri, 18 Oct 2024 13:06:21 -0700 (PDT)
+Received: by pdx1-shared-a3-03.dreamhost.com (Postfix, from userid 5516487)
+	id 4XVbLj5T1Yz50lV; Fri, 18 Oct 2024 20:06:21 +0000 (UTC)
+To: crimebuster@southtabor.org
+Subject: =?us-ascii?Q?SouthTabor.org_Form_-_Boost_Your_Online_Presenc?=  =?us-ascii?Q?e_Today:_Reach_Millions_of_Potential_Customers?=
+X-PHP-Originating-Script: 5516487:PHPMailer.php
+Date: Fri, 18 Oct 2024 20:06:21 +0000
+From: Barbara Hicks <communications@southtabor.org>
+Reply-To: barbarahicks@mail.co.uk
+Message-ID: <kcfYU14Z0cYtS0oNnHYPgOiUh912NG18dRxQoYpucFo@southtabor.org>
+X-Mailer: PHPMailer 6.9.1 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+
+From: Barbara Hicks <barbarahicks@mail.co.uk>
+Subject: Boost Your Online Presence Today: Reach Millions of Potential Customers
+
+Phone: 6136528054
+
+Message Body:
+Hi,
+
+I've visited southtabor.org and was wondering if you would be interested in promoting your site to our audience of up to 30 million? 
+We can also leverage our 3.4 million social media followers to boost your visibility.
+
+We handle the entire process. We safely deliver your message to millions of potential customers across the globe, or specific countries if you prefer.
+
+If this is of interested and you would like more information, get in touch.
+
+If you are not interested, simply ignore this email.
+
+Thanks,
+Barbara
+
+Unsubscribe: https://removeme.live/unsubscribe.php?d=southtabor.org
+
+--
+This e-mail was sent from a contact form on South Tabor Neighborhood Association (http://southtabor.org)
+
+
+--4XVbLj5h8qzLr.1729281982/pdx1-shared-relay-02.dreamhost.com--

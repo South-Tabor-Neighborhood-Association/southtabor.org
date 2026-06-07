@@ -1,0 +1,105 @@
+Return-Path: <>
+X-Original-To: dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Delivered-To: dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Received: from pdx1-shared-relay-02.dreamhost.com (pdx1-shared-relay-02.dreamhost.com [69.163.136.89])
+	by pdx1-shared-a3-03.dreamhost.com (Postfix) with ESMTP id 4bvW2y1h2Lz4n9c
+	for <dh_southtabor@pdx1-shared-a3-03.dreamhost.com>; Sat,  2 Aug 2025 11:06:02 -0700 (PDT)
+Received: by pdx1-shared-relay-02.dreamhost.com (Postfix)
+	id 4bvW2y1T69zKZ; Sat,  2 Aug 2025 11:06:02 -0700 (PDT)
+Date: Sat,  2 Aug 2025 11:06:02 -0700 (PDT)
+From: MAILER-DAEMON@pdx1-shared-relay-02.dreamhost.com (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="4bvW2x4RC3z59.1754157962/pdx1-shared-relay-02.dreamhost.com"
+Message-Id: <4bvW2y1T69zKZ@pdx1-shared-relay-02.dreamhost.com>
+
+This is a MIME-encapsulated message.
+
+--4bvW2x4RC3z59.1754157962/pdx1-shared-relay-02.dreamhost.com
+Content-Description: Notification
+Content-Type: text/plain; charset=us-ascii
+
+This is the mail system at host pdx1-shared-relay-02.dreamhost.com.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+If you are a current customer of DreamHost, please contact our
+technical support team here
+
+https://panel.dreamhost.com/support
+
+If you are not a customer please use our contact form at.
+
+http://dreamhost.com/contact
+
+If you do so, please include this email in your support ticket. You can
+delete your own text from the attached returned message.
+
+                DreamHost Email Support
+
+<communications@southtabor.org>: host mx2.mailchannels.net[18.236.29.166] said:
+    550 5.7.1 Message rejected (in reply to end of DATA command)
+
+--4bvW2x4RC3z59.1754157962/pdx1-shared-relay-02.dreamhost.com
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; pdx1-shared-relay-02.dreamhost.com
+X-Postfix-Queue-ID: 4bvW2x4RC3z59
+X-Postfix-Sender: rfc822; dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Arrival-Date: Sat,  2 Aug 2025 11:06:01 -0700 (PDT)
+
+Final-Recipient: rfc822; communications@southtabor.org
+Original-Recipient: rfc822;communications@southtabor.org
+Action: failed
+Status: 5.7.1
+Remote-MTA: dns; mx2.mailchannels.net
+Diagnostic-Code: smtp; 550 5.7.1 Message rejected
+
+--4bvW2x4RC3z59.1754157962/pdx1-shared-relay-02.dreamhost.com
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+
+Return-Path: <dh_southtabor@pdx1-shared-a3-03.dreamhost.com>
+Received: from pdx1-shared-a3-03.dreamhost.com (pdx1-shared-a3-03.dreamhost.com [69.163.140.3])
+	by pdx1-shared-relay-02.dreamhost.com (Postfix) with ESMTP id 4bvW2x4RC3z59
+	for <communications@southtabor.org>; Sat,  2 Aug 2025 11:06:01 -0700 (PDT)
+Received: by pdx1-shared-a3-03.dreamhost.com (Postfix, from userid 5516487)
+	id 4bvW2j0qPLz4s8G; Sat,  2 Aug 2025 11:05:49 -0700 (PDT)
+To: communications@southtabor.org
+Subject: =?us-ascii?Q?SouthTabor.org_Form_-_With_a_little_effort,_bus?=  =?us-ascii?Q?iness_taxes_can_disappear.?=
+X-PHP-Originating-Script: 5516487:PHPMailer.php
+Date: Sat, 2 Aug 2025 18:05:49 +0000
+From: "Mitch R." <communications@southtabor.org>
+Reply-To: mitch.r@lowertaxstrategy.com
+Message-ID: <mViCUmqneIQqDlx3rtsC1L3A1A6MwqbvSLMTnmERo@southtabor.org>
+X-Mailer: PHPMailer 6.9.3 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+
+From: Mitch R. <mitch.r@lowertaxstrategy.com>
+Subject: With a little effort, business taxes can disappear.
+
+Phone: (800) 272-0815
+
+Message Body:
+With a little effort, business taxes can disappear.
+
+Learn The Legal & Easy Hidden Strategy The Rich Use to Avoid Business Taxes!
+
+https://lowertaxstrategy.com
+
+
+
+To opt out of messages from me, just reply with: opt out
+southtabor.org
+
+--
+This e-mail was sent from a contact form on South Tabor Neighborhood Association (http://southtabor.org)
+
+
+--4bvW2x4RC3z59.1754157962/pdx1-shared-relay-02.dreamhost.com--

@@ -1,0 +1,252 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Exciter 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-02-11 17:00+0700\n"
+"PO-Revision-Date: 2012-02-11 17:00+0700\n"
+"Last-Translator: \n"
+"Language-Team: IziThemes <izithemes@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-SearchPath-0: D:\\AppServ\\www\\Exciter\\wp-content\\themes\\Exciter\n"
+
+#: D:\AppServ\www\Exciter\wp-content\themes\Exciter/404.php:7
+msgid "Page Not Found"
+msgstr ""
+
+#: D:\AppServ\www\Exciter\wp-content\themes\Exciter/404.php:12
+msgid "Sorry, the page you are looking for could not be found. Try using the search box below!"
+msgstr ""
+
+#: D:\AppServ\www\Exciter\wp-content\themes\Exciter/author.php:8
+msgid "All posts by"
+msgstr ""
+
+#: D:\AppServ\www\Exciter\wp-content\themes\Exciter/fullwidth.php:18
+#: D:\AppServ\www\Exciter\wp-content\themes\Exciter/page.php:15
+msgid "Edit this page"
+msgstr ""
+
+#: D:\AppServ\www\Exciter\wp-content\themes\Exciter/comments.php:7
+msgid "This post is password protected. Enter the password to view comments."
+msgstr ""
+
+#: D:\AppServ\www\Exciter\wp-content\themes\Exciter/comments.php:17
+msgid "No Comments"
+msgstr ""
+
+#: D:\AppServ\www\Exciter\wp-content\themes\Exciter/comments.php:17
+msgid "One Comment"
+msgstr ""
+
+#: D:\AppServ\www\Exciter\wp-content\themes\Exciter/comments.php:17
+msgid "% Comments"
+msgstr ""
+
+#: D:\AppServ\www\Exciter\wp-content\themes\Exciter/comments.php:35
+msgid "Comments are closed."
+msgstr ""
+
+#: D:\AppServ\www\Exciter\wp-content\themes\Exciter/comments.php:44
+msgid "Leave A Response"
+msgstr ""
+
+#: D:\AppServ\www\Exciter\wp-content\themes\Exciter/comments.php:56
+msgid "Logged in as"
+msgstr ""
+
+#: D:\AppServ\www\Exciter\wp-content\themes\Exciter/comments.php:60
+#: D:\AppServ\www\Exciter\wp-content\themes\Exciter/comments.php:90
+msgid "Comment"
+msgstr ""
+
+#: D:\AppServ\www\Exciter\wp-content\themes\Exciter/comments.php:67
+#: D:\AppServ\www\Exciter\wp-content\themes\Exciter/comments.php:97
+msgid "Post Comment"
+msgstr ""
+
+#: D:\AppServ\www\Exciter\wp-content\themes\Exciter/comments.php:77
+msgid "Name"
+msgstr ""
+
+#: D:\AppServ\www\Exciter\wp-content\themes\Exciter/comments.php:77
+#: D:\AppServ\www\Exciter\wp-content\themes\Exciter/comments.php:80
+msgid "(required)"
+msgstr ""
+
+#: D:\AppServ\www\Exciter\wp-content\themes\Exciter/comments.php:80
+msgid "Email"
+msgstr ""
+
+#: D:\AppServ\www\Exciter\wp-content\themes\Exciter/comments.php:83
+msgid "Website"
+msgstr ""
+
+#: D:\AppServ\www\Exciter\wp-content\themes\Exciter/index.php:22
+msgid "Latest Posts"
+msgstr ""
+
+#: D:\AppServ\www\Exciter\wp-content\themes\Exciter/archive.php:8
+#, php-format
+msgid "Daily Archives: <span>%s</span>"
+msgstr ""
+
+#: D:\AppServ\www\Exciter\wp-content\themes\Exciter/archive.php:10
+#, php-format
+msgid "Monthly Archives: <span>%s</span>"
+msgstr ""
+
+#: D:\AppServ\www\Exciter\wp-content\themes\Exciter/archive.php:12
+#, php-format
+msgid "Yearly Archives: <span>%s</span>"
+msgstr ""
+
+#: D:\AppServ\www\Exciter\wp-content\themes\Exciter/archive.php:14
+msgid "Blog Archives"
+msgstr ""
+
+#: D:\AppServ\www\Exciter\wp-content\themes\Exciter/search.php:6
+msgid "Search results for"
+msgstr ""
+
+#: D:\AppServ\www\Exciter\wp-content\themes\Exciter/searchform.php:2
+msgid "type and hit enter to search"
+msgstr ""
+
+#: D:\AppServ\www\Exciter\wp-content\themes\Exciter/header.php:158
+msgid "Home"
+msgstr ""
+
+#: D:\AppServ\www\Exciter\wp-content\themes\Exciter/single.php:11
+msgid "No Comments &#187;"
+msgstr ""
+
+#: D:\AppServ\www\Exciter\wp-content\themes\Exciter/single.php:11
+msgid "1 Comment &#187;"
+msgstr ""
+
+#: D:\AppServ\www\Exciter\wp-content\themes\Exciter/single.php:11
+msgid "Comments &#187;"
+msgstr ""
+
+#: D:\AppServ\www\Exciter\wp-content\themes\Exciter/single.php:12
+msgid "Edit this post"
+msgstr ""
+
+#: D:\AppServ\www\Exciter\wp-content\themes\Exciter/single.php:114
+msgid "TAGS"
+msgstr ""
+
+#: D:\AppServ\www\Exciter\wp-content\themes\Exciter/single.php:118
+msgid "POSTED IN"
+msgstr ""
+
+#: D:\AppServ\www\Exciter\wp-content\themes\Exciter/single.php:125
+msgid "About the author:"
+msgstr ""
+
+#: D:\AppServ\www\Exciter\wp-content\themes\Exciter/single.php:125
+msgid "View all posts by"
+msgstr ""
+
+#: D:\AppServ\www\Exciter\wp-content\themes\Exciter/single.php:157
+msgid "Related Posts"
+msgstr ""
+
+#: D:\AppServ\www\Exciter\wp-content\themes\Exciter/framework/IziFramework.php:50
+msgid "Top Navigation"
+msgstr ""
+
+#: D:\AppServ\www\Exciter\wp-content\themes\Exciter/framework/IziFramework.php:51
+msgid "Main Navigation"
+msgstr ""
+
+#: D:\AppServ\www\Exciter\wp-content\themes\Exciter/framework/custom_functions.php:17
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: D:\AppServ\www\Exciter\wp-content\themes\Exciter/framework/custom_functions.php:17
+msgid "Edit"
+msgstr ""
+
+#: D:\AppServ\www\Exciter\wp-content\themes\Exciter/framework/custom_functions.php:22
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: D:\AppServ\www\Exciter\wp-content\themes\Exciter/framework/custom_image_sizes.php:151
+msgid "Could not read image size"
+msgstr ""
+
+#: D:\AppServ\www\Exciter\wp-content\themes\Exciter/framework/custom_image_sizes.php:156
+msgid "Could not calculate resized image dimensions"
+msgstr ""
+
+#: D:\AppServ\www\Exciter\wp-content\themes\Exciter/framework/custom_image_sizes.php:185
+#: D:\AppServ\www\Exciter\wp-content\themes\Exciter/framework/custom_image_sizes.php:188
+#: D:\AppServ\www\Exciter\wp-content\themes\Exciter/framework/custom_image_sizes.php:193
+msgid "Resize path invalid"
+msgstr ""
+
+#: D:\AppServ\www\Exciter\wp-content\themes\Exciter/framework/widgets/search_widget.php:23
+msgid "Search here..."
+msgstr ""
+
+#: D:\AppServ\www\Exciter\wp-content\themes\Exciter/framework/widgets/homepage_1col_widget.php:61
+msgid "Read More"
+msgstr ""
+
+#: D:\AppServ\www\Exciter\wp-content\themes\Exciter/framework/widgets/tabs_widget.php:71
+msgid "Popular"
+msgstr ""
+
+#: D:\AppServ\www\Exciter\wp-content\themes\Exciter/framework/widgets/tabs_widget.php:72
+msgid "Comments"
+msgstr ""
+
+#: D:\AppServ\www\Exciter\wp-content\themes\Exciter/framework/widgets/tabs_widget.php:73
+msgid "Tags"
+msgstr ""
+
+#: D:\AppServ\www\Exciter\wp-content\themes\Exciter/framework/meta-box/meta-box-class.php:108
+#: D:\AppServ\www\Exciter\wp-content\themes\Exciter/framework/meta-box/meta-box-class.php:349
+msgid "Delete this image"
+msgstr ""
+
+#: D:\AppServ\www\Exciter\wp-content\themes\Exciter/framework/meta-box/meta-box-class.php:108
+#: D:\AppServ\www\Exciter\wp-content\themes\Exciter/framework/meta-box/meta-box-class.php:306
+#: D:\AppServ\www\Exciter\wp-content\themes\Exciter/framework/meta-box/meta-box-class.php:349
+msgid "Delete"
+msgstr ""
+
+#: D:\AppServ\www\Exciter\wp-content\themes\Exciter/framework/meta-box/meta-box-class.php:302
+msgid "Uploaded files"
+msgstr ""
+
+#: D:\AppServ\www\Exciter\wp-content\themes\Exciter/framework/meta-box/meta-box-class.php:312
+msgid "Upload new files"
+msgstr ""
+
+#: D:\AppServ\www\Exciter\wp-content\themes\Exciter/framework/meta-box/meta-box-class.php:315
+msgid "Add more file"
+msgstr ""
+
+#: D:\AppServ\www\Exciter\wp-content\themes\Exciter/framework/meta-box/meta-box-class.php:356
+msgid "Add more images"
+msgstr ""
+
+#: D:\AppServ\www\Exciter\wp-content\themes\Exciter/framework/meta-box/meta-box-class.php:363
+msgid "Select a color"
+msgstr ""
+
+#: D:\AppServ\www\Exciter\wp-content\themes\Exciter/includes/slider/lof.php:68
+#: D:\AppServ\www\Exciter\wp-content\themes\Exciter/includes/slider/lof.php:70
+#: D:\AppServ\www\Exciter\wp-content\themes\Exciter/includes/slider/lof.php:74
+#, php-format
+msgid "Permalink to %s"
+msgstr ""
+

@@ -1,0 +1,43 @@
+/*  
+Skin Name: Skin #1
+Version: 1.0
+Description: Skin for Exciter
+*/
+
+/* Main Menu */
+#wrapper-navigation{background-color:#990045;border-bottom:7px solid #ddd; }
+.sf-menu > li > a, .sf-menu > li > a:visited  {color: #fff;}
+.sf-menu > li.current-post-parent > a,
+.sf-menu > li.current-menu-parent > a,
+.sf-menu > li.current-post-ancestor > a,
+.sf-menu > li.current-menu-item > a,
+.sf-menu > li.current_page_item > a,
+.sf-menu > li.current-cat > a,
+.sf-menu > li:hover > a,
+.sf-menu a:focus, 
+.sf-menu a:hover, 
+.sf-menu a:active{background-color:#780031; }
+
+.sf-menu li li {background-color:#780031;}
+
+/* Slider Tab */
+.slider-navigator li.active{background:url(images/arrow-bg.png) no-repeat scroll left center; color:#fff}
+.slider-navigator li.active div{background:url(images/grad-bg.gif);color:#FFF;}
+.slider-navigator li.active img{ background:url(../../images/menu-overlay-sub.png); border:#b84579  solid 1px;}
+
+/* Title */
+.block h3,.block h3 a,.widget-title,ul.tabs li a { color:#990045;}
+
+/* Footer */
+#wrapper-footer{background-color:#990045}
+#footer .widget a{color:#bf5887}
+#footer .widget .widget-title{background:url(../../images/menu-sep-h.png) 0 100% repeat-x; border:none;}
+#footer .widget .item_small .block-image img{border:1px solid #a23768}
+#footer .widget .flickr-photo img{border:1px solid #a23768!important}
+#footer .widget li { border-bottom: 1px dashed #a23768}
+#footer .widget .item_small { border-bottom:1px dashed #a23768;}
+#footer .widget .item_small h2 a{color:#fff}
+#footer .widget .block-meta,
+#footer .widget .block-meta a{color:#bf5887}
+#footer-bottom {background:url(../../images/menu-sep-h.png) 0 0 repeat-x; border:none;}
+#footer .tweets .tweet a{color:#bf5887!important}

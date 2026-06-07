@@ -1,0 +1,96 @@
+Return-Path: <>
+X-Original-To: dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Delivered-To: dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Received: from pdx1-shared-relay-02.dreamhost.com (pdx1-shared-relay-02.dreamhost.com [69.163.136.89])
+	by pdx1-shared-a3-03.dreamhost.com (Postfix) with ESMTP id 4b85Yw2PZlz4qV3
+	for <dh_southtabor@pdx1-shared-a3-03.dreamhost.com>; Fri, 30 May 2025 07:42:44 -0700 (PDT)
+Received: by pdx1-shared-relay-02.dreamhost.com (Postfix)
+	id 4b85Yw2FKxzKJ; Fri, 30 May 2025 07:42:44 -0700 (PDT)
+Date: Fri, 30 May 2025 07:42:44 -0700 (PDT)
+From: MAILER-DAEMON@pdx1-shared-relay-02.dreamhost.com (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="4b85Yv6JY2zrv.1748616164/pdx1-shared-relay-02.dreamhost.com"
+Message-Id: <4b85Yw2FKxzKJ@pdx1-shared-relay-02.dreamhost.com>
+
+This is a MIME-encapsulated message.
+
+--4b85Yv6JY2zrv.1748616164/pdx1-shared-relay-02.dreamhost.com
+Content-Description: Notification
+Content-Type: text/plain; charset=us-ascii
+
+This is the mail system at host pdx1-shared-relay-02.dreamhost.com.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+If you are a current customer of DreamHost, please contact our
+technical support team here
+
+https://panel.dreamhost.com/support
+
+If you are not a customer please use our contact form at.
+
+http://dreamhost.com/contact
+
+If you do so, please include this email in your support ticket. You can
+delete your own text from the attached returned message.
+
+                DreamHost Email Support
+
+<landuse@southtabor.org>: host mx2.mailchannels.net[18.236.29.166] said: 550
+    5.7.1 Message rejected (in reply to end of DATA command)
+
+--4b85Yv6JY2zrv.1748616164/pdx1-shared-relay-02.dreamhost.com
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; pdx1-shared-relay-02.dreamhost.com
+X-Postfix-Queue-ID: 4b85Yv6JY2zrv
+X-Postfix-Sender: rfc822; dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Arrival-Date: Fri, 30 May 2025 07:42:43 -0700 (PDT)
+
+Final-Recipient: rfc822; landuse@southtabor.org
+Original-Recipient: rfc822;landuse@southtabor.org
+Action: failed
+Status: 5.7.1
+Remote-MTA: dns; mx2.mailchannels.net
+Diagnostic-Code: smtp; 550 5.7.1 Message rejected
+
+--4b85Yv6JY2zrv.1748616164/pdx1-shared-relay-02.dreamhost.com
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+
+Return-Path: <dh_southtabor@pdx1-shared-a3-03.dreamhost.com>
+Received: from pdx1-shared-a3-03.dreamhost.com (pdx1-shared-a3-03.dreamhost.com [69.163.140.3])
+	by pdx1-shared-relay-02.dreamhost.com (Postfix) with ESMTP id 4b85Yv6JY2zrv
+	for <landuse@southtabor.org>; Fri, 30 May 2025 07:42:43 -0700 (PDT)
+Received: by pdx1-shared-a3-03.dreamhost.com (Postfix, from userid 5516487)
+	id 4b85Yv6CGtz4y26; Fri, 30 May 2025 07:42:43 -0700 (PDT)
+To: landuse@southtabor.org
+Subject: =?us-ascii?Q?SouthTabor.org_Form_-_Personalized_Contact_Data?=  =?us-ascii?Q?_Extraction_from_Google_Maps?=
+X-PHP-Originating-Script: 5516487:PHPMailer.php
+Date: Fri, 30 May 2025 14:42:43 +0000
+From: OlegBro <communications@southtabor.org>
+Reply-To: support@hustlersource.com
+Message-ID: <lPPRxArl6R3ga9a4MkwikIf7n1cSXSiLlxMghsvSUWc@southtabor.org>
+X-Mailer: PHPMailer 6.9.3 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+
+From: OlegBro <support@hustlersource.com>
+Subject: Personalized Contact Data Extraction from Google Maps
+
+Phone: 89376662788
+
+Message Body:
+Looking for business contact details? Let me do the hard work for you! Get all the info you need for just $30 https://telegra.ph/Personalized-Contact-Data-Extraction-from-Google-Maps-10-03 (or telegram: @chamerion)
+
+--
+This e-mail was sent from a contact form on South Tabor Neighborhood Association (http://southtabor.org)
+
+
+--4b85Yv6JY2zrv.1748616164/pdx1-shared-relay-02.dreamhost.com--

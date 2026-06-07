@@ -1,0 +1,119 @@
+Return-Path: <>
+X-Original-To: dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Delivered-To: dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Received: from pdx1-shared-relay-02.dreamhost.com (pdx1-shared-relay-02.dreamhost.com [69.163.136.89])
+	by pdx1-shared-a3-03.dreamhost.com (Postfix) with ESMTP id 4XB4wv0bLsz4s7b
+	for <dh_southtabor@pdx1-shared-a3-03.dreamhost.com>; Sat, 21 Sep 2024 23:20:15 +0000 (UTC)
+Received: by pdx1-shared-relay-02.dreamhost.com (Postfix)
+	id 4XB4wv0By0z1Wc; Sat, 21 Sep 2024 16:20:15 -0700 (PDT)
+Date: Sat, 21 Sep 2024 16:20:15 -0700 (PDT)
+From: MAILER-DAEMON@pdx1-shared-relay-02.dreamhost.com (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="4XB4wt1pqCz6Y.1726960815/pdx1-shared-relay-02.dreamhost.com"
+Content-Transfer-Encoding: 8bit
+Message-Id: <4XB4wv0By0z1Wc@pdx1-shared-relay-02.dreamhost.com>
+
+This is a MIME-encapsulated message.
+
+--4XB4wt1pqCz6Y.1726960815/pdx1-shared-relay-02.dreamhost.com
+Content-Description: Notification
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 8bit
+
+This is the mail system at host pdx1-shared-relay-02.dreamhost.com.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+If you are a current customer of DreamHost, please contact our
+technical support team here
+
+https://panel.dreamhost.com/support
+
+If you are not a customer please use our contact form at.
+
+http://dreamhost.com/contact
+
+If you do so, please include this email in your support ticket. You can
+delete your own text from the attached returned message.
+
+                DreamHost Email Support
+
+<communications@southtabor.org>: host mx2.mailchannels.net[52.88.191.142] said:
+    550 5.7.1 Message rejected (in reply to end of DATA command)
+
+--4XB4wt1pqCz6Y.1726960815/pdx1-shared-relay-02.dreamhost.com
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; pdx1-shared-relay-02.dreamhost.com
+X-Postfix-Queue-ID: 4XB4wt1pqCz6Y
+X-Postfix-Sender: rfc822; dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Arrival-Date: Sat, 21 Sep 2024 16:20:14 -0700 (PDT)
+
+Final-Recipient: rfc822; communications@southtabor.org
+Original-Recipient: rfc822;communications@southtabor.org
+Action: failed
+Status: 5.7.1
+Remote-MTA: dns; mx2.mailchannels.net
+Diagnostic-Code: smtp; 550 5.7.1 Message rejected
+
+--4XB4wt1pqCz6Y.1726960815/pdx1-shared-relay-02.dreamhost.com
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+Content-Transfer-Encoding: 8bit
+
+Return-Path: <dh_southtabor@pdx1-shared-a3-03.dreamhost.com>
+Received: from pdx1-shared-a3-03.dreamhost.com (pdx1-shared-a3-03.dreamhost.com [69.163.140.3])
+	by pdx1-shared-relay-02.dreamhost.com (Postfix) with ESMTP id 4XB4wt1pqCz6Y
+	for <communications@southtabor.org>; Sat, 21 Sep 2024 16:20:14 -0700 (PDT)
+Received: by pdx1-shared-a3-03.dreamhost.com (Postfix, from userid 5516487)
+	id 4XB4wt1hHJz4sC4; Sat, 21 Sep 2024 23:20:14 +0000 (UTC)
+To: communications@southtabor.org
+Subject: =?us-ascii?Q?SouthTabor.org_Form_-_Drive_Targeted_Traffic_fo?=  =?us-ascii?Q?r_Just_$10!?=
+X-PHP-Originating-Script: 5516487:PHPMailer.php
+Date: Sat, 21 Sep 2024 23:20:14 +0000
+From: Jefferey McCormick <communications@southtabor.org>
+Reply-To: jefferey.mccormick@msn.com
+Message-ID: <hwVLtBsR0jhTlZrRAxJ0FnIJVA7NmAMoJe2gONisZs@southtabor.org>
+X-Mailer: PHPMailer 6.9.1 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+From: Jefferey McCormick <jefferey.mccormick@msn.com>
+Subject: Drive Targeted Traffic for Just $10!
+
+Phone: 7986305895
+
+Message Body:
+Hi,
+
+Are you ready to boost your online visibility and attract the right audience? For just $10, you can access targeted social ads traffic that can be customized by industry and country!
+
+Here’s what you can expect:
+•	Targeted Traffic: Reach your ideal customers based on specific industries and geographical locations.
+•	Affordable Pricing: For only $10, you get 5,000 visits that can significantly enhance your website’s exposure.
+•	Quick Setup: Our process is simple—just set your parameters, and we’ll take care of the rest!
+
+Don’t miss this opportunity to drive quality traffic to your site at an unbeatable price.
+
+Get Started with Targeted Social Ads
+https://www.digitalxpresscom.net/targeted-visits/
+
+If you have any questions or need assistance, feel free to reach out!
+https://www.digitalxpresscom.net/whatsapp-us/
+
+Best regards,
+Mike Mcbride
+Digital X SEO Experts
+
+--
+This e-mail was sent from a contact form on South Tabor Neighborhood Association (http://southtabor.org)
+
+
+--4XB4wt1pqCz6Y.1726960815/pdx1-shared-relay-02.dreamhost.com--

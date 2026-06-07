@@ -1,0 +1,122 @@
+Return-Path: <>
+X-Original-To: dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Delivered-To: dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Received: from pdx1-shared-relay-02.dreamhost.com (pdx1-shared-relay-02.dreamhost.com [69.163.136.89])
+	by pdx1-shared-a3-03.dreamhost.com (Postfix) with ESMTP id 4XJzYD1JfGz4sGC
+	for <dh_southtabor@pdx1-shared-a3-03.dreamhost.com>; Thu,  3 Oct 2024 04:42:08 +0000 (UTC)
+Received: by pdx1-shared-relay-02.dreamhost.com (Postfix)
+	id 4XJzYD11X0zHf; Wed,  2 Oct 2024 21:42:08 -0700 (PDT)
+Date: Wed,  2 Oct 2024 21:42:08 -0700 (PDT)
+From: MAILER-DAEMON@pdx1-shared-relay-02.dreamhost.com (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="4XJzYC2Gh5zCX.1727930528/pdx1-shared-relay-02.dreamhost.com"
+Content-Transfer-Encoding: 8bit
+Message-Id: <4XJzYD11X0zHf@pdx1-shared-relay-02.dreamhost.com>
+
+This is a MIME-encapsulated message.
+
+--4XJzYC2Gh5zCX.1727930528/pdx1-shared-relay-02.dreamhost.com
+Content-Description: Notification
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 8bit
+
+This is the mail system at host pdx1-shared-relay-02.dreamhost.com.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+If you are a current customer of DreamHost, please contact our
+technical support team here
+
+https://panel.dreamhost.com/support
+
+If you are not a customer please use our contact form at.
+
+http://dreamhost.com/contact
+
+If you do so, please include this email in your support ticket. You can
+delete your own text from the attached returned message.
+
+                DreamHost Email Support
+
+<harvest@southtabor.org>: host mx2.mailchannels.net[54.70.67.175] said: 550
+    5.7.1 Message rejected (in reply to end of DATA command)
+
+--4XJzYC2Gh5zCX.1727930528/pdx1-shared-relay-02.dreamhost.com
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; pdx1-shared-relay-02.dreamhost.com
+X-Postfix-Queue-ID: 4XJzYC2Gh5zCX
+X-Postfix-Sender: rfc822; dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Arrival-Date: Wed,  2 Oct 2024 21:42:07 -0700 (PDT)
+
+Final-Recipient: rfc822; harvest@southtabor.org
+Original-Recipient: rfc822;harvest@southtabor.org
+Action: failed
+Status: 5.7.1
+Remote-MTA: dns; mx2.mailchannels.net
+Diagnostic-Code: smtp; 550 5.7.1 Message rejected
+
+--4XJzYC2Gh5zCX.1727930528/pdx1-shared-relay-02.dreamhost.com
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+Content-Transfer-Encoding: 8bit
+
+Return-Path: <dh_southtabor@pdx1-shared-a3-03.dreamhost.com>
+Received: from pdx1-shared-a3-03.dreamhost.com (pdx1-shared-a3-03.dreamhost.com [69.163.140.3])
+	by pdx1-shared-relay-02.dreamhost.com (Postfix) with ESMTP id 4XJzYC2Gh5zCX
+	for <harvest@southtabor.org>; Wed,  2 Oct 2024 21:42:07 -0700 (PDT)
+Received: by pdx1-shared-a3-03.dreamhost.com (Postfix, from userid 5516487)
+	id 4XJzYC29fcz4sQF; Thu,  3 Oct 2024 04:42:07 +0000 (UTC)
+To: harvest@southtabor.org
+Subject: =?us-ascii?Q?SouthTabor.org_Form_-_Why_not_TALK_with_your_le?=  =?us-ascii?Q?ads=3F?=
+X-PHP-Originating-Script: 5516487:PHPMailer.php
+Date: Thu, 3 Oct 2024 04:42:07 +0000
+From: Eric Jones <communications@southtabor.org>
+Reply-To: ericjonesmyemail@gmail.com
+Message-ID: <rlSuB1jAd14wQ836BXeoxzFmdoNyVPF2UofFdeobSPE@southtabor.org>
+X-Mailer: PHPMailer 6.9.1 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+From: Eric Jones <ericjonesmyemail@gmail.com>
+Subject: Why not TALK with your leads?
+
+Phone: 555-555-1212
+
+Message Body:
+Dear
+
+My name’s Eric and I just found your site southtabor.org.
+
+It’s got a lot going for it, but here’s an idea to make it even MORE effective.
+
+CLICK HERE https://blazeleadgeneration.com for a live demo now.
+
+Web Visitors Into Leads is a software widget that’s works on your site, ready to capture any visitor’s Name, Email address and Phone Number.  It signals you the moment they let you know they’re interested – so that you can talk to that lead while they’re literally looking over your site.
+
+And once you’ve captured their phone number, with our new SMS Text With Lead feature, you can automatically start a text (SMS) conversation… and if they don’t take you up on your offer then, you can follow up with text messages for new offers, content links, even just “how you doing?” notes to build a relationship.
+
+CLICK HERE https://blazeleadgeneration.com to discover what Web Visitors Into Leads can do for your business.
+
+The difference between contacting someone within 5 minutes versus a half-hour means you could be converting up to 100X more leads today!
+
+Eric
+PS: Studies show that 70% of a site’s visitors disappear and are gone forever after just a moment. Don’t keep losing them. 
+Web Visitors Into Leads offers a FREE 14 days trial – and it even includes International Long Distance Calling. 
+You have customers waiting to talk with you right now… don’t keep them waiting. 
+CLICK HERE https://blazeleadgeneration.com to try Talk With Web Visitor now.
+
+If you'd like to unsubscribe click here https://blazeleadgeneration.com/unsubscribe.aspx?d=southtabor.org
+
+--
+This e-mail was sent from a contact form on South Tabor Neighborhood Association (http://southtabor.org)
+
+
+--4XJzYC2Gh5zCX.1727930528/pdx1-shared-relay-02.dreamhost.com--

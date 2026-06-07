@@ -1,0 +1,112 @@
+Return-Path: <>
+X-Original-To: dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Delivered-To: dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Received: from pdx1-shared-relay-02.dreamhost.com (pdx1-shared-relay-02.dreamhost.com [69.163.136.89])
+	by pdx1-shared-a3-03.dreamhost.com (Postfix) with ESMTP id 4fKvNK37DBz4shJ
+	for <dh_southtabor@pdx1-shared-a3-03.dreamhost.com>; Tue, 24 Feb 2026 02:39:13 -0800 (PST)
+Received: by pdx1-shared-relay-02.dreamhost.com (Postfix)
+	id 4fKvNK1vX4zLR; Tue, 24 Feb 2026 02:39:13 -0800 (PST)
+Date: Tue, 24 Feb 2026 02:39:13 -0800 (PST)
+From: MAILER-DAEMON@pdx1-shared-relay-02.dreamhost.com (Mail Delivery System)
+Subject: Undelivered Mail Returned to Sender
+To: dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="4fKvNJ3dXPz62.1771929553/pdx1-shared-relay-02.dreamhost.com"
+Content-Transfer-Encoding: 8bit
+Message-Id: <4fKvNK1vX4zLR@pdx1-shared-relay-02.dreamhost.com>
+
+This is a MIME-encapsulated message.
+
+--4fKvNJ3dXPz62.1771929553/pdx1-shared-relay-02.dreamhost.com
+Content-Description: Notification
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 8bit
+
+This is the mail system at host pdx1-shared-relay-02.dreamhost.com.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+If you are a current customer of DreamHost, please contact our
+technical support team here
+
+https://panel.dreamhost.com/support
+
+If you are not a customer please use our contact form at.
+
+http://dreamhost.com/contact
+
+If you do so, please include this email in your support ticket. You can
+delete your own text from the attached returned message.
+
+                DreamHost Email Support
+
+<landuse@southtabor.org>: host mx1.mailchannels.net[52.38.143.159] said: 550
+    5.7.1 Message rejected (in reply to end of DATA command)
+
+--4fKvNJ3dXPz62.1771929553/pdx1-shared-relay-02.dreamhost.com
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; pdx1-shared-relay-02.dreamhost.com
+X-Postfix-Queue-ID: 4fKvNJ3dXPz62
+X-Postfix-Sender: rfc822; dh_southtabor@pdx1-shared-a3-03.dreamhost.com
+Arrival-Date: Tue, 24 Feb 2026 02:39:12 -0800 (PST)
+
+Final-Recipient: rfc822; landuse@southtabor.org
+Original-Recipient: rfc822;landuse@southtabor.org
+Action: failed
+Status: 5.7.1
+Remote-MTA: dns; mx1.mailchannels.net
+Diagnostic-Code: smtp; 550 5.7.1 Message rejected
+
+--4fKvNJ3dXPz62.1771929553/pdx1-shared-relay-02.dreamhost.com
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+Content-Transfer-Encoding: 8bit
+
+Return-Path: <dh_southtabor@pdx1-shared-a3-03.dreamhost.com>
+Received: from pdx1-shared-a3-03.dreamhost.com (pdx1-shared-a3-03.dreamhost.com [69.163.140.3])
+	by pdx1-shared-relay-02.dreamhost.com (Postfix) with ESMTP id 4fKvNJ3dXPz62
+	for <landuse@southtabor.org>; Tue, 24 Feb 2026 02:39:12 -0800 (PST)
+Received: by pdx1-shared-a3-03.dreamhost.com (Postfix, from userid 5516487)
+	id 4fKvNJ3Y2wz4sls; Tue, 24 Feb 2026 02:39:12 -0800 (PST)
+To: landuse@southtabor.org
+Subject: =?UTF-8?B?U291dGhUYWJvci5vcmcgRm9ybSAtINCf0L7Qu9C40LPRgNCw0YTQuNGP?=
+X-PHP-Originating-Script: 5516487:PHPMailer.php
+Date: Tue, 24 Feb 2026 10:39:12 +0000
+From: Edwardvof <communications@southtabor.org>
+Reply-To: kina3axjglime@bk.ru
+Message-ID: <2ECnz64Hm2vYE1f97NbC6NViOU8hRkEaAhHBQAObCA@southtabor.org>
+X-Mailer: PHPMailer 7.0.0 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+From: Edwardvof <kina3axjglime@bk.ru>
+Subject: Полиграфия
+
+Phone: 82255434231
+
+Message Body:
+Интерьерная печати применяется для решения задач: 
+Рекламно-производственная компания «Гранд Принт» 
+Интерьерная печать – разновидность широкоформатной печати, позволяющая создавать четкие контрастные изображения фотографического качества https://print-classic.ru/bandanas
+  Мельчайшие детали напечатанной таким способом композиции можно рассмотреть даже с очень близкого расстояния https://print-classic.ru/polzovatelskoe-soglashenie
+  При этом детализация картинки и сочность ее цветов сохраняются как на исходном электронном носителе https://print-classic.ru/booklets
+  Поэтому, несмотря на название, интерьерная печать применяется не только для оформления помещений https://print-classic.ru/kalendari
+  Фотореалистичные изображения, полученные таким методом печати, широко используются при изготовлении уличной рекламы и информационных конструкций – стендов, пресс-волов, баннеров или растяжек https://print-classic.ru/presentations
+ 
+Знаток города 4 уровня https://print-classic.ru/vizitki
+ 
+ROLL UP стенды https://print-classic.ru/paket
+ 
+Интерьерная печать Москва https://print-classic.ru/tolstovki
+
+--
+This e-mail was sent from a contact form on South Tabor Neighborhood Association (http://southtabor.org)
+
+
+--4fKvNJ3dXPz62.1771929553/pdx1-shared-relay-02.dreamhost.com--
