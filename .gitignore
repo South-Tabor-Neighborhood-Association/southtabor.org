@@ -1,0 +1,7 @@
+.DS_Store
+**/.DS_Store
+logs/
+Maildir/
+replacements.txt
+southtabor.org/db_backup.sql
+db_backup.sql
