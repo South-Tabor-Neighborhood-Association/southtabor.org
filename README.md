@@ -35,6 +35,14 @@ docker compose up -d
 * **Local Site URL:** [http://localhost:8080](http://localhost:8080)
 * **Local Database Host & Port:** `localhost:3306`
 
+### 4. Setup Git Hooks (detect-secrets)
+This repository uses Yelp's `detect-secrets` via the `pre-commit` framework to prevent accidentally committing sensitive information (passwords, API keys, etc.).
+After cloning the repository, you must install the hooks on your local machine:
+```bash
+pip install pre-commit detect-secrets
+pre-commit install
+```
+
 ---
 
 ## ⚙️ Local Database Credentials

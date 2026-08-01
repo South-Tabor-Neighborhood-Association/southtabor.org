@@ -46,7 +46,14 @@ docker-compose down -v && docker-compose up -d
 ### Local URL
 [http://localhost:8080](http://localhost:8080)
 
-
+### Security (detect-secrets)
+The repository enforces a pre-commit hook using the `pre-commit` framework and Yelp's `detect-secrets`. 
+If you clone this repository to a new machine, you must initialize the hooks before you can commit:
+```bash
+pip install pre-commit detect-secrets
+pre-commit install
+```
+If you encounter a false positive when committing, you can skip the hook by using `git commit --no-verify`.
 
 ## Active Theme
 **Exciter** (`wp-content/themes/Exciter/`)  
