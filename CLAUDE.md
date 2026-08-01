@@ -46,53 +46,7 @@ docker-compose down -v && docker-compose up -d
 ### Local URL
 [http://localhost:8080](http://localhost:8080)
 
-### Refreshing the DB from Production
-```bash
-# 1. Export from production (run locally — requires your IP whitelisted in DreamHost panel)
-mysqldump -h mysql.southtabor.dreamhosters.com \
-  -u southtabordreamh -p'your_dev_password' \
-  southtabor_dreamhosters_ > southtabor.org/db_backup.sql
 
-# 2. Re-initialize the local DB
-docker-compose down -v && docker-compose up -d
-```
-
-## Production (DreamHost)
-
-| Setting         | Value                                      |
-|-----------------|--------------------------------------------|
-| Host            | `southtabor.dreamhosters.com`              |
-| SSH/SFTP User   | `dh_southtabor`                            |
-| DB Host         | `mysql.southtabor.dreamhosters.com:3306`   |
-| DB Name         | `southtabor_dreamhosters_`                 |
-| DB User         | `southtabordreamh`                         |
-| Table Prefix    | `wp_fwtwtf_`                               |
-
-### SSH
-```bash
-ssh dh_southtabor@southtabor.dreamhosters.com
-```
-> **Note:** DreamHost shared hosting has a low process limit (~100). If you hit
-> `-bash: fork: Resource temporarily unavailable`, wait a few minutes for the
-> server watchdog to clear dead processes, or close all SFTP clients before reconnecting.
-
-### Transferring Files
-Prefer a single compressed archive over SFTP folder-by-folder transfers:
-```bash
-# On the server (via SSH)
-tar -czf southtabor-backup.tar.gz southtabor.org/
-
-# Extract locally
-tar -xzf southtabor-backup.tar.gz
-```
-
-For incremental syncs use `rsync` with exclusions to avoid pushing editor temp files:
-```bash
-rsync -avz --progress \
-  --exclude='*.swp' --exclude='*.swo' \
-  --exclude='.git/' --exclude='.DS_Store' \
-  ./southtabor.org/ dh_southtabor@southtabor.dreamhosters.com:~/southtabor.org/
-```
 
 ## Active Theme
 **Exciter** (`wp-content/themes/Exciter/`)  
