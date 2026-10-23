@@ -65,6 +65,19 @@ should happen here. Key entry points:
 - `css/` / `js/` — theme assets
 - `skins/` — theme skin variants
 
+## Redesign Theme (in development)
+**South Tabor** (`wp-content/themes/southtabor/`) is a block theme for the redesign,
+built from the South Tabor design system. It does not depend on Exciter.
+- `theme.json` — all design tokens (colors, fonts, sizes, spacing, radii)
+- `style.css` — component styles (`st-*` classes and `is-style-*` block styles)
+- `templates/`, `parts/`, `patterns/` — page layouts; volunteers can edit them in the Site Editor
+- `functions.php` — block styles, the next-board-meeting shortcode (`[stna_next_meeting]`,
+  third Thursday, no December) and the "Add to calendar" button (a Button block with class
+  `stna-add-to-calendar`)
+- Fonts (Zilla Slab, Public Sans, OFL) are self-hosted in `assets/fonts/`
+
+Activate it locally under Appearance → Themes. Switching back to Exciter is one click.
+
 ## Active Plugins
 | Plugin | Purpose |
 |---|---|
