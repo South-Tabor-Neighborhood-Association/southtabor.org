@@ -1,0 +1,251 @@
+/*
+Theme Name: South Tabor
+Theme URI: https://southtabor.org
+Author: South Tabor Neighborhood Association
+Description: Block theme for southtabor.org, built on the South Tabor design system: fir green from the STNA seal, Zilla Slab headings and Public Sans text.
+Version: 0.1.1
+Requires at least: 6.6
+Tested up to: 7.0
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: southtabor
+*/
+
+/* Colors, type, spacing and radii come from theme.json as --wp--preset--* variables.
+   The short aliases below keep component rules readable. */
+:root {
+	--st-paper: var(--wp--preset--color--paper);
+	--st-surface: var(--wp--preset--color--surface);
+	--st-moss: var(--wp--preset--color--moss);
+	--st-fir: var(--wp--preset--color--fir);
+	--st-on-fir: var(--wp--preset--color--on-fir);
+	--st-band: var(--wp--preset--color--band);
+	--st-on-band: var(--wp--preset--color--on-band);
+	--st-on-band-muted: var(--wp--preset--color--on-band-muted);
+	--st-ink: var(--wp--preset--color--ink);
+	--st-ink-muted: var(--wp--preset--color--ink-muted);
+	--st-marigold: var(--wp--preset--color--marigold);
+	--st-on-marigold: var(--wp--preset--color--on-marigold);
+	--st-line: var(--wp--preset--color--line);
+	--st-line-strong: var(--wp--preset--color--line-strong);
+	--st-focus: var(--wp--preset--color--focus);
+	--st-alert: var(--wp--preset--color--alert);
+	--st-alert-bg: var(--wp--preset--color--alert-bg);
+	--st-display: var(--wp--preset--font-family--display);
+	--st-radius-sm: var(--wp--preset--border-radius--sm, 3px);
+	--st-radius-md: var(--wp--preset--border-radius--md, 6px);
+}
+
+:where(a, button, input, select, textarea, summary):focus-visible {
+	outline: 2px solid var(--st-focus);
+	outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	a, .wp-element-button { transition: color 120ms, background-color 120ms, border-color 120ms; }
+}
+
+/* Street label: tracked capitals from the seal's ring of street names */
+.is-style-street {
+	font-family: var(--st-display);
+	font-size: 13px;
+	line-height: 16px;
+	font-weight: 600;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	color: var(--st-fir);
+	margin: 0;
+}
+
+/* Buttons */
+.wp-block-button.is-style-secondary .wp-block-button__link {
+	background: transparent;
+	color: var(--st-fir);
+	border-color: var(--st-line-strong);
+}
+.wp-block-button.is-style-secondary .wp-block-button__link:hover {
+	background: var(--st-moss);
+	color: var(--st-fir);
+}
+.wp-block-button.is-style-event .wp-block-button__link {
+	background: var(--st-marigold);
+	color: var(--st-on-marigold);
+}
+.wp-block-button.is-style-event .wp-block-button__link:hover {
+	background: var(--st-marigold);
+	color: var(--st-on-marigold);
+	border-color: var(--st-on-marigold);
+}
+
+/* Header band */
+.st-header {
+	background: var(--st-band);
+	color: var(--st-on-band);
+}
+.st-header a { color: var(--st-on-band); text-decoration: none; }
+.st-header :is(a, button):focus,
+.st-footer :is(a, button):focus { outline-color: var(--st-marigold) !important; }
+.st-brand { text-decoration: none; }
+.st-brand img { width: 56px; height: 56px; border-radius: 9999px; display: block; }
+.st-brand__name { margin: 0; font-family: var(--st-display); font-size: 22px; line-height: 24px; font-weight: 600; }
+.st-brand__sub {
+	margin: 0;
+	font-family: var(--st-display);
+	font-size: 11px;
+	line-height: 14px;
+	font-weight: 600;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	color: var(--st-on-band-muted);
+}
+.st-header .wp-block-navigation-item__content {
+	padding-block: 4px;
+	border-bottom: 2px solid transparent;
+}
+.st-header .wp-block-navigation-item__content:hover,
+.st-header .current-menu-item > .wp-block-navigation-item__content,
+.st-header [aria-current="page"] {
+	border-bottom-color: var(--st-marigold);
+}
+.st-header .wp-block-navigation__responsive-container.is-menu-open {
+	background: var(--st-band);
+	color: var(--st-on-band);
+	box-shadow: var(--wp--preset--shadow--menu);
+}
+
+/* Roundel date stamp: the circle from the seal */
+.st-roundel {
+	flex: none;
+	width: 64px;
+	height: 64px;
+	border-radius: 9999px;
+	background: var(--st-fir);
+	color: var(--st-on-fir);
+	display: grid;
+	place-content: center;
+	text-align: center;
+	font-family: var(--st-display);
+	gap: 0;
+}
+.st-roundel > * { margin: 0 !important; color: inherit !important; }
+.st-roundel b,
+.st-roundel > :first-child { display: block; font-size: 24px !important; line-height: 24px; font-weight: 700 !important; font-variant-numeric: tabular-nums; }
+.st-roundel span,
+.st-roundel > :nth-child(2) { display: block; font-size: 11px !important; line-height: 14px; font-weight: 600 !important; letter-spacing: 0.14em; text-transform: uppercase; }
+
+/* Post card in a list */
+.st-post {
+	gap: var(--wp--preset--spacing--40) !important;
+	padding-block: var(--wp--preset--spacing--50);
+	border-top: 1px solid var(--st-line);
+}
+.wp-block-post:last-child .st-post { border-bottom: 1px solid var(--st-line); }
+.st-post__body { flex: 1 1 auto; min-width: 0; }
+.st-post__body > * { margin-block: 0 !important; }
+.st-post__body > * + * { margin-block-start: var(--wp--preset--spacing--20) !important; }
+.st-post__title { font-size: var(--wp--preset--font-size--heading-3); line-height: 1.33; }
+.st-post__title a { color: var(--st-ink); text-decoration: none; }
+.st-post__title a:hover { color: var(--st-fir); text-decoration: underline; text-underline-offset: 3px; }
+/* Many featured images are flyers or the round logo, so show them whole on a tinted band */
+.st-post .wp-block-post-featured-image img { border-radius: var(--st-radius-md); background: var(--st-moss); }
+.st-post .wp-block-post-excerpt__excerpt { margin: 0; }
+.st-meta { gap: var(--wp--preset--spacing--20) !important; font-size: 13px; line-height: 18px; color: var(--st-ink-muted); font-variant-numeric: tabular-nums; }
+.wp-block-post-template { list-style: none; padding: 0; margin: 0; }
+
+/* Category tags */
+.st-tags { display: flex; flex-wrap: wrap; gap: 4px; }
+.st-tags .wp-block-post-terms__separator { display: none; }
+.st-tags a {
+	display: inline-block;
+	font-size: 12px;
+	padding: 2px 8px;
+	border: 1px solid var(--st-line-strong);
+	border-radius: var(--st-radius-sm);
+	font-weight: 600;
+	line-height: 18px;
+	letter-spacing: 0.04em;
+	color: var(--st-ink-muted);
+	background: var(--st-surface);
+	text-decoration: none;
+}
+.st-tags a[href*="land-use"] { background: var(--st-moss); color: var(--st-fir); border-color: var(--st-fir); }
+
+/* Meeting card */
+.is-style-meeting-card {
+	background: var(--st-moss);
+	border-radius: var(--st-radius-md);
+	padding: var(--wp--preset--spacing--50);
+}
+.is-style-meeting-card > * { margin-block: 0 !important; }
+.is-style-meeting-card > * + * { margin-block-start: var(--wp--preset--spacing--30) !important; }
+.st-meeting__head { display: flex; gap: var(--wp--preset--spacing--40); align-items: center; }
+.st-meeting__date { margin: 0; font-size: var(--wp--preset--font-size--heading-3); line-height: 28px; }
+.st-meeting__when { margin: var(--wp--preset--spacing--30) 0 0; font-weight: 600; line-height: 24px; }
+.is-style-meeting-card .wp-block-shortcode > :first-child { margin-top: 0; }
+.st-muted, .is-style-meeting-card p.st-muted { color: var(--st-ink-muted); font-size: var(--wp--preset--font-size--small); line-height: 22px; }
+.st-muted strong { color: var(--st-ink); }
+
+/* Panel: a bordered surface, e.g. the mailing-list box */
+.is-style-panel {
+	background: var(--st-surface);
+	border: 1px solid var(--st-line);
+	border-radius: var(--st-radius-md);
+	padding: var(--wp--preset--spacing--50);
+}
+
+/* Notices */
+.is-style-notice,
+.is-style-notice-info {
+	border: 1px solid var(--st-alert);
+	background: var(--st-alert-bg);
+	border-radius: var(--st-radius-sm);
+	padding: var(--wp--preset--spacing--40) var(--wp--preset--spacing--50);
+}
+.is-style-notice > *,
+.is-style-notice-info > * { margin-block: 0 !important; }
+.is-style-notice > * + *,
+.is-style-notice-info > * + * { margin-block-start: var(--wp--preset--spacing--10) !important; }
+.is-style-notice > :first-child,
+.is-style-notice-info > :first-child {
+	font-size: 15px;
+	line-height: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+	color: var(--st-alert);
+}
+.is-style-notice-info { border-color: var(--st-fir); background: var(--st-moss); }
+.is-style-notice-info > :first-child { color: var(--st-fir); }
+
+/* Link list (sidebar resources) */
+.wp-block-list.is-style-links { list-style: none; padding: 0; margin: 0; }
+.wp-block-list.is-style-links li { border-top: 1px solid var(--st-line); padding-block: var(--wp--preset--spacing--30); margin: 0; }
+.wp-block-list.is-style-links li:last-child { border-bottom: 1px solid var(--st-line); }
+.wp-block-list.is-style-links a { color: var(--st-ink); text-decoration: none; font-weight: 600; font-size: 15px; }
+.wp-block-list.is-style-links a:hover { color: var(--st-fir); text-decoration: underline; text-underline-offset: 3px; }
+
+/* Boundary frame: the four streets around the neighborhood, as on the seal */
+.st-bounds {
+	display: grid !important;
+	grid-template-columns: auto minmax(0, 1fr) auto;
+	grid-template-rows: auto minmax(0, 1fr) auto;
+	gap: var(--wp--preset--spacing--30);
+}
+.st-bounds > * { margin: 0 !important; text-align: center; }
+.st-bounds__n { grid-column: 2; grid-row: 1; }
+.st-bounds__w { grid-column: 1; grid-row: 2; writing-mode: vertical-rl; transform: rotate(180deg); }
+.st-bounds__in { grid-column: 2; grid-row: 2; text-align: left; }
+.st-bounds__e { grid-column: 3; grid-row: 2; writing-mode: vertical-rl; }
+.st-bounds__s { grid-column: 2; grid-row: 3; }
+
+/* Footer band */
+.st-footer { background: var(--st-band); color: var(--st-on-band); }
+.st-footer a { color: var(--st-on-band); }
+.st-footer a:hover { color: var(--st-on-band-muted); }
+.st-footer .is-style-street { color: var(--st-on-band-muted); }
+.st-footer__fine { margin: 0; font-size: 13px; line-height: 18px; color: var(--st-on-band-muted); }
+
+/* Long legacy content: keep tables and embeds inside the column */
+.wp-block-post-content table { display: block; overflow-x: auto; }
+.wp-block-post-content img { height: auto; }

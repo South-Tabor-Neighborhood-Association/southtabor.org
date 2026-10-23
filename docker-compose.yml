@@ -2,7 +2,8 @@ version: '3.8'
 
 services:
   db:
-    image: mysql:8.0
+    # MySQL 8.4, as on DreamHost
+    image: mysql:8.4
     container_name: southtabor_db
     restart: always
     environment:
@@ -23,7 +24,8 @@ services:
           - mysql.southtabor.dreamhosters.com
 
   wordpress:
-    image: wordpress:php8.1-apache
+    # PHP 8.3, as on DreamHost
+    image: wordpress:php8.3-apache
     container_name: southtabor_wp
     restart: always
     ports:
