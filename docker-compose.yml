@@ -2,19 +2,19 @@ version: '3.8'
 
 services:
   db:
-    # MariaDB, as on Hostinger shared hosting
-    image: mariadb:11.8
+    # MySQL 8.4, as on DreamHost
+    image: mysql:8.4
     container_name: southtabor_db
     restart: always
     environment:
-      MARIADB_DATABASE: southtabor_dreamhosters_
-      MARIADB_USER: southtabordreamh
-      MARIADB_PASSWORD: your_dev_password
-      MARIADB_ROOT_PASSWORD: your_root_password
+      MYSQL_DATABASE: southtabor_dreamhosters_
+      MYSQL_USER: southtabordreamh
+      MYSQL_PASSWORD: your_dev_password
+      MYSQL_ROOT_PASSWORD: your_root_password
     ports:
       - "3306:3306"
     volumes:
-      - db_data_mariadb:/var/lib/mysql
+      - db_data:/var/lib/mysql
       # Automatically import the database backup when the container is first created.
       # Make sure db_backup.sql is in the southtabor.org/ folder before starting the container.
       - ./southtabor.org/db_backup.sql:/docker-entrypoint-initdb.d/db_backup.sql
@@ -24,8 +24,8 @@ services:
           - mysql.southtabor.dreamhosters.com
 
   wordpress:
-    build: ./docker/wordpress
-    image: southtabor-wordpress:php8.5
+    # PHP 8.3, as on DreamHost
+    image: wordpress:php8.3-apache
     container_name: southtabor_wp
     restart: always
     ports:
@@ -36,4 +36,4 @@ services:
       - db
 
 volumes:
-  db_data_mariadb:
+  db_data:

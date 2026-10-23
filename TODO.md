@@ -18,11 +18,12 @@ Next steps for the southtabor.org redesign. The redesign work is on the
       are Editors.
 
 ## Analytics
-- [ ] Independent Analytics is **inactive on production**, so nothing is being recorded.
-      Decide whether to reactivate it or replace it (Koko Analytics was the front-runner;
-      Umami Cloud or GoatCounter if analytics should live outside WordPress).
-- [ ] If replacing it, export the Independent Analytics history first, then remove the plugin and
-      `uploads/iawp-geo-db.mmdb`.
+- [ ] Pick a replacement for Independent Analytics, which has been removed from the repo
+      (Koko Analytics was the front-runner; Umami Cloud or GoatCounter if analytics should
+      live outside WordPress). Nothing is being recorded meanwhile; it was already
+      inactive on production.
+- [ ] On production, export the Independent Analytics history if wanted, then delete the plugin,
+      `uploads/iawp-geo-db.mmdb` and `uploads/iawp-favicons/`.
 
 ## Launch on production
 - [ ] Merge `claude/sharp-mayer-oxgae9` into `main` (open a PR).
@@ -32,6 +33,7 @@ Next steps for the southtabor.org redesign. The redesign work is on the
 - [ ] Upload the South Tabor theme and activate it.
 - [ ] Deactivate and delete the plugins removed from the repo: `advanced-accordion-block`,
       `any-mobile-theme-switcher`, `google-analytics-for-wordpress` (inactive),
+      `independent-analytics` (inactive),
       `velvet-blues-update-urls`, `widget-entries`, `wp-edit`.
 - [ ] ManageWP: `worker` is active on production, and the `0-worker.php` loader is in the repo.
       Confirm nobody uses ManageWP, then remove both.
@@ -44,11 +46,12 @@ Next steps for the southtabor.org redesign. The redesign work is on the
 - [ ] Set up SMTP for the forms, since Hostinger's `mail()` is capped at 100 emails a day.
 - [ ] Exclude the homepage meeting card from LiteSpeed's page cache, or the date goes stale.
 - [ ] Remove DreamHost-specific settings (`DB_HOST`, `dreamhost-panel-login.php`).
-- [ ] Drop or fix the collation of `wp_fwtwtf_logo_thumbnail_backup` before exporting.
+- [ ] Drop `wp_fwtwtf_logo_thumbnail_backup` before exporting (MariaDB rejects its collation).
+- [ ] Switch the local Docker database to MariaDB to match.
 
 ## Cleanup
 - [ ] When staging is no longer needed: remove the site and its database in the DreamHost
       panel, and delete `~/staging-backup/` and `~/staging-debug.log`.
-- [ ] Delete the old local Docker volume `southtabororg_db_data` (MySQL 8):
-      `docker volume rm southtabororg_db_data`.
+- [ ] Delete the unused local MariaDB volume: `docker volume rm southtabororg_db_data_mariadb`.
+- [ ] Drop the Independent Analytics tables from the local DB once nobody needs the data.
 - [ ] Drop `wp_fwtwtf_logo_thumbnail_backup` once the logo removal is confirmed on production.
