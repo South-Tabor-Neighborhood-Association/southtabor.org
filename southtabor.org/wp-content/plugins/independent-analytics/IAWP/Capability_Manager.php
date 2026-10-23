@@ -5,6 +5,24 @@ namespace IAWP;
 /** @internal */
 class Capability_Manager
 {
+    private static $is_granting_all_analytics = \false;
+    /**
+     * Runs the callback with access to all analytics, regardless of the current user's capabilities.
+     * This is used for things like email reports, which should always include all analytics.
+     *
+     * @param callable $callback
+     * @return mixed
+     */
+    public static function with_all_analytics(callable $callback)
+    {
+        $previous = self::$is_granting_all_analytics;
+        self::$is_granting_all_analytics = \true;
+        try {
+            return $callback();
+        } finally {
+            self::$is_granting_all_analytics = $previous;
+        }
+    }
     /**
      * @return array
      */
@@ -34,6 +52,9 @@ class Capability_Manager
                 continue;
             }
             $user_role = \get_role($role);
+            if ($user_role === null) {
+                continue;
+            }
             // For the role, remove all previous capabilities
             foreach (self::all_capabilities() as $possible_capability => $label) {
                 $user_role->remove_cap($possible_capability);
@@ -49,11 +70,14 @@ class Capability_Manager
     }
     public static function can_only_view_authored_analytics() : bool
     {
+        if (self::$is_granting_all_analytics) {
+            return \false;
+        }
         return !self::is_admin_user() && \current_user_can('iawp_read_only_authored_access');
     }
     public static function can_view_all_analytics() : bool
     {
-        return self::is_admin_user() || \current_user_can('iawp_read_only_access') || \current_user_can('iawp_full_access');
+        return self::$is_granting_all_analytics || self::is_admin_user() || \current_user_can('iawp_read_only_access') || \current_user_can('iawp_full_access');
     }
     public static function can_edit() : bool
     {

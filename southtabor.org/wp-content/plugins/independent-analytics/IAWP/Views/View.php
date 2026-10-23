@@ -2,21 +2,16 @@
 
 namespace IAWP\Views;
 
-use IAWP\Custom_WordPress_Columns\Views_Column;
 use IAWP\Illuminate_Builder;
 use IAWP\Known_Referrers;
 use IAWP\Models\Page;
-use IAWP\Models\Page_Home;
-use IAWP\Models\Page_Post_Type_Archive;
-use IAWP\Models\Page_Singular;
 use IAWP\Models\Visitor;
 use IAWP\Query;
 use IAWP\Tables;
 use IAWP\Utils\Device;
-use IAWP\Utils\String_Util;
 use IAWP\Utils\Timezone;
 use IAWP\Utils\URL;
-use IAWPSCOPED\Illuminate\Database\Query\JoinClause;
+use IAWP\ViewsColumn\UpdateTotalViewsPostMeta;
 /** @internal */
 class View
 {
@@ -28,11 +23,11 @@ class View
     private $resource;
     private $session;
     /**
-     * @param array              $payload
-     * @param string|null        $referrer_url
-     * @param Visitor            $visitor
+     * @param array $payload
+     * @param string|null $referrer_url
+     * @param Visitor $visitor
      * @param ?CampaignParameters $campaign_parameters
-     * @param \DateTime|null     $viewed_at
+     * @param \DateTime|null $viewed_at
      */
     public function __construct(array $payload, ?string $referrer_url, Visitor $visitor, ?\IAWP\Views\CampaignParameters $campaign_parameters, ?\DateTime $viewed_at = null)
     {
@@ -52,7 +47,7 @@ class View
         $this->set_session_total_views();
         $this->set_sessions_initial_view($view_id);
         $this->set_sessions_final_view($view_id);
-        $this->set_views_postmeta($this->resource);
+        UpdateTotalViewsPostMeta::for_page($this->resource);
     }
     /**
      * @return int ID of newly created session
@@ -64,30 +59,35 @@ class View
     }
     public function fetch_or_create_country() : ?int
     {
-        if (!$this->visitor->geoposition()->valid_location()) {
+        $geo = $this->visitor->geo();
+        if (\is_null($geo)) {
             return null;
         }
         $countries_table = Query::get_table_name(Query::COUNTRIES);
-        $country_id = Illuminate_Builder::new()->from($countries_table)->where('country_code', '=', $this->visitor->geoposition()->country_code())->where('country', '=', $this->visitor->geoposition()->country())->where('continent', '=', $this->visitor->geoposition()->continent())->value('country_id');
+        $country_id = Illuminate_Builder::new()->from($countries_table)->where('country_code', '=', $geo->country_code())->value('country_id');
         if (!\is_null($country_id)) {
             return $country_id;
         }
-        Illuminate_Builder::new()->from($countries_table)->insertOrIgnore(['country_code' => $this->visitor->geoposition()->country_code(), 'country' => $this->visitor->geoposition()->country(), 'continent' => $this->visitor->geoposition()->continent()]);
-        return Illuminate_Builder::new()->from($countries_table)->where('country_code', '=', $this->visitor->geoposition()->country_code())->where('country', '=', $this->visitor->geoposition()->country())->where('continent', '=', $this->visitor->geoposition()->continent())->value('country_id');
+        Illuminate_Builder::new()->from($countries_table)->insertOrIgnore(['country_code' => $geo->country_code(), 'country' => $geo->country(), 'continent' => $geo->continent()]);
+        return Illuminate_Builder::new()->from($countries_table)->where('country_code', '=', $geo->country_code())->value('country_id');
     }
     public function fetch_or_create_city() : ?int
     {
-        if (!$this->visitor->geoposition()->valid_location()) {
+        $geo = $this->visitor->geo();
+        if (\is_null($geo)) {
             return null;
         }
         $country_id = $this->fetch_or_create_country();
+        if (\is_null($country_id)) {
+            return null;
+        }
         $cities_table = Query::get_table_name(Query::CITIES);
-        $city_id = Illuminate_Builder::new()->from($cities_table)->where('country_id', $country_id)->where('subdivision', '=', $this->visitor->geoposition()->subdivision())->where('city', '=', $this->visitor->geoposition()->city())->value('city_id');
+        $city_id = Illuminate_Builder::new()->from($cities_table)->where('country_id', $country_id)->where('subdivision', '=', $geo->subdivision())->where('city', '=', $geo->city())->value('city_id');
         if (!\is_null($city_id)) {
             return $city_id;
         }
-        Illuminate_Builder::new()->from($cities_table)->insertOrIgnore(['country_id' => $country_id, 'subdivision' => $this->visitor->geoposition()->subdivision(), 'city' => $this->visitor->geoposition()->city()]);
-        return Illuminate_Builder::new()->from($cities_table)->where('country_id', $country_id)->where('subdivision', '=', $this->visitor->geoposition()->subdivision())->where('city', '=', $this->visitor->geoposition()->city())->value('city_id');
+        Illuminate_Builder::new()->from($cities_table)->insertOrIgnore(['country_id' => $country_id, 'subdivision' => $geo->subdivision(), 'city' => $geo->city()]);
+        return Illuminate_Builder::new()->from($cities_table)->where('country_id', $country_id)->where('subdivision', '=', $geo->subdivision())->where('city', '=', $geo->city())->value('city_id');
     }
     /**
      * Fetch the last view, if any.
@@ -247,7 +247,7 @@ class View
      */
     private function is_internal_referrer(?string $referrer_url) : bool
     {
-        return !empty($referrer_url) && String_Util::str_starts_with(\strtolower($referrer_url), \strtolower(\get_home_url()));
+        return !empty($referrer_url) && \str_starts_with(\strtolower($referrer_url), \strtolower(\get_home_url()));
     }
     private function referrer_id() : int
     {
@@ -284,11 +284,16 @@ class View
     }
     private function referrer_type_id(string $type) : int
     {
-        $referrer_type_id = Illuminate_Builder::new()->select('id')->from(Tables::referrer_types())->where('referrer_type', '=', $type)->value('id');
-        if ($referrer_type_id === null) {
-            $referrer_type_id = Illuminate_Builder::new()->from(Tables::referrer_types())->insertGetId(['referrer_type' => $type]);
+        $table = Tables::referrer_types();
+        $referrer_type_id = Illuminate_Builder::new()->from($table)->where('referrer_type', '=', $type)->value('id');
+        if ($referrer_type_id !== null) {
+            return $referrer_type_id;
         }
-        return $referrer_type_id;
+        try {
+            return Illuminate_Builder::new()->from($table)->insertGetId(['referrer_type' => $type]);
+        } catch (\Throwable $error) {
+            return Illuminate_Builder::new()->from($table)->where('referrer_type', '=', $type)->value('id');
+        }
     }
     private function strip_www(string $string) : string
     {
@@ -310,61 +315,5 @@ class View
         $sessions_table = Query::get_table_name(Query::SESSIONS);
         $session = Illuminate_Builder::new()->from($sessions_table, 'sessions')->selectRaw('IFNULL(ended_at, created_at) AS latest_view_at')->selectRaw('sessions.*')->where('visitor_id', '=', $this->visitor->id())->havingRaw('latest_view_at > DATE_SUB(UTC_TIMESTAMP(), INTERVAL 30 MINUTE)')->orderBy('latest_view_at', 'DESC')->first();
         return $session;
-    }
-    private function set_views_postmeta(Page $resource) : void
-    {
-        if ($resource instanceof Page_Singular) {
-            $this->set_views_postmeta_for_singular($resource);
-        } elseif ($resource instanceof Page_Home) {
-            $this->set_views_postmeta_for_home($resource);
-        } elseif ($resource instanceof Page_Post_Type_Archive && $resource->post_type() === 'product') {
-            $this->set_views_postmeta_for_shop_page($resource);
-        }
-    }
-    private function set_views_postmeta_for_singular(Page_Singular $resource) : void
-    {
-        $singular_id = $resource->get_singular_id();
-        if ($singular_id === null) {
-            return;
-        }
-        $views_table = Query::get_table_name(Query::VIEWS);
-        $resources_table = Query::get_table_name(Query::RESOURCES);
-        $total_views = Illuminate_Builder::new()->selectRaw('COUNT(*) AS views')->from("{$resources_table} as resources")->join("{$views_table} AS views", function (JoinClause $join) {
-            $join->on('resources.id', '=', 'views.resource_id');
-        })->where('singular_id', '=', $singular_id)->value('views');
-        \update_post_meta($singular_id, Views_Column::$meta_key, $total_views);
-    }
-    private function set_views_postmeta_for_home(Page_Home $resource) : void
-    {
-        $blog_page_id = \get_option('page_for_posts');
-        if (\is_string($blog_page_id) && \ctype_digit($blog_page_id)) {
-            $blog_page_id = \intval($blog_page_id);
-        }
-        $blog_page = \get_post($blog_page_id);
-        if ($blog_page === null) {
-            return;
-        }
-        $views_table = Query::get_table_name(Query::VIEWS);
-        $resources_table = Query::get_table_name(Query::RESOURCES);
-        $total_views = Illuminate_Builder::new()->selectRaw('COUNT(*) AS views')->from("{$resources_table} as resources")->join("{$views_table} AS views", function (JoinClause $join) {
-            $join->on('resources.id', '=', 'views.resource_id');
-        })->where('resource', '=', 'home')->value('views');
-        \update_post_meta($blog_page_id, Views_Column::$meta_key, $total_views);
-    }
-    private function set_views_postmeta_for_shop_page(Page_Post_Type_Archive $resource) : void
-    {
-        try {
-            $shop_id = wc_get_page_id('shop');
-            if ($shop_id === -1) {
-                return;
-            }
-            $views_table = Query::get_table_name(Query::VIEWS);
-            $resources_table = Query::get_table_name(Query::RESOURCES);
-            $total_views = Illuminate_Builder::new()->selectRaw('COUNT(*) AS views')->from("{$resources_table} as resources")->join("{$views_table} AS views", function (JoinClause $join) {
-                $join->on('resources.id', '=', 'views.resource_id');
-            })->where('resource', '=', 'post_type_archive')->where('post_type', '=', 'product')->value('views');
-            \update_post_meta($shop_id, Views_Column::$meta_key, $total_views);
-        } catch (\Throwable $e) {
-        }
     }
 }

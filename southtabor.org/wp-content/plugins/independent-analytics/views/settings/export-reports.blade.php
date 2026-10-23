@@ -28,7 +28,7 @@
                         <li class="empty">
                             <p><?php esc_html_e('No reports found.', 'independent-analytics'); ?></p>
                         </li><?php
-                    else : 
+                    else :
                         foreach ($report_type['saved_reports'] as $report) : ?>
                             <li>
                                 <label>
@@ -36,7 +36,7 @@
                                         data-action="export-reports#handleToggleReport">
                                     <?php echo esc_html($report->name()); ?>
                                 </label>
-                            </li><?php 
+                            </li><?php
                         endforeach;
                     endif; ?>
                 </ol>
@@ -50,7 +50,7 @@
 </div>
 
 <div class="settings-container import-reports" data-controller="import-reports"
-     data-import-reports-database-version-value="<?php echo '52'; ?>">
+     data-import-reports-database-version-value="<?php echo '53'; ?>">
     <div class="heading">
         <h2><?php
             esc_html_e('Import Custom Reports', 'independent-analytics'); ?>

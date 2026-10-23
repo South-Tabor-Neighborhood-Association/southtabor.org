@@ -36,6 +36,10 @@ class Submission_Listener
         // Gravity Forms
         \add_action('gform_after_submission', function ($entry, $form) {
             try {
+                // Ignore submissions that Gravity Forms has marked as spam
+                if (isset($entry['status']) && $entry['status'] === 'spam') {
+                    return;
+                }
                 $submission = new \IAWP\Form_Submissions\Submission(4, \intval($form['id']), Security::string($form['title']));
                 $submission->record_submission();
             } catch (\Throwable $e) {
@@ -260,10 +264,10 @@ class Submission_Listener
         // WP Store Locator
         \add_action('wpsl_store_search', function () {
             try {
-                $is_autoloaded = isset($_GET['autoload']) && $_GET['autoload'];
+                $is_page_load = !empty($_GET['autoload']) || !empty($_GET['skip_cache']) || !empty($_GET['approximate']);
                 // This hooks fires after the locations are fetched on page load. We only want to track
                 // manual form submissions.
-                if ($is_autoloaded) {
+                if ($is_page_load) {
                     return;
                 }
                 // There's only one possible form for this plugin. This is why the form id and the forms
@@ -338,16 +342,17 @@ class Submission_Listener
             }
         }, 10, 3);
         // Newletter
-        \add_action('newsletter_user_post_subscribe', function ($user) {
+        \add_filter('newsletter_user_subscribe', function ($user) {
             try {
                 $form = \IAWP\Form_Submissions\Newsletter::get_form($user->referrer ?? null);
                 if (!$form) {
-                    return;
+                    return $user;
                 }
                 $submission = new \IAWP\Form_Submissions\Submission(29, \intval($form['id']), Security::string($form['title']));
                 $submission->record_submission();
             } catch (\Throwable $e) {
             }
+            return $user;
         }, 10, 1);
         // Everest Forms
         \add_action('everest_forms_process_complete', function ($fields, $entry, $form_data, $entry_id) {
@@ -366,6 +371,53 @@ class Submission_Listener
             } catch (\Throwable $e) {
             }
         }, 10, 1);
+        // Core Forms
+        \add_action('cf_form_success', function ($submission, $form) {
+            try {
+                $submission = new \IAWP\Form_Submissions\Submission(
+                    32,
+                    \intval($form->id),
+                    // Form id
+                    Security::string($form->title)
+                );
+                $submission->record_submission();
+            } catch (\Throwable $e) {
+            }
+        }, 10, 2);
+        // Superb Addons
+        \add_action('superbaddons_form_after_submit', function ($form_id, $fields, $data) {
+            try {
+                $id_field = array_find($data['form_fields'], fn($field) => ($field['fieldName'] ?? null) === 'iawp-form-id');
+                if (!$id_field) {
+                    return;
+                }
+                $id = $id_field['defaultValue'] ?? null;
+                if (!\is_numeric($id)) {
+                    return;
+                }
+                $submission = new \IAWP\Form_Submissions\Submission(
+                    33,
+                    \intval($id),
+                    // Form id
+                    Security::string($data['form_name'])
+                );
+                $submission->record_submission();
+            } catch (\Throwable $e) {
+            }
+        }, 10, 3);
+        // Custom Breakdance Hook
+        \add_action('iawp_breakdance_form_submission', function ($id, $title) {
+            try {
+                $submission = new \IAWP\Form_Submissions\Submission(
+                    34,
+                    \intval($id),
+                    // Form id
+                    Security::string($title)
+                );
+                $submission->record_submission();
+            } catch (\Throwable $e) {
+            }
+        }, 10, 2);
         // Template
         // add_action('iawp_some_form_callback', function () {
         //     try {

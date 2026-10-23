@@ -23,7 +23,8 @@ services:
           - mysql.southtabor.dreamhosters.com
 
   wordpress:
-    image: wordpress:php8.1-apache
+    build: ./docker/wordpress
+    image: southtabor-wordpress:php8.5
     container_name: southtabor_wp
     restart: always
     ports:

@@ -104,7 +104,7 @@ abstract class Rows
     {
         return [$this->date_range->iso_start(), $this->date_range->iso_end()];
     }
-    protected function appears_to_be_for_real_time_analytics() : bool
+    protected function is_real_time() : bool
     {
         $difference_in_seconds = $this->date_range->end()->getTimestamp() - $this->date_range->start()->getTimestamp();
         $one_hour_in_seconds = 3600;
@@ -150,7 +150,7 @@ abstract class Rows
             return;
         }
         if ($this->using_logical_or_operator()) {
-            $query->where(function (Builder $query) {
+            $query->having(function (Builder $query) {
                 foreach ($this->filters as $index => $filter) {
                     $filter->apply_to_query($query, \IAWP\Rows\Filter::$AGGREGATE_FILTER, $index > 0);
                 }

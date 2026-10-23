@@ -45,7 +45,8 @@ abstract class Table
         $this->is_new_group = $is_new_group;
         $this->filters = new Filters();
     }
-    protected abstract function groups() : Groups;
+    public abstract function name() : string;
+    public abstract function groups() : Groups;
     /**
      * @return array<Column>
      */
@@ -136,12 +137,12 @@ abstract class Table
             return Number_Formatter::percent($row->{$column_id}(), 2);
         } elseif ($column_id == 'url') {
             if ($row->is_deleted()) {
-                return \urldecode(\esc_url($row->url()));
+                return \esc_html(\urldecode($row->url()));
             } else {
-                return '<a href="' . \esc_url($row->url(\true)) . '" target="_blank" class="external-link">' . \urldecode(\esc_url($row->url())) . '<span class="dashicons dashicons-external"></span></a>';
+                return '<a href="' . \esc_url($row->url(\true)) . '" target="_blank" class="external-link">' . \esc_html(\urldecode($row->url())) . '<span class="dashicons dashicons-external"></span></a>';
             }
         } elseif ($column_id == 'author') {
-            return Security::html($row->avatar()) . ' ' . Security::string($row->author());
+            return Security::table_cell_content($row->avatar()) . ' ' . Security::string($row->author());
         } elseif ($column_id == 'date') {
             return Security::string(\date(Format::date(), \strtotime($row->date())));
         } elseif ($column_id == 'type' && \method_exists($row, 'icon') && \method_exists($row, 'type')) {
@@ -165,7 +166,7 @@ abstract class Table
         } elseif ($column_id === 'link_target') {
             $value = $row->{$column_id}();
             if (\is_string($value) && URL::new($value)->is_valid_url()) {
-                return '<a href="' . \esc_url($value) . '" target="_blank" class="external-link">' . \esc_url(\urldecode($value)) . '<span class="dashicons dashicons-external"></span></a>';
+                return '<a href="' . \esc_url($value) . '" target="_blank" class="external-link">' . \esc_html(\urldecode($value)) . '<span class="dashicons dashicons-external"></span></a>';
             }
             return Security::string($value);
         } else {
@@ -177,6 +178,7 @@ abstract class Table
         $options = Dashboard_Options::getInstance();
         $start = $options->get_date_range()->start()->setTimezone(Timezone::site_timezone());
         $end = $options->get_date_range()->end()->setTimezone(Timezone::site_timezone());
+        $csv_labels = ['hourly' => \__('Download Hourly Metrics CSV', 'independent-analytics'), 'daily' => \__('Download Daily Metrics CSV', 'independent-analytics'), 'weekly' => \__('Download Weekly Metrics CSV', 'independent-analytics'), 'monthly' => \__('Download Monthly Metrics CSV', 'independent-analytics')];
         ?>
         <div id="toolbar" class="toolbar" data-filter-count="<?php 
         echo \count($options->filters());
@@ -237,9 +239,12 @@ abstract class Table
                             </button>
                             <button id="download-report-statistics-csv" class="iawp-button" data-report-target="exportReportStatistics" data-action="report#exportReportStatistics">
                                 <span class="dashicons dashicons-media-spreadsheet"></span>
-                                <span class="iawp-label">
+                                <span class="iawp-label"
+                                      data-labels="<?php 
+        echo \esc_attr(\wp_json_encode($csv_labels));
+        ?>">
                                     <?php 
-        \esc_html_e('Download Daily Metrics CSV', 'independent-analytics');
+        echo \esc_html($csv_labels[$options->chart_interval()->id()]);
         ?>
                                 </span>
                             </button>
@@ -334,6 +339,13 @@ abstract class Table
         return Collection::make($filters)->map(function ($filter) {
             return $this->sanitize_filter($filter);
         })->filter()->values()->all();
+    }
+    public function sanitize_filter_logic(?string $filter_logic) : string
+    {
+        if (!\in_array($filter_logic, ['and', 'or'])) {
+            return 'and';
+        }
+        return $filter_logic;
     }
     public function resolve_filter_conflicts(array $filters, string $filter_logic) : array
     {

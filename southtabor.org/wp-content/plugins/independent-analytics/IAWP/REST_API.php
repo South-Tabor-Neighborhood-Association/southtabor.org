@@ -3,6 +3,7 @@
 namespace IAWP;
 
 use IAWP\Click_Tracking\Link_Rule_Finder;
+use IAWP\Click_Tracking\Site;
 use IAWP\Models\Visitor;
 use IAWP\Utils\Device;
 use IAWP\Utils\Request;
@@ -17,8 +18,10 @@ class REST_API
 {
     public function __construct()
     {
-        \add_action('wp_footer', [$this, 'echo_tracking_script']);
         \add_action('rest_api_init', [$this, 'register_rest_api']);
+        \add_action('wp_footer', [$this, 'echo_tracking_script']);
+        // Support tracking where wp_footer isn't called
+        \add_action('iawp_output_tracking_script', [$this, 'echo_tracking_script']);
         // Support for PDF Viewer by Themencode (free and pro versions)
         \add_action('tnc_pvfw_viewer_head', [$this, 'echo_tracking_script']);
         \add_action('tnc_pvfw_head', [$this, 'echo_tracking_script']);
@@ -62,6 +65,18 @@ class REST_API
         if (\is_null($current_resource)) {
             return;
         }
+        /** Use the iawp_user_excluded_posts filter to exclude the analytics tracking script on any page. 
+         *
+         * add_filter( 'iawp_user_excluded_posts', function ( $ids ) {
+         *  $ids[] = 1;
+         *
+         *   return $ids;
+         * });
+         */
+        $user_excluded_posts = \apply_filters('iawp_user_excluded_posts', []);
+        if ($current_resource->type() === 'singular' && \in_array($current_resource->meta_value(), $user_excluded_posts)) {
+            return;
+        }
         $payload['resource'] = $current_resource->type();
         if ($current_resource->has_meta()) {
             $payload[$current_resource->meta_key()] = $current_resource->meta_value();
@@ -103,14 +118,14 @@ class REST_API
                         return
                     }
 
-                    const request = fetch(url, {
+                    fetch(url, {
                         method: 'POST',
                         body: JSON.stringify(body),
                         keepalive: true,
                         headers: {
                             'Content-Type': 'application/json;charset=UTF-8'
                         }
-                    });
+                    }).catch(() => {});
                 }
                 const calculateParentDistance = (child, parent) => {
                     let count = 0;
@@ -135,12 +150,19 @@ class REST_API
                 const isMatchingId = (linkRule, href, classes, ids) => {
                     return ids.includes(linkRule.value)
                 }
+                const parseUrl = (href) => {
+                    try {
+                        return new URL(href)
+                    } catch (error) {
+                        return null
+                    }
+                }
                 const isMatchingDomain = (linkRule, href, classes, ids) => {
-                    if(!URL.canParse(href)) {
+                    const url = parseUrl(href)
+                    if(!url) {
                         return false
                     }
 
-                    const url = new URL(href)
                     const host = url.host
                     const hostsToMatch = [host]
 
@@ -153,40 +175,37 @@ class REST_API
                     return hostsToMatch.includes(linkRule.value)
                 }
                 const isMatchingExtension = (linkRule, href, classes, ids) => {
-                    if(!URL.canParse(href)) {
+                    const url = parseUrl(href)
+                    if(!url) {
                         return false
                     }
-
-                    const url = new URL(href)
 
                     return url.pathname.endsWith('.' + linkRule.value)
                 }
                 const isMatchingSubdirectory = (linkRule, href, classes, ids) => {
-                    if(!URL.canParse(href)) {
+                    const url = parseUrl(href)
+                    if(!url) {
                         return false
                     }
-
-                    const url = new URL(href)
 
                     return url.pathname.startsWith('/' + linkRule.value + '/')
                 }
                 const isMatchingProtocol = (linkRule, href, classes, ids) => {
-                    if(!URL.canParse(href)) {
+                    const url = parseUrl(href)
+                    if(!url) {
                         return false
                     }
-
-                    const url = new URL(href)
 
                     return url.protocol === linkRule.value + ':'
                 }
                 const isMatchingExternal = (linkRule, href, classes, ids) => {
-                    if(!URL.canParse(href) || !URL.canParse(document.location.href)) {
+                    const linkUrl = parseUrl(href)
+                    const siteUrl = parseUrl(document.location.href)
+                    if(!linkUrl || !siteUrl) {
                         return false
                     }
 
                     const matchingProtocols = ['http:', 'https:']
-                    const siteUrl = new URL(document.location.href)
-                    const linkUrl = new URL(href)
 
                     // Links to subdomains will appear to be external matches according to JavaScript,
                     // but the PHP rules will filter those events out.
@@ -277,10 +296,14 @@ class REST_API
                     const url = "<?php 
         echo $track_click_url;
         ?>";
+                    const siteId = "<?php 
+        echo Site::id();
+        ?>";
                     const body = {
                         href: href,
                         classes: classes.join(' '),
                         ids: ids.join(' '),
+                        siteId: siteId,
                         ...<?php 
         echo \json_encode($data);
         ?>
@@ -331,6 +354,8 @@ class REST_API
                         utm_term: params.utm_term,
                         utm_content: params.utm_content,
                         gclid: params.gclid,
+                        fbclid: params.fbclid,
+                        oppref: params.oppref,
                         ...<?php 
         echo \json_encode($data);
         ?>
@@ -369,7 +394,7 @@ class REST_API
                     }
 
                     track(element)
-                })
+                }, true)
                 document.addEventListener('click', function (event) {
                     <?php 
         if (!\defined('IAWP_TESTING')) {
@@ -396,7 +421,7 @@ class REST_API
                     }
 
                     track(element)
-                })
+                }, true)
                 document.addEventListener('play', function (event) {
                     <?php 
         if (!\defined('IAWP_TESTING')) {
@@ -471,12 +496,19 @@ class REST_API
     }
     private function calculate_referrer_url($request) : ?string
     {
+        // OpenAI ad clicks may not include a browser referrer.
+        if (\is_string($this->decode_or_nullify($request['oppref']))) {
+            return 'https://openaiads.iawp';
+        }
         $referrer_url = $request['referrer_url'];
         $url = new URL($referrer_url ?? '');
+        // Why the exception for "googleads.g.doubleclick.net"? We want to keep Google Display Network separate.
+        // https://github.com/andrewjmead/independent-analytics/commit/8d914d3108fa5bebc83274997655991e52c6b033
         if (\is_string($this->decode_or_nullify($request['gclid'])) && $url->get_domain() !== 'googleads.g.doubleclick.net') {
             $referrer_url = 'https://googleads.iawp';
         }
-        if (\is_string($this->decode_or_nullify($request['fbclid'])) && ($url->get_domain() === 'facebook.com' || Str::endsWith($url->get_domain(), '.facebook.com'))) {
+        // fbclid is also present on organic Facebook links, so require paid campaign tagging.
+        if (($url->get_domain() === 'facebook.com' || Str::endsWith($url->get_domain(), '.facebook.com')) && $this->decode_or_nullify($request['utm_source']) === 'facebook' && \preg_match('/^(.*cp.*|ppc|retargeting|paid.*)$/i', $this->decode_or_nullify($request['utm_medium']) ?? '') === 1) {
             $referrer_url = 'https://facebookads.iawp';
         }
         if ($referrer_url === null || $url->get_domain() === null) {

@@ -49,13 +49,24 @@ class Click_Processing_Job extends Cron_Job
             if (!$payload_validator->is_valid() || \is_null($payload_validator->resource())) {
                 continue;
             }
-            if (\is_string($event['href']) && !$this->is_valid_href($event['href'])) {
-                continue;
+            $href = $event['href'];
+            // An anchor without a href produces an empty string. Treat it like a button or other element without a href.
+            if ($href === '') {
+                $href = null;
             }
-            $event['href'] = \sanitize_url($event['href']);
+            if (\is_string($href)) {
+                if (!$this->is_valid_href($href)) {
+                    continue;
+                }
+                $href = \sanitize_url($href);
+                // Sanitization can expand characters, such as spaces into %20.
+                if (Str::length($href) > 2083) {
+                    continue;
+                }
+            }
             $event['classes'] = Security::string($event['classes']);
             $event['ids'] = Security::string($event['ids']);
-            $click = \IAWP\Click_Tracking\Click::new(['href' => $event['href'], 'classes' => $event['classes'], 'ids' => $event['ids'], 'resource_id' => $payload_validator->resource()['id'], 'visitor_id' => Visitor::fetch_visitor_id_by_hash($event['visitor_token']), 'created_at' => CarbonImmutable::createFromTimestamp($event['created_at'], 'utc')]);
+            $click = \IAWP\Click_Tracking\Click::new(['href' => $href, 'classes' => $event['classes'], 'ids' => $event['ids'], 'resource_id' => $payload_validator->resource()['id'], 'visitor_id' => Visitor::fetch_visitor_id_by_hash($event['visitor_token']), 'created_at' => CarbonImmutable::createFromTimestamp($event['created_at'], 'utc')]);
             $click->track();
         }
         \fclose($job_handle);
@@ -64,13 +75,14 @@ class Click_Processing_Job extends Cron_Job
     private function get_click_data_file() : ?string
     {
         $avoid_temporary_directory = \defined('IAWP_AVOID_TEMPORARY_DIRECTORY') ? \IAWP_AVOID_TEMPORARY_DIRECTORY === \true : \false;
+        $suffix = \IAWP\Click_Tracking\Site::file_suffix();
         if (!$avoid_temporary_directory) {
-            $text_file = Str::finish(\sys_get_temp_dir(), \DIRECTORY_SEPARATOR) . "iawp-click-data.txt";
+            $text_file = Str::finish(\sys_get_temp_dir(), \DIRECTORY_SEPARATOR) . "iawp-click-data{$suffix}.txt";
             if (\is_file($text_file) && \is_readable($text_file) && \is_writable($text_file)) {
                 return $text_file;
             }
         }
-        $php_file = \IAWPSCOPED\iawp_path_to('iawp-click-data.php');
+        $php_file = \IAWPSCOPED\iawp_path_to("iawp-click-data{$suffix}.php");
         if (\is_file($php_file)) {
             return $php_file;
         }
