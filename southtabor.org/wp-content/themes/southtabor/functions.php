@@ -201,6 +201,46 @@ function southtabor_render_shortcode_block( $block_content ) {
 add_filter( 'render_block_core/shortcode', 'southtabor_render_shortcode_block' );
 
 /**
+ * Many older posts open with their featured image in the post body, so the
+ * single-post template would show it twice. Skip the template's copy when
+ * the body already has it.
+ */
+function southtabor_skip_duplicate_featured_image( $block_content, $parsed_block, $block ) {
+	if ( '' === $block_content || ! is_singular() || isset( $block->context['queryId'] ) ) {
+		return $block_content;
+	}
+	$post_id = isset( $block->context['postId'] ) ? (int) $block->context['postId'] : 0;
+	if ( $post_id !== get_queried_object_id() ) {
+		return $block_content;
+	}
+	$thumb_id = get_post_thumbnail_id( $post_id );
+	$file     = $thumb_id ? get_attached_file( $thumb_id ) : '';
+	if ( ! $file ) {
+		return $block_content;
+	}
+	$content = get_post_field( 'post_content', $post_id );
+	// Sized copies share the original's name: photo.jpg, photo-1024x512.jpg, photo-scaled.jpg.
+	$name = preg_replace( '/-scaled$/', '', pathinfo( $file, PATHINFO_FILENAME ) );
+	if ( false !== strpos( $content, 'wp-image-' . $thumb_id . '"' ) || false !== strpos( $content, '/' . $name ) ) {
+		return '';
+	}
+	return $block_content;
+}
+add_filter( 'render_block_core/post-featured-image', 'southtabor_skip_duplicate_featured_image', 10, 3 );
+
+/**
+ * Next-meeting block: the same output as [stna_next_meeting], but the
+ * editor shows a live preview instead of a Shortcode box.
+ */
+function southtabor_register_blocks() {
+	register_block_type(
+		get_theme_file_path( 'blocks/next-meeting' ),
+		array( 'render_callback' => 'southtabor_next_meeting_shortcode' )
+	);
+}
+add_action( 'init', 'southtabor_register_blocks' );
+
+/**
  * [stna_copyright] — footer fine print with the current year.
  */
 function southtabor_copyright_shortcode() {

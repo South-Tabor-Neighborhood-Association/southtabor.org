@@ -3,7 +3,7 @@ Theme Name: South Tabor
 Theme URI: https://southtabor.org
 Author: South Tabor Neighborhood Association
 Description: Block theme for southtabor.org, built on the South Tabor design system: fir green from the STNA seal, Zilla Slab headings and Public Sans text.
-Version: 0.1.0
+Version: 0.1.1
 Requires at least: 6.6
 Tested up to: 7.0
 Requires PHP: 7.4
@@ -147,7 +147,8 @@ Text Domain: southtabor
 .st-post__title { font-size: var(--wp--preset--font-size--heading-3); line-height: 1.33; }
 .st-post__title a { color: var(--st-ink); text-decoration: none; }
 .st-post__title a:hover { color: var(--st-fir); text-decoration: underline; text-underline-offset: 3px; }
-.st-post .wp-block-post-featured-image img { border-radius: var(--st-radius-md); }
+/* Many featured images are flyers or the round logo, so show them whole on a tinted band */
+.st-post .wp-block-post-featured-image img { border-radius: var(--st-radius-md); background: var(--st-moss); }
 .st-post .wp-block-post-excerpt__excerpt { margin: 0; }
 .st-meta { gap: var(--wp--preset--spacing--20) !important; font-size: 13px; line-height: 18px; color: var(--st-ink-muted); font-variant-numeric: tabular-nums; }
 .wp-block-post-template { list-style: none; padding: 0; margin: 0; }

@@ -26,7 +26,7 @@
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><a href="/stna-info-kiosks/">Info Kiosks</a></li>
+<li><a href="/?s=kiosk">Info Kiosks</a></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->

@@ -1,0 +1,15 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "southtabor/next-meeting",
+	"title": "Next board meeting date",
+	"category": "widgets",
+	"icon": "calendar-alt",
+	"description": "Date and time of the next board meeting, worked out from the third-Thursday schedule. Change the schedule in the theme's functions.php.",
+	"textdomain": "southtabor",
+	"supports": {
+		"html": false,
+		"reusable": false
+	},
+	"editorScript": "file:./index.js"
+}

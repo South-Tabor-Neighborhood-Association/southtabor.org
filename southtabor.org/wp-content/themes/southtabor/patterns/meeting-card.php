@@ -9,9 +9,7 @@
  */
 ?>
 <!-- wp:group {"tagName":"section","anchor":"meetings","className":"is-style-meeting-card","layout":{"type":"default"}} -->
-<section id="meetings" class="wp-block-group is-style-meeting-card"><!-- wp:shortcode -->
-[stna_next_meeting]
-<!-- /wp:shortcode -->
+<section id="meetings" class="wp-block-group is-style-meeting-card"><!-- wp:southtabor/next-meeting {"lock":{"remove":true}} /-->
 
 <!-- wp:paragraph {"className":"st-muted"} -->
 <p class="st-muted"><strong>St. Mark's Church</strong>, 5415 SE Powell Blvd. Enter from the north parking lot.</p>
